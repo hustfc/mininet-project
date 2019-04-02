@@ -28,7 +28,7 @@ class action:
             packet_counts.update([key])           
             info=packet[0][3].load
             #filename='/home/shlled/mininet-wifi/Log/BSLog.json'
-            filename = '/media/psf/Home/Documents/GitHub/mininet-wifi-project/Stackelberg/Log/BSLog.json'
+            filename = '/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/BSLog.json'
             #f=open(filename,"a+")
             temp = {}                       #temp for storage
             data = []
