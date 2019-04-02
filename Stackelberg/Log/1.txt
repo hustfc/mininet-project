@@ -1,0 +1,807 @@
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754282.909867 send_time: 1553754282.791550 msg: This is the information which is to be send.
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754283.997957 send_time: 1553754283.951731 msg: The first line information.
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754285.071668 send_time: 1553754285.043636 msg: The second line information.
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754286.115677 send_time: 1553754286.095866 msg: The third line information.
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754335.721640 send_time: 1553754335.653535 msg: This is the information which is to be send.
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754336.767510 send_time: 1553754336.735121 msg: The first line information.
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754337.820241 send_time: 1553754337.796064 msg: The second line information.
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754338.855823 send_time: 1553754338.839509 msg: The third line information.
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754392.866672 send_time: 1553754392.795775 msg: This is the information which is to be send.
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754393.903702 send_time: 1553754393.887611 msg: The first line information.
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754394.963999 send_time: 1553754394.923640 msg: The second line information.
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754396.004129 send_time: 1553754395.983577 msg: The third line information.
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754450.537622 send_time: 1553754450.449689 msg: This is the information which is to be send.
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754451.580017 send_time: 1553754451.558723 msg: The first line information.
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754452.607924 send_time: 1553754452.595159 msg: The second line information.
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754453.679971 send_time: 1553754453.635298 msg: The third line information.
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754480.352826 send_time: 1553754480.263716 msg: This is the information which is to be send.
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754481.392341 send_time: 1553754481.375744 msg: The first line information.
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754482.428128 send_time: 1553754482.411414 msg: The second line information.
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754483.472311 send_time: 1553754483.443996 msg: The third line information.
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754524.384304 send_time: 1553754524.256977 msg: This is the information which is to be send.
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754525.426568 send_time: 1553754525.395385 msg: The first line information.
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754526.467985 send_time: 1553754526.447449 msg: The second line information.
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754527.519927 send_time: 1553754527.487488 msg: The third line information.
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754645.099036 send_time: 1553754645.020482 msg: This is the information which is to be send.
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754646.132301 send_time: 1553754646.115670 msg: The first line information.
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754647.164145 send_time: 1553754647.147247 msg: The second line information.
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553754648.195838 send_time: 1553754648.179168 msg: The third line information.
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553755343.396418 send_time: 1553755343.290190 msg: 基于多中继的D2D网络模型，以通信总速率最大化为目标，在总时隙、最大功率、信噪比阀值等约束条件下。
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553755344.430284 send_time: 1553755344.403037 msg: 采用分布式随机接入策略，中继用户可基于博弈论、采用竞价模式同步优化通信总速率，实现设备的发射功率分配以及时隙分配任务。
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553755345.480649 send_time: 1553755345.447156 msg: 结论将对算法的时间复杂度以及迭代次数等参数进行分析。
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553755346.535635 send_time: 1553755346.519570 msg: 使用Stackelberg博弈理论将问题数学地表述为一个速率驱动的源设备选择和功率控制问题。
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553755347.583876 send_time: 1553755347.567605 msg: 基站和候选中继节点的行为类似于Stackelberg博弈理论中的竞拍结合的中继方案。
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553755348.636010 send_time: 1553755348.600367 msg: 将基站作为博弈的买方，源设备作为博弈的卖方，博弈的主要目的是增加基站和源设备的收入，同时通过合作最大化优化传输视频的质量。
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553763349.898547 send_time: 1553763349.796439 msg: 基于多中继的D2D网络模型，以通信总速率最大化为目标，在总时隙、最大功率、信噪比阀值等约束条件下。
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553763598.837381 send_time: 1553763597.852822 msg: Chapter 1
+
+
+
+
+
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766472.915973 send_time: 1553766472.808231 msg: 　　“Oh, he read law in Judge Parmalee’s office over in Fayetteville,” answered Brent carelessly.“Besi(can) des, it don’t matter much. We’d have had to come home before the term was outanyway.”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766473.962176 send_time: 1553766473.935616 msg: 　　“Why?”
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766475.017969 send_time: 1553766474.991986 msg: 　　“The war, goose! The war’s going to start any day, and you don’t suppose any of us would stayin college with a war going on, do you?”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766476.075257 send_time: 1553766476.047484 msg: 　　“You know there isn’t going to be any war,” said Scarlett, bored. “It’s all just talk. Why, AshleyWilkes and his father told Pa just last week that our commissioners in Washington would come to—to—an—amicable agreement with Mr. Lincoln about the Confederacy. And anyway, theYankees are too scared of us to fight. There won’t be any war, and I’m tired of hearing about it.”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766477.155711 send_time: 1553766477.103483 msg: 　　“Not going to be any war!” cried the twins indignantly, as though they had been defrauded.
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766478.215944 send_time: 1553766478.175350 msg: 　　“Why, honey, of course there’s going to be a war,” said Stuart. The Yankees may be scared of us,but after the way General Beauregard shelled them out of Fort Sumter day before yesterday, they’llhave to fight or stand branded as cowards before the whole world. Why, the Confederacy—”
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766479.267620 send_time: 1553766479.247648 msg: 　　Scarlett made a mouth of bored impatience.
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766480.312188 send_time: 1553766480.295726 msg: 　　If you say ‘war’ just once more, I’ll go in the house and shut the door. I’ve never gotten so tiredof any one word in my life as ‘war,’ unless it’s ‘secession.’ Pa talks war morning, noon and night,and all the gentlemen who come to see him shout about Fort Sumter and States’ Rights and AbeLincoln till I get so bored I could scream! And that’s all the boys talk about, too, that and their oldTroop. There hasn’t been any fun at any party this spring because the boys can’t talk aboutanything else. I’m mighty glad Georgia waited till after Christmas before it seceded or it wouldhave ruined the Christmas parties, too. If you say ‘war’ again, I’ll go in the house.”
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766481.363946 send_time: 1553766481.343078 msg: 　　She meant what she said, for she could never long endure any conversation of which she wasnot the chief subject. But she smiled when she spoke, consciously deepening her dimple andfluttering her bristly black lashes as swiftly as butterflies’ wings. The boys were enchanted, as shehad intended them to be, and they hastened to apologize for boring her. They thought none the lessof her for her lack of interest. Indeed, they thought more. War was men’s business, not ladies’, andthey took her attitude as evidence of her femininity.
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766482.408632 send_time: 1553766482.378780 msg: 　　Having maneuvered them away from the boring subject of war, she went back with interest totheir immediate situation.
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766626.084540 send_time: 1553766625.985757 msg: Chapter 1
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766627.120109 send_time: 1553766627.094148 msg: SCARLETT O’HARA was not beautiful, but men seldom realized it when caught by her charmas the Tarleton twins were. In her face were too sharply blended the delicate features of her mother,a Coast aristocrat of French descent, and the heavy ones of her florid Irish father. But it was anarresting face, pointed of chin, square of jaw. Her eyes were pale green without a touch of hazel,starred with bristly black lashes and slightly tilted at the ends. Above them, her thick black browsslanted upward, cutting a startling oblique line in her magnolia-white skin—that skin so prized bySouthern women and so carefully guarded with bonnets, veils and mittens against hot Georgiasuns.
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766628.167833 send_time: 1553766628.143804 msg: 　　Seated with Stuart and Brent Tarleton in the cool shade of the porch of Tara, her father’splantation, that bright April afternoon of 1861, she made a pretty picture. Her new green flowered-muslin dress spread its twelve yards of billowing material over her hoops and exactly matched theflat-heeled green morocco slippers her father had recently brought her from Atlanta. The dress set off to perfection the seventeen-inch waist, the smallest in three counties, and the tightly fittingbasque showed breasts well matured for her sixteen years. But for all the modesty of her spreadingskirts, the demureness of hair netted smoothly into a chignon and the quietness of small whitehands folded in her lap, her true self was poorly concealed. The green eyes in the carefully sweetface were turbulent, willful, lusty with life, distinctly at variance with her decorous demeanor. Hermanners had been imposed upon her by her mother’s gentle admonitions and the sterner disciplineof her mammy; her eyes were her own.
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766629.215658 send_time: 1553766629.183693 msg: 　　On either side of her, the twins lounged easily in their chairs, squinting at the sunlight throughtall mint-garnished glasses as they laughed and talked, their long legs, booted to the knee and thickwith saddle muscles, crossed negligently. Nineteen years old, six feet two inches tall, long of boneand hard of muscle, with sunburned faces and deep auburn hair, their eyes merry and arrogant,their bodies clothed in identical blue coats and mustard-colored breeches, they were as much alikeas two bolls of cotton.
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766630.260360 send_time: 1553766630.239740 msg: 　　Outside, the late afternoon sun slanted down in the yard, throwing into gleaming brightness thedogwood trees that were solid masses of white blossoms against the background of new green. Thetwins’ horses were hitched in the driveway, big animals, red as their masters’ hair; and around thehorses’ legs quarreled the pack of lean, nervous possum hounds that accompanied Stuart and Brentwherever they went. A little aloof, as became an aristocrat, lay a black-spotted carriage dog,muzzle on paws, patiently waiting for the boys to go home to supper.
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766631.299798 send_time: 1553766631.275212 msg: 　　Between the hounds and the horses and the twins there was a kinship deeper than that of theirconstant companionship. They were all healthy, thoughtless young animals, sleek, graceful, high-spirited, the boys as mettlesome as the horses they rode, mettlesome and dangerous but, withal,sweet-tempered to those who knew how to handle them.
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766632.391531 send_time: 1553766632.375440 msg: 　　Although born to the ease of plantation life, waited on hand and foot since infancy, the faces ofthe three on the porch were neither slack nor soft. They had the vigor and alertness of countrypeople who have spent all their lives in the open and troubled their heads very little with dullthings in books. Life in the north Georgia county of Clayton was still new and, according to thestandards of Augusta, Savannah and Charleston, a little crude. The more sedate and older sectionsof the South looked down their noses at the up-country Georgians, but here in north Georgia, alack of the niceties of classical education carried no shame, provided a man was smart in the thingsthat mattered. And raising good cotton, riding well, shooting straight, dancing lightly, squiring theladies with elegance and carrying one’s liquor like a gentleman were the things that mattered.
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766633.431476 send_time: 1553766633.415572 msg: 　　In these accomplishments the twins excelled, and they were equally outstanding in theirnotorious inability to learn anything contained between the covers of books. Their family had moremoney, more horses, more slaves than any one else in the County, but the boys had less grammarthan most of their poor Cracker neighbors.
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766634.472277 send_time: 1553766634.455462 msg: 　　It was for this precise reason that Stuart and Brent were idling on the porch of Tara this Aprilafternoon. They had just been expelled from the University of Georgia, the fourth university thathad thrown them out in two years; and their older brothers, Tom and Boyd, had come home withthem, because they refused to remain at an institution where the twins were not welcome. Stuartand Brent considered their latest expulsion a fine joke, and Scarlett, who had not willingly opened a book since leaving the Fayetteville Female Academy the year before, thought it just as amusingas they did.
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766635.515935 send_time: 1553766635.495572 msg: 　　“I know you two don’t care about being expelled, or Tom either,” she said. “But what aboutBoyd? He’s kind of set on getting an education, and you two have pulled him out of the Universityof Virginia and Alabama and South Carolina and now Georgia. He’ll never get finished at thisrate.”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766644.113084 send_time: 1553766644.023241 msg: 　　“Oh, he read law in Judge Parmalee’s office over in Fayetteville,” answered Brent carelessly.“Besi(can) des, it don’t matter much. We’d have had to come home before the term was outanyway.”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766645.151764 send_time: 1553766645.127374 msg: 　　“Why?”
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766646.196059 send_time: 1553766646.179443 msg: 　　“The war, goose! The war’s going to start any day, and you don’t suppose any of us would stayin college with a war going on, do you?”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766647.231510 send_time: 1553766647.212054 msg: 　　“You know there isn’t going to be any war,” said Scarlett, bored. “It’s all just talk. Why, AshleyWilkes and his father told Pa just last week that our commissioners in Washington would come to—to—an—amicable agreement with Mr. Lincoln about the Confederacy. And anyway, theYankees are too scared of us to fight. There won’t be any war, and I’m tired of hearing about it.”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766648.287549 send_time: 1553766648.267547 msg: 　　“Not going to be any war!” cried the twins indignantly, as though they had been defrauded.
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766649.336232 send_time: 1553766649.312107 msg: 　　“Why, honey, of course there’s going to be a war,” said Stuart. The Yankees may be scared of us,but after the way General Beauregard shelled them out of Fort Sumter day before yesterday, they’llhave to fight or stand branded as cowards before the whole world. Why, the Confederacy—”
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766650.375544 send_time: 1553766650.354181 msg: 　　Scarlett made a mouth of bored impatience.
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766651.415567 send_time: 1553766651.395068 msg: 　　If you say ‘war’ just once more, I’ll go in the house and shut the door. I’ve never gotten so tiredof any one word in my life as ‘war,’ unless it’s ‘secession.’ Pa talks war morning, noon and night,and all the gentlemen who come to see him shout about Fort Sumter and States’ Rights and AbeLincoln till I get so bored I could scream! And that’s all the boys talk about, too, that and their oldTroop. There hasn’t been any fun at any party this spring because the boys can’t talk aboutanything else. I’m mighty glad Georgia waited till after Christmas before it seceded or it wouldhave ruined the Christmas parties, too. If you say ‘war’ again, I’ll go in the house.”
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766652.499937 send_time: 1553766652.479426 msg: 　　She meant what she said, for she could never long endure any conversation of which she wasnot the chief subject. But she smiled when she spoke, consciously deepening her dimple andfluttering her bristly black lashes as swiftly as butterflies’ wings. The boys were enchanted, as shehad intended them to be, and they hastened to apologize for boring her. They thought none the lessof her for her lack of interest. Indeed, they thought more. War was men’s business, not ladies’, andthey took her attitude as evidence of her femininity.
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766653.539883 send_time: 1553766653.519389 msg: 　　Having maneuvered them away from the boring subject of war, she went back with interest totheir immediate situation.
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766662.157432 send_time: 1553766662.046770 msg: 　　“What did your mother say about you two being expelled again?”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766663.199746 send_time: 1553766663.176344 msg: 　　The boys looked uncomfortable, recalling their mother’s conduct three months ago when theyhad come home, by request, from the University of Virginia.
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766664.235921 send_time: 1553766664.219376 msg: 　　“Well,” said Stuart, “she hasn’t had a chance to say anything yet. Tom and us left home earlythis morning before she got up, and Tom’s laying out over at the Fontaines’ while we came overhere.”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766665.284756 send_time: 1553766665.259710 msg: 　　“Didn’t she say anything when you got home last night?”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766666.336019 send_time: 1553766666.304682 msg: 　　“We were in luck last night. Just before we got home that new stallion Ma got in Kentucky lastmonth was brought in, and the place was in a stew. The big brute—he’s a grand horse, Scarlett;you must tell your pa to come over and see him right away—he’d already bitten a hunk out of hisgroom on the way down here and he’d trampled two of Ma’s darkies who met the train atJonesboro. And just before we got home, he’d about kicked the stable down and half-killedStrawberry, Ma’s old stallion. When we got home, Ma was out in the stable with a sackful of sugarsmoothing him down and doing it mighty well, too. The darkies were hanging from the rafters,popeyed, they were so scared, but Ma was talking to the horse like he was folks and he was eatingout of her hand. There ain’t nobody like Ma with a horse. And when she saw us she said: ‘InHeaven’s name, what are you four doing home again? You’re worse than the plagues of Egypt!’
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766667.367924 send_time: 1553766667.351518 msg: 　　And then the horse began snorting and rearing and she said: ‘Get out of here! Can’t you see he’snervous, the big darling? I’ll tend to you four in the morning!’ So we went to bed, and this morningwe got away before she could catch us. and left Boyd to handle her.”
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766668.399534 send_time: 1553766668.383766 msg: 　　“Do you suppose she’ll hit Boyd?” Scarlett, like the rest of the County, could never get used tothe way small Mrs. Tarleton bullied her grown sons and laid her riding crop on their backs if theoccasion seemed to warrant it.
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766669.447547 send_time: 1553766669.419041 msg: 　　Beatrice Tarleton was a busy woman, having on her hands not only a large cotton plantation, ahundred negroes and eight children, but the largest horse-breeding farm in the state as well. Shewas hot-tempered and easily plagued by the frequent scrapes of her four sons, and while no onewas permitted to whip a horse or a slave, she felt that a lick now and then didn’t do the boys anyharm.
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766670.479978 send_time: 1553766670.463481 msg: 　　“Of course she won’t hit Boyd. She never did beat Boyd much because he’s the oldest andbesides he’s the runt of the litter,” said Stuart, proud of his six feet two. “That’s why we left him athome to explain things to her. God’lmighty, Ma ought to stop licking us! We’re nineteen and Tom’stwenty-one, and she acts like we’re six years old.”
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766671.523484 send_time: 1553766671.495693 msg: 　　“Will your mother ride the new horse to the Wilkes barbecue tomorrow?”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766680.130595 send_time: 1553766680.045881 msg: 　　“She wants to, but Pa says he’s too dangerous. And, anyway, the girls won’t let her. They saidthey were going to have her go to one party at least like a lady, riding in the carriage.”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766681.156274 send_time: 1553766681.139593 msg: 　　“I hope it doesn’t rain tomorrow,” said Scarlett. “It’s rained nearly every day for a week. There’snothing worse than a barbecue turned into an indoor picnic.”
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766682.219998 send_time: 1553766682.195456 msg: 　　“Oh, it’ll be clear tomorrow and hot as June,” said Stuart. “Look at Oat sunset I never saw oneredder. You can always tell weather by sunsets.”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766683.295733 send_time: 1553766683.255932 msg: 　　They looked out across the endless acres of Gerald O’Hara’s newly plowed cotton fields towardthe red horizon. Now that the sun was setting in a welter of crimson behind tin lulls across the FlintRiver, the warmth of the April day was ebbing into a faint but balmy chill.
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766684.343775 send_time: 1553766684.315262 msg: 　　Spring had come early that year, with warm quick rains and sudden frothing of pink peachblossoms and dogwood dappling with white stars the dark river swamp and far-off hills. Alreadythe plowing was nearly finished, and the bloody glory of the sunset colored the fresh-cut furrowsof red Georgia clay to even redder hues. The moist hungry earth, waiting upturned for the cottonseeds, showed pinkish on the sandy tops of furrows, vermilion and scarlet and maroon whereshadows lay along the sides of the trenches. The whitewashed brick plantation house seemed anisland set in a wild red sea, a sea of spiraling, curving, crescent billows petrified suddenly at themoment when the pink-tipped waves were breaking into surf. For here were no long, straightfurrows, such as could be seen in the yellow clay fields of the flat middle Georgia country or in thelush black earth of the coastal plantations. The rolling foothill country of north Georgia wasplowed in a million curves to keep the rich earth from washing down into the river bottoms.
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766685.377004 send_time: 1553766685.359330 msg: 　　It was a savagely red land, blood-colored after rains, brick dust in droughts, the best cotton landin the world. It was a pleasant land of white houses, peaceful plowed fields and sluggish yellowrivers, but a land of contrasts, of brightest sun glare and densest shade. The plantation clearingsand miles of cotton fields smiled up to a warm sun, placid, complacent. At their edges rose thevirgin forests, dark and cool even in the hottest noons, mysterious, a little sinister, the soughingpines seeming to wait with an age-old patience, to threaten with soft sighs: “Be careful! Be careful!
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766686.419632 send_time: 1553766686.395567 msg: 　　We had you once. We can take you back again.”
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766687.451649 send_time: 1553766687.436674 msg: 　　To the ears of the three on the porch came the sounds of hooves, the jingling of harness chainsand the shrill careless laughter of negro voices, as the field hands and mules came in from thefields. From within the house floated the soft voice of Scarlett’s mother, Ellen O’Hara, as shecalled to the little black girl who carried her basket of keys. The high-pitched, childish voiceanswered “Yas’m,” and there were sounds of footsteps going out the back way toward thesmokehouse where Ellen would ration out the food to the home-coming hands. There was the clickof china and the rattle of silver as Pork, the valet-butler of Tara, laid the table for supper.
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766688.487659 send_time: 1553766688.467476 msg: 　　At these last sounds, the twins realized it was time they were starting home. But they were loathto face their mother and they lingered on the porch of Tara, momentarily expecting Scarlett to givethem an invitation to supper.
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766689.539876 send_time: 1553766689.503581 msg: 　　“Look, Scarlett. About tomorrow,” said Brent. “Just because we’ve been away and didn’t knowabout the barbecue and the ball, that’s no reason why we shouldn’t get plenty of dances tomorrownight. You haven’t promised them all, have you?”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766698.197986 send_time: 1553766698.083431 msg: 　　“Well, I have! How did I know you all would be home? I couldn’t risk being a wallflower justwaiting on you two.”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766699.259699 send_time: 1553766699.231319 msg: 　　“You a wallflower!” The boys laughed uproariously.
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766700.291779 send_time: 1553766700.275344 msg: 　　“Look, honey. You’ve got to give me the first waltz and Stu the last one and you’ve got to eatsupper with us. We’ll sit on the stair landing like we did at the last ball and get Mammy Jincy tocome tell our fortunes again.”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766701.339127 send_time: 1553766701.310314 msg: 　　“I don’t like Mammy Jincy’s fortunes. You know she said I was going to marry a gentlemanwith jet-black hair and a long black mustache, and I don’t like black-haired gentlemen.”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766702.395714 send_time: 1553766702.351123 msg: 　　“You like ‘em red-headed, don’t you, honey?” grinned Brent “Now, come on, promise us all the waltzes and the supper.”
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766703.439948 send_time: 1553766703.419383 msg: 　　“If you’ll promise, we’ll tell you a secret,” said Stuart.
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766704.507895 send_time: 1553766704.475337 msg: 　　“What?” cried Scarlett, alert as a child at the word.
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766705.571760 send_time: 1553766705.547945 msg: 　　“Is it what we heard yesterday in Atlanta, Stu? If it is, you know we promised not to tell.”
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766706.623445 send_time: 1553766706.599389 msg: 　　“Well, Miss Pitty told us.”
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766707.683917 send_time: 1553766707.659265 msg: 　　“Miss Who?”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766716.382469 send_time: 1553766716.314683 msg: 　　“You know, Ashley Wilkes’ cousin who lives in Atlanta, Miss Pittypat Hamilton—Charles andMelanie Hamilton’s aunt.”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766717.411842 send_time: 1553766717.394296 msg: 　　“I do, and a sillier old lady I never met in all my life.”
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766718.463625 send_time: 1553766718.434358 msg: 　　“Well, when we were in Atlanta yesterday, waiting for the home train, her carriage went by thedepot and she stopped and talked to us, and she told us there was going to be an engagementannounced tomorrow night at the Wilkes ball.”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766719.515586 send_time: 1553766719.495629 msg: 　　“Oh, I know about that,” said Scarlett in disappointment. “That silly nephew of hers, CharlieHamilton, and Honey Wilkes. Everybody’s known for years that they’d get married some time,even if he did seem kind of lukewarm about it.”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766720.563845 send_time: 1553766720.543451 msg: 　　“Do you think he’s silly?” questioned Brent. “Last Christmas you sure let him buzz round youplenty.”
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766721.620699 send_time: 1553766721.594266 msg: 　　“I couldn’t help him buzzing,” Scarlett shrugged negligently. “I think he’s an awful sissy.”
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766722.681723 send_time: 1553766722.646296 msg: 　　“Besides, it isn’t his engagement that’s going to be announced,” said Stuart triumphantly. “It’sAshley’s to Charlie’s sister, Miss Melanie!”
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766723.715784 send_time: 1553766723.695395 msg: 　　Scarlett’s face did not change but her lips went white—like a person who has received astunning blow without warning and who, in the first moments of shock, does not realize what hashappened. So still was her face as she stared at Stuart that he, never analytic, took it for grantedthat she was merely surprised and very interested.
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766724.787688 send_time: 1553766724.755823 msg: 　　“Miss Pitty told us they hadn’t intended announcing it till next year, because Miss Melly hasn’tbeen very well; but with all the war talk going around, everybody in both families thought it wouldbe better to get married soon. So it’s to be announced tomorrow night at the supper intermission.
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766725.825445 send_time: 1553766725.803327 msg: 　　Now, Scarlett, we’ve told you the secret, so you’ve got to promise to eat supper with us.”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766734.225018 send_time: 1553766734.129931 msg: 　　“Of course I will,” Scarlett said automatically.
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766735.259970 send_time: 1553766735.239330 msg: 　　“And all the waltzes?”
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766736.295468 send_time: 1553766736.279621 msg: 　　“All.”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766737.341287 send_time: 1553766737.323617 msg: 　　“You’re sweet! I’ll bet the other boys will be hopping mad.”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766738.372086 send_time: 1553766738.355346 msg: 　　“Let ‘em be mad,” said Brent. “We two can handle ‘em. Look, Scarlett. Sit with us at thebarbecue in the morning.”
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766739.413716 send_time: 1553766739.387624 msg: 　　“What?”
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766740.463703 send_time: 1553766740.444092 msg: 　　Stuart repeated his request.
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766741.511591 send_time: 1553766741.487563 msg: 　　“Of course.”
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766742.564858 send_time: 1553766742.537974 msg: 　　The twins looked at each other jubilantly but with some surprise. Although they consideredthemselves Scarlett’s favored suitors, they had never before gained tokens of this favor so easily.
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766743.599639 send_time: 1553766743.584209 msg: 　　Usually she made them beg and plead, while she put them off, refusing to give a Yes or No answer,laughing if they sulked, growing cool if they became angry. And here she had practically promisedthem the whole of tomorrow—seats by her at the barbecue, all the waltzes (and they’d see to it thatthe dances were all waltzes!) and the supper intermission. This was worth getting expelled fromthe university.
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766752.182744 send_time: 1553766752.065007 msg: 　　Filled with new enthusiasm by their success, they lingered on, talking about the barbecue andthe ball and Ashley Wilkes and Melanie Hamilton, interrupting each other, making jokes andlaughing at them, hinting broadly for invitations to supper. Some time had passed before theyrealized that Scarlett was having very little to say. The atmosphere had somehow changed. Justhow, the twins did not know, but the fine glow had gone out of the afternoon. Scarlett seemed to bepaying little attention to what they said, although she made the correct answers. Sensing somethingthey could not understand, baffled and annoyed by it, the twins struggled along for a while, andthen rose reluctantly, looking at their watches.
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766753.215344 send_time: 1553766753.199486 msg: 　　The sun was low across the new-plowed fields and the tall woods across the river were loomingblackly in silhouette. Chimney swallows were darting swiftly across the yard, and chickens, ducksand turkeys were waddling and strutting and straggling in from the fields.
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766754.267911 send_time: 1553766754.243501 msg: 　　Stuart bellowed: “Jeems!” And after an interval a tall black boy of their own age ran breathlesslyaround the house and out toward the tethered horses. Jeems was their body servant and, like thedogs, accompanied them everywhere. He had been their childhood playmate and had been given tothe twins for their own on their tenth birthday. At the sight of him, the Tarleton hounds rose up outof the red dust and stood waiting expectantly for their masters. The boys bowed, shook hands andtold Scarlett they’d be over at the Wilkeses’ early in the morning, waiting for her. Then they wereoff down the walk at a rush, mounted their horses and, followed by Jeems, went down the avenueof cedars at a gallop, waving their hats and yelling back to her.
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766755.299600 send_time: 1553766755.283660 msg: 　　When they had rounded the curve of the dusty road that hid them from Tara, Brent drew hishorse to a stop under a clump of dogwood. Stuart halted, too, and the darky boy pulled up a fewpaces behind them. The horses, feeling slack reins, stretched down their necks to crop the tenderspring grass, and the patient hounds lay down again in the soft red dust and looked up longingly atthe chimney swallows circling in the gathering dusk. Brent’s wide ingenuous face was puzzled andmildly indignant.
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766756.363674 send_time: 1553766756.335512 msg: 　　“Look,” he said. “Don’t it look to you like she would of asked us to stay for supper?”
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766757.400753 send_time: 1553766757.379225 msg: 　　“I thought she would,” said Stuart. I kept waiting for her to do it, but she didn’t. What do youmake of it?”
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766758.435872 send_time: 1553766758.419367 msg: 　　“I don’t make anything of it But it just looks to me like she might of. After all, it’s our first dayhome and she hasn’t seen us in quite a spell. And we had lots more things to tell her.”
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766759.464178 send_time: 1553766759.451334 msg: 　　“It looked to me like she was mighty glad to see us when we came.”
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766760.491753 send_time: 1553766760.478312 msg: 　　“I thought so, too.”
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766761.527981 send_time: 1553766761.508130 msg: 　　“And then, about a half-hour ago, she got kind of quiet, like she had a headache.”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766770.165690 send_time: 1553766770.080069 msg: 　　“I noticed that but I didn’t pay it any mind then. What do you suppose ailed her?”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766771.207647 send_time: 1553766771.191760 msg: 　　“I dunno. Do you suppose we said something that made her mad?”
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766772.255548 send_time: 1553766772.235700 msg: 　　They both thought for a minute.
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766773.291532 send_time: 1553766773.275588 msg: 　　“I can’t think of anything. Besides, when Scarlett gets mad, everybody knows it. She don’t holdherself in like some girls do.”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766774.331556 send_time: 1553766774.319687 msg: 　　“Yes, that’s what I like about her. She don’t go around being cold and hateful when she’s mad—she tells you about it. But it was something we did or said that made her shut up talking and looksort of sick. I could swear she was glad to see us when we came and was aiming to ask us tosupper.”
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766775.383845 send_time: 1553766775.355363 msg: 　　“You don’t suppose it’s because we got expelled?”
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766776.432022 send_time: 1553766776.407248 msg: 　　“Hell, no! Don’t be a fool. She laughed like everything when we told her about it. And besidesScarlett don’t set any more store by book learning than we do.”
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766777.479424 send_time: 1553766777.455031 msg: 　　Brent turned in the saddle and called to the negro groom.
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766778.523743 send_time: 1553766778.503862 msg: 　　“Jeems!”
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766779.583778 send_time: 1553766779.563313 msg: 　　“Suh?”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766788.157759 send_time: 1553766788.101381 msg: 　　“You heard what we were talking to Miss Scarlett about?”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766789.191717 send_time: 1553766789.180214 msg: 　　“Nawsuh, Mist’ Brent! Huccome you think Ah be spyin’ on w’ite folks?”
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766790.219211 send_time: 1553766790.207755 msg: 　　“Spying, my God! You darkies know everything that goes on. Why, you liar, I saw you with myown eyes sidle round the corner of the porch and squat in the cape jessamine bush by the wall.
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766791.255930 send_time: 1553766791.235739 msg: 　　Now, did you hear us say anything that might have made Miss Scarlett mad—or hurt her feelings?”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766792.308158 send_time: 1553766792.278499 msg: 　　Thus appealed to, Teems gave up further pretense of not having overheard the conversation andfurrowed his black brow.
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766793.368842 send_time: 1553766793.338270 msg: 　　“Nawsuh, Ah din’ notice y’all say anything ter mek her mad. Look ter me lak she sho glad tersee you an’ sho had missed you, an’ she cheep along happy as a bird, tell ‘bout de time y’all got tertalkin’ ‘bout Mist’ Ashley an’ Miss Melly Hamilton gittin’ mah’ied. Den she quiet down lak a birdw’en de hawk fly ober.”
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766794.419809 send_time: 1553766794.391347 msg: 　　The twins looked at each other and nodded, but without comprehension.
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766795.472320 send_time: 1553766795.434466 msg: 　　“Jeems is right. But I don’t see why,” said Stuart. “My Lord! Ashley don’t mean anything to her,‘cept a friend. She’s not crazy about him. It’s us she’s crazy about.”
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766796.528313 send_time: 1553766796.494291 msg: 　　Brent nodded an agreement.
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766797.567774 send_time: 1553766797.551191 msg: 　　“But do you suppose,” he said, “that maybe Ashley hadn’t told her he was going to announce ittomorrow night and she was mad at him for not telling her, an old friend, before he told everybodyelse? Girls set a big store on knowing such things first.”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766806.252560 send_time: 1553766806.163380 msg: 　　“Well, maybe. But what if he hadn’t told her it was tomorrow? It was supposed to be a secretand a surprise, and a man’s got a right to keep his own engagement quiet, hasn’t he? We wouldn’thave known it if Miss Melly’s aunt hadn’t let it out. But Scarlett must have known he was going tomarry Miss Melly sometime. Why, we’ve known it for years. The Wilkes and Hamiltons alwaysmarry their own cousins. Everybody knew he’d probably marry her some day, just like HoneyWilkes is going to marry Miss Melly’s brother, Charles.”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766807.303438 send_time: 1553766807.278542 msg: 　　“Well, I give it up. But I’m sorry she didn’t ask us to supper. I swear I don’t want to go homeand listen to Ma take on about us being expelled. It isn’t as if this was the first time.”
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766808.356766 send_time: 1553766808.323641 msg: 　　“Maybe Boyd will have smoothed her down by now. You know what a slick talker that littlevarmint is. You know he always can smooth her down.”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766809.425086 send_time: 1553766809.371548 msg: 　　“Yes, he can do it, but it takes Boyd time. He has to talk around in circles till Ma gets soconfused that she gives up and tells him to save his voice for his law practice. But he ain’t had timeto get good started yet. Why, I’ll bet you Ma is still so excited about the new horse that she’ll nevereven realize we’re home again till She sits down to supper tonight and sees Boyd. And beforesupper is over she’ll be going strong and breathing fire. And it’ll be ten o’clock before Boyd gets achance to tell her that it wouldn’t have been honorable for any of us to stay in college after the waythe Chancellor talked to you and me. And it’ll be midnight before he gets her turned around towhere she’s so mad at the Chancellor she’ll be asking Boyd why he didn’t shoot him. No, we can’tgo home till after midnight”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766810.473866 send_time: 1553766810.447340 msg: 　　The twins looked at each other glumly. They were completely fearless of wild horses, shootingaffrays and the indignation of their neighbors, but they had a wholesome fear of their red-hairedmother’s outspoken remarks and the riding crop that she did not scruple to lay across theirbreeches.
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766811.512726 send_time: 1553766811.491619 msg: 　　“Well, look,” said Brent. “Let’s go over to the Wilkes’. Ashley and the girls’ll be glad to have usfor supper.”
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766812.555911 send_time: 1553766812.527533 msg: 　　Stuart looked a little discomforted.
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766813.600610 send_time: 1553766813.574532 msg: 　　“No, don’t let’s go there. They’ll be in a stew getting ready for the barbecue tomorrow andbesides—”
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766814.645299 send_time: 1553766814.623458 msg: 　　“Oh, I forgot about that,” said Brent hastily. “No, don’t let’s go there.”
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766815.683872 send_time: 1553766815.659565 msg: 　　They clucked to their horses and rode along in silence for a while, a flush of embarrassment onStuart’s brown cheeks. Until the previous summer, Stuart had courted India Wilkes with theapprobation of both families and the entire County. The County felt that perhaps the cool andcontained India Wilkes would have a quieting effect on him. They fervently hoped so, at any rate.
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766824.249747 send_time: 1553766824.148375 msg: 　　And Stuart might have made the match, but Brent had not been satisfied. Brent liked India but hethought her mighty plain and tame, and he simply could not fall in love with her himself to keepStuart company. That was the first time the twins’ interest had ever diverged, and Brent wasresentful of his brother’s attentions to a girl who seemed to him not at all remarkable.
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766825.295716 send_time: 1553766825.271654 msg: 　　Then, last summer at a political speaking in a grove of oak trees at Jonesboro, they bothsuddenly became aware of Scarlett O’Hara. They had known her for years, and, since theirchildhood, she had been a favorite playmate, for she could ride horses and climb trees almost as well as they. But now to their amazement she had become a grown-up young lady and quite themost charming one in all the world.
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766826.344091 send_time: 1553766826.323663 msg: 　　They noticed for the first time how her green eyes danced, how deep her dimples were when shelaughed, how tiny her hands and feet and what a small waist she had. Their clever remarks sent herinto merry peals of laughter and, inspired by the thought that she considered them a remarkablepair, they fairly outdid themselves.
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766827.391488 send_time: 1553766827.372076 msg: 　　It was a memorable day in the life of the twins. Thereafter, when they talked it over, they alwayswondered just why they had failed to notice Scarlett’s charms before. They never arrived at thecorrect answer, which was that Scarlett on that day had decided to make them notice. She wasconstitutionally unable to endure any man being in love with any woman not herself, and the sightof India Wilkes and Stuart at the speaking had been too much for her predatory nature. Not contentwith Stuart alone, she had set her cap for Brent as well, and with a thoroughness that overwhelmedthe two of them.
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766828.476831 send_time: 1553766828.427298 msg: 　　Now they were both in love with her, and India Wilkes and Letty Munroe, from Lovejoy, whomBrent had been half-heartedly courting, were far in the back of their minds. Just what the loserwould do, should Scarlett accept either one of them, the twins did not ask. They would cross thatbridge when they came to it. For the present they were quite satisfied to be in accord again aboutone girl, for they had no jealousies between them. It was a situation which interested the neighborsand annoyed their mother, who had no liking for Scarlett.
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766829.519813 send_time: 1553766829.495365 msg: 　　“It will serve you right if that sly piece does accept one of you,” she said. “Or maybe she’llaccept both of you, and then you’ll have to move to Utah, if the Mormons’ll have you—which Idoubt. ... All that bothers me is that some one of these days you’re both going to get lickered upand jealous of each other about that two-faced, little, green-eyed baggage, and you’ll shoot eachother. But that might not be a bad idea either.”
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766830.571866 send_time: 1553766830.551427 msg: 　　Since the day of the speaking, Stuart had been uncomfortable in India’s presence. Not that Indiaever reproached him or even indicated by look or gesture that she was aware of his abruptlychanged allegiance. She was too much of a lady. But Stuart felt guilty and ill at ease with her. Heknew he had made India love him and he knew that she still loved him and, deep in his heart, hehad the feeling that he had not played the gentleman. He still liked her tremendously and respectedher for her cool good breeding, her book learning and all the sterling qualities she possessed. But,damn it, she was just so pallid and uninteresting and always the same, beside Scarlett’s bright andchangeable charm. You always knew where you stood with India and you never had the slightestnotion with Scarlett. That was enough to drive a man to distraction, but it had its charm.
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766831.619875 send_time: 1553766831.602270 msg: 　　“Well, let’s go over to Cade Calvert’s and have supper. Scarlett said Cathleen was home fromCharleston. Maybe she’ll have some news about Fort Sumter that we haven’t heard.”
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766832.660245 send_time: 1553766832.635463 msg: 　　“Not Cathleen. I’ll lay you two to one she didn’t even know the fort was out there in the harbor,much less that it was full of Yankees until we shelled them out. All she’ll know about is the ballsshe went to and the beaux she collected.”
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766833.703602 send_time: 1553766833.687442 msg: 　　“Well, it’s fun to hear her gabble. And it’ll be somewhere to hide out till Ma has gone to bed.”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766842.257549 send_time: 1553766842.159832 msg: 　　“Well, hell! I like Cathleen and she is fun and I’d like to hear about Caro Rhett and the rest of the Charleston folks; but I’m damned if I can stand sitting through another meal with that Yankeestepmother of hers.”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766843.291412 send_time: 1553766843.275955 msg: 　　“Don’t be too hard on her, Stuart. She means well.”
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766844.343696 send_time: 1553766844.319629 msg: 　　“I’m not being hard on her. I feel sorry for her, but I don’t like people I’ve got to feel sorry for.
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766845.379672 send_time: 1553766845.363244 msg: 　　And she fusses around so much, trying to do the right thing and make you feel at home, that shealways manages to say and do just exactly the wrong thing. She gives me the fidgets! And shethinks Southerners wild barbarians. She even told Ma so. She’s afraid of Southerners. Wheneverwe’retheres(are) he always looks scared to death. She reminds me of a skinny hen perchedon a chair, her eyes kind of bright and blank and scared, all ready to flap and squawk at theslightest move anybody makes.”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766846.432411 send_time: 1553766846.411196 msg: 　　“Well, you can’t blame her. You did shoot Cade in the leg.”
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766847.492759 send_time: 1553766847.455685 msg: 　　“Well, I was lickered up or I wouldn’t have done it,” said Stuart. “And Cade never had any hardfeelings. Neither did Cathleen or Raiford or Mr. Calvert. It was just that Yankee stepmother whosqualled and said I was a wild barbarian and decent people weren’t safe around uncivilizedSoutherners.”
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766848.527603 send_time: 1553766848.511615 msg: 　　“Well, you can’t blame her. She’s a Yankee and ain’t got very good manners; and, after all, youdid shoot him and he is her stepson.”
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766849.563648 send_time: 1553766849.547160 msg: 　　“Well, hell! That’s no excuse for insulting me! You are Ma’s own blood son, but did she take onthat time Tony Fontaine shot you in the leg? No, she just sent for old Doc Fontaine to dress it andasked the doctor what ailed Tony’s aim. Said she guessed licker was spoiling his marksmanship.
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766850.600555 send_time: 1553766850.587192 msg: 　　Remember how mad that made Tony?”
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766851.639798 send_time: 1553766851.623290 msg: 　　Both boys yelled with laughter.
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766860.285234 send_time: 1553766860.180743 msg: 　　“Ma’s a card!” said Brent with loving approval. “You can always count on her to do the rightthing and not embarrass you in front of folks.”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766861.339661 send_time: 1553766861.315598 msg: 　　“Yes, but she’s mighty liable to talk embarrassing in front of Father and the girls when we gethome tonight,” said Stuart gloomily. “Look, Brent. I guess this means we don’t go to Europe. Youknow Mother said if we got expelled from another college we couldn’t have our Grand Tour.”
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766862.379862 send_time: 1553766862.359432 msg: 　　“Well, hell! We don’t care, do we? What is there to see in Europe? I’ll bet those foreigners can’tshow us a thing we haven’t got right here in Georgia. I’ll bet their horses aren’t as fast or their girlsas pretty, and I know damn well they haven’t got any rye whisky that can touch Father’s.”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766863.415992 send_time: 1553766863.399348 msg: 　　“Ashley Wilkes said they had an awful lot of scenery and music. Ashley liked Europe. He’salways talking about it.”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766864.463797 send_time: 1553766864.439341 msg: 　　“Well—you know how the Wilkes are. They are kind of queer about music and books andscenery. Mother says it’s because their grandfather came from Virginia. She says Virginians setquite a store by such things.”
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766865.504354 send_time: 1553766865.479393 msg: 　　“They can have ‘em. Give me a good horse to ride and some good licker to drink and a good girlto court and a bad girl to have fun with and anybody can have their Europe. ... What do we careabout missing the Tour? Suppose we were in Europe now, with the war coming on? We couldn’tget home soon enough. I’d heap rather go to a war than go to Europe.”
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766866.547764 send_time: 1553766866.531376 msg: 　　“So would I, any day. ... Look, Brent! I know where we can go for supper. Let’s ride across theswamp to Abel Wynder’s place and tell him we’re all four home again and ready for drill.”
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766867.599827 send_time: 1553766867.575447 msg: 　　“That’s an idea!” cried Brent with enthusiasm. “And we can hear all the news of the Troop andfind out what color they finally decided on for the uniforms.”
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766868.643569 send_time: 1553766868.627167 msg: 　　“If it’s Zouave, I’m damned if I’ll go in the troop. I’d feel like a sissy in those baggy red pants.
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766869.719896 send_time: 1553766869.687392 msg: 　　They look like ladies’ red flannel drawers to me.”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766878.444674 send_time: 1553766878.357869 msg: 　　“Is y’all aimin’ ter go ter Mist’ Wynder’s? ‘Cause ef you is, you ain’ gwine git much supper,”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766879.492074 send_time: 1553766879.467400 msg: 　　said Jeems. “Dey cook done died, an’ dey ain’ bought a new one. Dey got a fe’el han’ cookin’, an’
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766880.545436 send_time: 1553766880.508005 msg: 　　de niggers tells me she is de wustest cook in de state.”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766881.607845 send_time: 1553766881.567944 msg: 　　“Good God! Why don’t they buy another cook?”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766882.676290 send_time: 1553766882.627486 msg: 　　“Huccome po’ w’ite trash buy any niggers? Dey ain’ never owned mo’n fo’ at de mostes’.”
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766883.711662 send_time: 1553766883.695978 msg: 　　There was frank contempt in Jeems’ voice. His own social status was assured because theTarletons owned a hundred negroes and, like all slaves of large planters, he looked down on smallfarmers whose slaves were few.
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766884.768259 send_time: 1553766884.755446 msg: 　　“I’m going to beat your hide off for that,” cried Stuart fiercely. “Don’t you call Abel Wynder‘po’ white.’ Sure he’s poor, but he ain’t trash; and I’m damned if I’ll have any man, darky orWhite, throwing off on him. There ain’t a better man in this County, or why else did the Troopelect him lieutenant?”
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766885.820794 send_time: 1553766885.787804 msg: 　　“Ah ain’ never figgered dat out, mahseff,” replied Jeems, undisturbed by his master’s scowl.
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766886.860048 send_time: 1553766886.843645 msg: 　　“Look ter me lak dey’d ‘lect all de awficers frum rich gempmum, ‘stead of swamp trash.”
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766887.916754 send_time: 1553766887.882308 msg: 　　“He ain’t trash! Do you mean to compare him with real white trash like the Slatterys? Abel justain’t rich. He’s a small farmer, not a big planter, and if the boys thought enough of him to elect himlieutenant, then it’s not for any darky to talk impudent about him. The Troop knows what it’sdoing.”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766896.320177 send_time: 1553766896.224096 msg: 　　The troop of cavalry had been organized three months before, the very day that Georgia secededfrom the Union, and since then the recruits had been whistling for war. The outfit was as yetunnamed, though not for want of suggestions. Everyone had his own idea on that subject and wasloath to relinquish it, just as everyone had ideas about the color and cut of the uniforms. “ClaytonWild Cats,” “Fire Eaters,” “North Georgia Hussars,” “Zouaves,” “The Inland Rifles” (although theTroop was to be armed with pistols, sabers and bowie knives, and not with rifles), “The ClaytonGrays,” “The Blood and Thunderers,” “The Rough and Readys,” all had their adherents. Untilmatters were settled, everyone referred to the organization as the Troop and, despite the high-sounding name finally adopted, they were known to the end of their usefulness simply as “TheTroop.”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766897.359747 send_time: 1553766897.343268 msg: 　　The officers were elected by the members, for no one in the County had had any militaryexperience except a few veterans of the Mexican and Seminole wars and, besides, the Troop wouldhave scorned a veteran as a leader if they had not personally liked him and trusted him. Everyoneliked the four Tarleton boys and the three Fontaines, but regretfully refused to elect them, becausethe Tarletons got lickered up too quickly and liked to skylark, and the Fontaines had such quick, murderous tempers. Ashley Wilkes was elected captain, because he was the best rider in theCounty and because his cool head was counted on to keep some semblance of order. RaifordCalvert was made first lieutenant, because everybody liked Raif, and Abel Wynder, son of aswamp trapper, himself a small farmer, was elected second lieutenant.
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766898.404162 send_time: 1553766898.387210 msg: 　　Abel was a shrewd, grave giant, illiterate, kind of heart, older than the other boys and with asgood or better manners in the presence of ladies. There was little snobbery in the Troop. Too manyof their fathers and grandfathers had come up to wealth from the small farmer class for that.
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766899.435529 send_time: 1553766899.419592 msg: 　　Moreover, Abel was the best shot in the Troop, a real sharpshooter who could pick out the eye of asquirrel at seventy-five yards, and, too, he knew all about living outdoors, building fires in the rain,tracking animals and finding water. The Troop bowed to real worth and moreover, because theyliked him, they made him an officer. He bore the honor gravely and with no untoward conceit, asthough it were only his due. But the planters’ ladies and the planters’ slaves could not overlook thefact that he was not born a gentleman, even if their men folks could.
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766900.483577 send_time: 1553766900.467731 msg: 　　In the beginning, the Troop had been recruited exclusively from the of planters, agentleman’s outfit, each supplying his own horse,arms,equipment,unif(sons) orm and body servant.Butrichplanterswere(man) few in the young county of Clayton, and, in order to muster a full-strength troop, it had been necessary to raise more recruits among the sons of small farmers,hunters in the backwoods, swamp trappers, Crackers and, in a very few cases, even poor whites, ifthey were above the average of their class.
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766914.346393 send_time: 1553766914.235963 msg: 　　The troop of cavalry had been organized three months before, the very day that Georgia secededfrom the Union, and since then the recruits had been whistling for war. The outfit was as yetunnamed, though not for want of suggestions. Everyone had his own idea on that subject and wasloath to relinquish it, just as everyone had ideas about the color and cut of the uniforms. “ClaytonWild Cats,” “Fire Eaters,” “North Georgia Hussars,” “Zouaves,” “The Inland Rifles” (although theTroop was to be armed with pistols, sabers and bowie knives, and not with rifles), “The ClaytonGrays,” “The Blood and Thunderers,” “The Rough and Readys,” all had their adherents. Untilmatters were settled, everyone referred to the organization as the Troop and, despite the high-sounding name finally adopted, they were known to the end of their usefulness simply as “TheTroop.”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766915.387632 send_time: 1553766915.363226 msg: 　　The officers were elected by the members, for no one in the County had had any militaryexperience except a few veterans of the Mexican and Seminole wars and, besides, the Troop wouldhave scorned a veteran as a leader if they had not personally liked him and trusted him. Everyoneliked the four Tarleton boys and the three Fontaines, but regretfully refused to elect them, becausethe Tarletons got lickered up too quickly and liked to skylark, and the Fontaines had such quick, murderous tempers. Ashley Wilkes was elected captain, because he was the best rider in theCounty and because his cool head was counted on to keep some semblance of order. RaifordCalvert was made first lieutenant, because everybody liked Raif, and Abel Wynder, son of aswamp trapper, himself a small farmer, was elected second lieutenant.
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766916.419670 send_time: 1553766916.403195 msg: 　　Abel was a shrewd, grave giant, illiterate, kind of heart, older than the other boys and with asgood or better manners in the presence of ladies. There was little snobbery in the Troop. Too manyof their fathers and grandfathers had come up to wealth from the small farmer class for that.
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766917.467655 send_time: 1553766917.451749 msg: 　　Moreover, Abel was the best shot in the Troop, a real sharpshooter who could pick out the eye of asquirrel at seventy-five yards, and, too, he knew all about living outdoors, building fires in the rain,tracking animals and finding water. The Troop bowed to real worth and moreover, because theyliked him, they made him an officer. He bore the honor gravely and with no untoward conceit, asthough it were only his due. But the planters’ ladies and the planters’ slaves could not overlook thefact that he was not born a gentleman, even if their men folks could.
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766918.496611 send_time: 1553766918.483202 msg: 　　In the beginning, the Troop had been recruited exclusively from the of planters, agentleman’s outfit, each supplying his own horse,arms,equipment,unif(sons) orm and body servant.Butrichplanterswere(man) few in the young county of Clayton, and, in order to muster a full-strength troop, it had been necessary to raise more recruits among the sons of small farmers,hunters in the backwoods, swamp trappers, Crackers and, in a very few cases, even poor whites, ifthey were above the average of their class.
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766932.322476 send_time: 1553766932.237829 msg: 　　“Well, let’s cut across country to Abel’s,” suggested Brent. “We can go through Mr. O’Hara’sriver bottom and the Fontaine’s pasture and get there in no time.”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766933.359690 send_time: 1553766933.343285 msg: 　　“We ain’ gwine git nothin’ ter eat ‘cept possum an’ greens,” argued Jeems.
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766934.399842 send_time: 1553766934.379380 msg: 　　“You ain’t going to get anything,” grinned Stuart “Because you are going home and tell Ma thatwe won’t be home for supper.”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766935.455687 send_time: 1553766935.423347 msg: 　　“No, Ah ain’!” cried Jeems in alarm. “No, Ah ain’! Ah doan git no mo’ fun outer havin’ MissBeetriss lay me out dan y’all does. Fust place she’ll ast me huccome Ah let y’all git expelled agin.
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766936.499552 send_time: 1553766936.479302 msg: 　　An’ nex’ thing, huccome Ah din’ bring y’all home ternight so she could lay you out An’ den she’lllight on me lak a duck on a June bug, an’ fust thing Ah know Ah’ll be ter blame fer it all. Ef y’alldoan tek me ter Mist’ Wynder’s, Ah’ll lay out in de woods all night an’ maybe de patterollers gitme, ‘cause Ah heap ruther de patterollers git me dan Miss Beetriss when she in a state.”
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766937.555886 send_time: 1553766937.535288 msg: 　　The twins looked at the determined black boy in perplexity and indignation.
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766938.611691 send_time: 1553766938.579370 msg: 　　“He’d be just fool enough to let the patterollers get him and that would give Ma something elseto talk about for weeks. I swear, darkies are more trouble. Sometimes I think the Abolitionists havegot the right idea.”
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766939.653681 send_time: 1553766939.639333 msg: 　　“Well, it wouldn’t be right to make Jeems face what we don’t want to face. We’ll have to takehim. But, look, you impudent black fool, if you put on any airs in front of the Wynder darkies andhint that we all the time have fried chicken and ham, while they don’t have nothing but rabbit andpossum, I’ll—I’ll tell Ma. And we won’t let you go to the war with us, either.”
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766940.712064 send_time: 1553766940.683538 msg: 　　“Airs? Me put on airs fo’ dem cheap niggers? Nawsuh, Ah got better manners. Ain’ MissBeetriss taught me manners same as she taught y’all?”
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766941.783909 send_time: 1553766941.735526 msg: 　　“She didn’t do a very good job on any of the three of us,” said Stuart. “Come on, let’s get going.”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766986.387050 send_time: 1553766986.304301 msg: 　　He backed his big red horse and then, putting spurs to his side, lifted him easily over the splitrail fence into the soft field of Gerald O’Hara’s plantation. Brent’s horse followed and then Jeems’,with Jeems clinging to pommel and mane. Jeems did not like to jump fences, but he had jumpedhigher ones than this in order to keep up with his masters.
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766987.427771 send_time: 1553766987.403782 msg: 　　As they picked their way across the red furrows and down the hill to the river bottom in thedeepening dusk, Brent yelled to his brother:
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766988.497364 send_time: 1553766988.443814 msg: 　　“Look, Stu! Don’t it seem like to you that Scarlett would have asked us to supper?”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766989.543623 send_time: 1553766989.519588 msg: 　　“I kept thinking she would,” yelled Stuart “Why do you suppose ...”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553766990.595473 send_time: 1553766990.579577 msg: 　　
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767004.534072 send_time: 1553767004.458064 msg: 　　He backed his big red horse and then, putting spurs to his side, lifted him easily over the splitrail fence into the soft field of Gerald O’Hara’s plantation. Brent’s horse followed and then Jeems’,with Jeems clinging to pommel and mane. Jeems did not like to jump fences, but he had jumpedhigher ones than this in order to keep up with his masters.
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767005.575612 send_time: 1553767005.559635 msg: 　　As they picked their way across the red furrows and down the hill to the river bottom in thedeepening dusk, Brent yelled to his brother:
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767006.615768 send_time: 1553767006.599366 msg: 　　“Look, Stu! Don’t it seem like to you that Scarlett would have asked us to supper?”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767007.667840 send_time: 1553767007.643501 msg: 　　“I kept thinking she would,” yelled Stuart “Why do you suppose ...”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767008.715611 send_time: 1553767008.699204 msg: 　　
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767188.888061 send_time: 1553767188.796697 msg: Chapter 1
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767189.916660 send_time: 1553767189.899380 msg: SCARLETT O’HARA was not beautiful, but men seldom realized it when caught by her charmas the Tarleton twins were. In her face were too sharply blended the delicate features of her mother,a Coast aristocrat of French descent, and the heavy ones of her florid Irish father. But it was anarresting face, pointed of chin, square of jaw. Her eyes were pale green without a touch of hazel,starred with bristly black lashes and slightly tilted at the ends. Above them, her thick black browsslanted upward, cutting a startling oblique line in her magnolia-white skin—that skin so prized bySouthern women and so carefully guarded with bonnets, veils and mittens against hot Georgiasuns.
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767190.976682 send_time: 1553767190.951348 msg: 　　Seated with Stuart and Brent Tarleton in the cool shade of the porch of Tara, her father’splantation, that bright April afternoon of 1861, she made a pretty picture. Her new green flowered-muslin dress spread its twelve yards of billowing material over her hoops and exactly matched theflat-heeled green morocco slippers her father had recently brought her from Atlanta. The dress set off to perfection the seventeen-inch waist, the smallest in three counties, and the tightly fittingbasque showed breasts well matured for her sixteen years. But for all the modesty of her spreadingskirts, the demureness of hair netted smoothly into a chignon and the quietness of small whitehands folded in her lap, her true self was poorly concealed. The green eyes in the carefully sweetface were turbulent, willful, lusty with life, distinctly at variance with her decorous demeanor. Hermanners had been imposed upon her by her mother’s gentle admonitions and the sterner disciplineof her mammy; her eyes were her own.
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767192.016095 send_time: 1553767191.999417 msg: 　　On either side of her, the twins lounged easily in their chairs, squinting at the sunlight throughtall mint-garnished glasses as they laughed and talked, their long legs, booted to the knee and thickwith saddle muscles, crossed negligently. Nineteen years old, six feet two inches tall, long of boneand hard of muscle, with sunburned faces and deep auburn hair, their eyes merry and arrogant,their bodies clothed in identical blue coats and mustard-colored breeches, they were as much alikeas two bolls of cotton.
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767193.060325 send_time: 1553767193.044006 msg: 　　Outside, the late afternoon sun slanted down in the yard, throwing into gleaming brightness thedogwood trees that were solid masses of white blossoms against the background of new green. Thetwins’ horses were hitched in the driveway, big animals, red as their masters’ hair; and around thehorses’ legs quarreled the pack of lean, nervous possum hounds that accompanied Stuart and Brentwherever they went. A little aloof, as became an aristocrat, lay a black-spotted carriage dog,muzzle on paws, patiently waiting for the boys to go home to supper.
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767194.099473 send_time: 1553767194.079450 msg: 　　Between the hounds and the horses and the twins there was a kinship deeper than that of theirconstant companionship. They were all healthy, thoughtless young animals, sleek, graceful, high-spirited, the boys as mettlesome as the horses they rode, mettlesome and dangerous but, withal,sweet-tempered to those who knew how to handle them.
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767195.140424 send_time: 1553767195.119431 msg: 　　Although born to the ease of plantation life, waited on hand and foot since infancy, the faces ofthe three on the porch were neither slack nor soft. They had the vigor and alertness of countrypeople who have spent all their lives in the open and troubled their heads very little with dullthings in books. Life in the north Georgia county of Clayton was still new and, according to thestandards of Augusta, Savannah and Charleston, a little crude. The more sedate and older sectionsof the South looked down their noses at the up-country Georgians, but here in north Georgia, alack of the niceties of classical education carried no shame, provided a man was smart in the thingsthat mattered. And raising good cotton, riding well, shooting straight, dancing lightly, squiring theladies with elegance and carrying one’s liquor like a gentleman were the things that mattered.
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767196.203493 send_time: 1553767196.166229 msg: 　　In these accomplishments the twins excelled, and they were equally outstanding in theirnotorious inability to learn anything contained between the covers of books. Their family had moremoney, more horses, more slaves than any one else in the County, but the boys had less grammarthan most of their poor Cracker neighbors.
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767197.247883 send_time: 1553767197.227444 msg: 　　It was for this precise reason that Stuart and Brent were idling on the porch of Tara this Aprilafternoon. They had just been expelled from the University of Georgia, the fourth university thathad thrown them out in two years; and their older brothers, Tom and Boyd, had come home withthem, because they refused to remain at an institution where the twins were not welcome. Stuartand Brent considered their latest expulsion a fine joke, and Scarlett, who had not willingly opened a book since leaving the Fayetteville Female Academy the year before, thought it just as amusingas they did.
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767198.291920 send_time: 1553767198.270875 msg: 　　“I know you two don’t care about being expelled, or Tom either,” she said. “But what aboutBoyd? He’s kind of set on getting an education, and you two have pulled him out of the Universityof Virginia and Alabama and South Carolina and now Georgia. He’ll never get finished at thisrate.”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767206.891409 send_time: 1553767206.784146 msg: 　　“Oh, he read law in Judge Parmalee’s office over in Fayetteville,” answered Brent carelessly.“Besi(can) des, it don’t matter much. We’d have had to come home before the term was outanyway.”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767207.919811 send_time: 1553767207.907339 msg: 　　“Why?”
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767208.971658 send_time: 1553767208.951280 msg: 　　“The war, goose! The war’s going to start any day, and you don’t suppose any of us would stayin college with a war going on, do you?”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767210.008667 send_time: 1553767209.995263 msg: 　　“You know there isn’t going to be any war,” said Scarlett, bored. “It’s all just talk. Why, AshleyWilkes and his father told Pa just last week that our commissioners in Washington would come to—to—an—amicable agreement with Mr. Lincoln about the Confederacy. And anyway, theYankees are too scared of us to fight. There won’t be any war, and I’m tired of hearing about it.”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767211.051501 send_time: 1553767211.039795 msg: 　　“Not going to be any war!” cried the twins indignantly, as though they had been defrauded.
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767212.083687 send_time: 1553767212.067773 msg: 　　“Why, honey, of course there’s going to be a war,” said Stuart. The Yankees may be scared of us,but after the way General Beauregard shelled them out of Fort Sumter day before yesterday, they’llhave to fight or stand branded as cowards before the whole world. Why, the Confederacy—”
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767213.135744 send_time: 1553767213.115328 msg: 　　Scarlett made a mouth of bored impatience.
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767214.192196 send_time: 1553767214.159373 msg: 　　If you say ‘war’ just once more, I’ll go in the house and shut the door. I’ve never gotten so tiredof any one word in my life as ‘war,’ unless it’s ‘secession.’ Pa talks war morning, noon and night,and all the gentlemen who come to see him shout about Fort Sumter and States’ Rights and AbeLincoln till I get so bored I could scream! And that’s all the boys talk about, too, that and their oldTroop. There hasn’t been any fun at any party this spring because the boys can’t talk aboutanything else. I’m mighty glad Georgia waited till after Christmas before it seceded or it wouldhave ruined the Christmas parties, too. If you say ‘war’ again, I’ll go in the house.”
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767215.228960 send_time: 1553767215.211222 msg: 　　She meant what she said, for she could never long endure any conversation of which she wasnot the chief subject. But she smiled when she spoke, consciously deepening her dimple andfluttering her bristly black lashes as swiftly as butterflies’ wings. The boys were enchanted, as shehad intended them to be, and they hastened to apologize for boring her. They thought none the lessof her for her lack of interest. Indeed, they thought more. War was men’s business, not ladies’, andthey took her attitude as evidence of her femininity.
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767216.275708 send_time: 1553767216.255250 msg: 　　Having maneuvered them away from the boring subject of war, she went back with interest totheir immediate situation.
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767224.914029 send_time: 1553767224.817905 msg: 　　“What did your mother say about you two being expelled again?”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767225.971675 send_time: 1553767225.955192 msg: 　　The boys looked uncomfortable, recalling their mother’s conduct three months ago when theyhad come home, by request, from the University of Virginia.
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767227.012260 send_time: 1553767226.986462 msg: 　　“Well,” said Stuart, “she hasn’t had a chance to say anything yet. Tom and us left home earlythis morning before she got up, and Tom’s laying out over at the Fontaines’ while we came overhere.”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767228.051474 send_time: 1553767228.035611 msg: 　　“Didn’t she say anything when you got home last night?”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767229.099548 send_time: 1553767229.071731 msg: 　　“We were in luck last night. Just before we got home that new stallion Ma got in Kentucky lastmonth was brought in, and the place was in a stew. The big brute—he’s a grand horse, Scarlett;you must tell your pa to come over and see him right away—he’d already bitten a hunk out of hisgroom on the way down here and he’d trampled two of Ma’s darkies who met the train atJonesboro. And just before we got home, he’d about kicked the stable down and half-killedStrawberry, Ma’s old stallion. When we got home, Ma was out in the stable with a sackful of sugarsmoothing him down and doing it mighty well, too. The darkies were hanging from the rafters,popeyed, they were so scared, but Ma was talking to the horse like he was folks and he was eatingout of her hand. There ain’t nobody like Ma with a horse. And when she saw us she said: ‘InHeaven’s name, what are you four doing home again? You’re worse than the plagues of Egypt!’
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767230.139537 send_time: 1553767230.123973 msg: 　　And then the horse began snorting and rearing and she said: ‘Get out of here! Can’t you see he’snervous, the big darling? I’ll tend to you four in the morning!’ So we went to bed, and this morningwe got away before she could catch us. and left Boyd to handle her.”
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767231.187530 send_time: 1553767231.171553 msg: 　　“Do you suppose she’ll hit Boyd?” Scarlett, like the rest of the County, could never get used tothe way small Mrs. Tarleton bullied her grown sons and laid her riding crop on their backs if theoccasion seemed to warrant it.
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767232.260068 send_time: 1553767232.235459 msg: 　　Beatrice Tarleton was a busy woman, having on her hands not only a large cotton plantation, ahundred negroes and eight children, but the largest horse-breeding farm in the state as well. Shewas hot-tempered and easily plagued by the frequent scrapes of her four sons, and while no onewas permitted to whip a horse or a slave, she felt that a lick now and then didn’t do the boys anyharm.
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767233.292335 send_time: 1553767233.278962 msg: 　　“Of course she won’t hit Boyd. She never did beat Boyd much because he’s the oldest andbesides he’s the runt of the litter,” said Stuart, proud of his six feet two. “That’s why we left him athome to explain things to her. God’lmighty, Ma ought to stop licking us! We’re nineteen and Tom’stwenty-one, and she acts like we’re six years old.”
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767234.352163 send_time: 1553767234.331208 msg: 　　“Will your mother ride the new horse to the Wilkes barbecue tomorrow?”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767242.896727 send_time: 1553767242.824276 msg: 　　“She wants to, but Pa says he’s too dangerous. And, anyway, the girls won’t let her. They saidthey were going to have her go to one party at least like a lady, riding in the carriage.”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767243.943921 send_time: 1553767243.927416 msg: 　　“I hope it doesn’t rain tomorrow,” said Scarlett. “It’s rained nearly every day for a week. There’snothing worse than a barbecue turned into an indoor picnic.”
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767244.987870 send_time: 1553767244.963507 msg: 　　“Oh, it’ll be clear tomorrow and hot as June,” said Stuart. “Look at Oat sunset I never saw oneredder. You can always tell weather by sunsets.”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767246.027606 send_time: 1553767246.011502 msg: 　　They looked out across the endless acres of Gerald O’Hara’s newly plowed cotton fields towardthe red horizon. Now that the sun was setting in a welter of crimson behind tin lulls across the FlintRiver, the warmth of the April day was ebbing into a faint but balmy chill.
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767247.067827 send_time: 1553767247.051813 msg: 　　Spring had come early that year, with warm quick rains and sudden frothing of pink peachblossoms and dogwood dappling with white stars the dark river swamp and far-off hills. Alreadythe plowing was nearly finished, and the bloody glory of the sunset colored the fresh-cut furrowsof red Georgia clay to even redder hues. The moist hungry earth, waiting upturned for the cottonseeds, showed pinkish on the sandy tops of furrows, vermilion and scarlet and maroon whereshadows lay along the sides of the trenches. The whitewashed brick plantation house seemed anisland set in a wild red sea, a sea of spiraling, curving, crescent billows petrified suddenly at themoment when the pink-tipped waves were breaking into surf. For here were no long, straightfurrows, such as could be seen in the yellow clay fields of the flat middle Georgia country or in thelush black earth of the coastal plantations. The rolling foothill country of north Georgia wasplowed in a million curves to keep the rich earth from washing down into the river bottoms.
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767248.103855 send_time: 1553767248.087655 msg: 　　It was a savagely red land, blood-colored after rains, brick dust in droughts, the best cotton landin the world. It was a pleasant land of white houses, peaceful plowed fields and sluggish yellowrivers, but a land of contrasts, of brightest sun glare and densest shade. The plantation clearingsand miles of cotton fields smiled up to a warm sun, placid, complacent. At their edges rose thevirgin forests, dark and cool even in the hottest noons, mysterious, a little sinister, the soughingpines seeming to wait with an age-old patience, to threaten with soft sighs: “Be careful! Be careful!
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767249.135640 send_time: 1553767249.119302 msg: 　　We had you once. We can take you back again.”
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767250.175512 send_time: 1553767250.155583 msg: 　　To the ears of the three on the porch came the sounds of hooves, the jingling of harness chainsand the shrill careless laughter of negro voices, as the field hands and mules came in from thefields. From within the house floated the soft voice of Scarlett’s mother, Ellen O’Hara, as shecalled to the little black girl who carried her basket of keys. The high-pitched, childish voiceanswered “Yas’m,” and there were sounds of footsteps going out the back way toward thesmokehouse where Ellen would ration out the food to the home-coming hands. There was the clickof china and the rattle of silver as Pork, the valet-butler of Tara, laid the table for supper.
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767251.211775 send_time: 1553767251.196316 msg: 　　At these last sounds, the twins realized it was time they were starting home. But they were loathto face their mother and they lingered on the porch of Tara, momentarily expecting Scarlett to givethem an invitation to supper.
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767252.267432 send_time: 1553767252.243488 msg: 　　“Look, Scarlett. About tomorrow,” said Brent. “Just because we’ve been away and didn’t knowabout the barbecue and the ball, that’s no reason why we shouldn’t get plenty of dances tomorrownight. You haven’t promised them all, have you?”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767260.914435 send_time: 1553767260.832536 msg: 　　“Well, I have! How did I know you all would be home? I couldn’t risk being a wallflower justwaiting on you two.”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767261.963697 send_time: 1553767261.936031 msg: 　　“You a wallflower!” The boys laughed uproariously.
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767263.003809 send_time: 1553767262.987292 msg: 　　“Look, honey. You’ve got to give me the first waltz and Stu the last one and you’ve got to eatsupper with us. We’ll sit on the stair landing like we did at the last ball and get Mammy Jincy tocome tell our fortunes again.”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767264.051712 send_time: 1553767264.031857 msg: 　　“I don’t like Mammy Jincy’s fortunes. You know she said I was going to marry a gentlemanwith jet-black hair and a long black mustache, and I don’t like black-haired gentlemen.”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767265.088184 send_time: 1553767265.071494 msg: 　　“You like ‘em red-headed, don’t you, honey?” grinned Brent “Now, come on, promise us all the waltzes and the supper.”
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767266.135509 send_time: 1553767266.115557 msg: 　　“If you’ll promise, we’ll tell you a secret,” said Stuart.
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767267.199675 send_time: 1553767267.183776 msg: 　　“What?” cried Scarlett, alert as a child at the word.
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767268.260575 send_time: 1553767268.231112 msg: 　　“Is it what we heard yesterday in Atlanta, Stu? If it is, you know we promised not to tell.”
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767269.299573 send_time: 1553767269.279701 msg: 　　“Well, Miss Pitty told us.”
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767270.347815 send_time: 1553767270.331842 msg: 　　“Miss Who?”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767296.974872 send_time: 1553767296.876991 msg: 　　“You know, Ashley Wilkes’ cousin who lives in Atlanta, Miss Pittypat Hamilton—Charles andMelanie Hamilton’s aunt.”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767298.019602 send_time: 1553767297.991230 msg: 　　“I do, and a sillier old lady I never met in all my life.”
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767299.076200 send_time: 1553767299.051272 msg: 　　“Well, when we were in Atlanta yesterday, waiting for the home train, her carriage went by thedepot and she stopped and talked to us, and she told us there was going to be an engagementannounced tomorrow night at the Wilkes ball.”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767300.123954 send_time: 1553767300.107055 msg: 　　“Oh, I know about that,” said Scarlett in disappointment. “That silly nephew of hers, CharlieHamilton, and Honey Wilkes. Everybody’s known for years that they’d get married some time,even if he did seem kind of lukewarm about it.”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767301.159374 send_time: 1553767301.139469 msg: 　　“Do you think he’s silly?” questioned Brent. “Last Christmas you sure let him buzz round youplenty.”
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767302.191618 send_time: 1553767302.175471 msg: 　　“I couldn’t help him buzzing,” Scarlett shrugged negligently. “I think he’s an awful sissy.”
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767303.239462 send_time: 1553767303.219677 msg: 　　“Besides, it isn’t his engagement that’s going to be announced,” said Stuart triumphantly. “It’sAshley’s to Charlie’s sister, Miss Melanie!”
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767304.279853 send_time: 1553767304.267232 msg: 　　Scarlett’s face did not change but her lips went white—like a person who has received astunning blow without warning and who, in the first moments of shock, does not realize what hashappened. So still was her face as she stared at Stuart that he, never analytic, took it for grantedthat she was merely surprised and very interested.
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767305.312191 send_time: 1553767305.295235 msg: 　　“Miss Pitty told us they hadn’t intended announcing it till next year, because Miss Melly hasn’tbeen very well; but with all the war talk going around, everybody in both families thought it wouldbe better to get married soon. So it’s to be announced tomorrow night at the supper intermission.
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767306.347807 send_time: 1553767306.324345 msg: 　　Now, Scarlett, we’ve told you the secret, so you’ve got to promise to eat supper with us.”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767314.970280 send_time: 1553767314.887072 msg: 　　“Of course I will,” Scarlett said automatically.
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767316.031908 send_time: 1553767315.987596 msg: 　　“And all the waltzes?”
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767317.103537 send_time: 1553767317.079286 msg: 　　“All.”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767318.155629 send_time: 1553767318.139698 msg: 　　“You’re sweet! I’ll bet the other boys will be hopping mad.”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767319.211597 send_time: 1553767319.171895 msg: 　　“Let ‘em be mad,” said Brent. “We two can handle ‘em. Look, Scarlett. Sit with us at thebarbecue in the morning.”
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767320.267598 send_time: 1553767320.251581 msg: 　　“What?”
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767321.315700 send_time: 1553767321.287286 msg: 　　Stuart repeated his request.
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767322.347521 send_time: 1553767322.331548 msg: 　　“Of course.”
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767323.399471 send_time: 1553767323.375601 msg: 　　The twins looked at each other jubilantly but with some surprise. Although they consideredthemselves Scarlett’s favored suitors, they had never before gained tokens of this favor so easily.
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767324.447655 send_time: 1553767324.431615 msg: 　　Usually she made them beg and plead, while she put them off, refusing to give a Yes or No answer,laughing if they sulked, growing cool if they became angry. And here she had practically promisedthem the whole of tomorrow—seats by her at the barbecue, all the waltzes (and they’d see to it thatthe dances were all waltzes!) and the supper intermission. This was worth getting expelled fromthe university.
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767332.966000 send_time: 1553767332.902155 msg: 　　Filled with new enthusiasm by their success, they lingered on, talking about the barbecue andthe ball and Ashley Wilkes and Melanie Hamilton, interrupting each other, making jokes andlaughing at them, hinting broadly for invitations to supper. Some time had passed before theyrealized that Scarlett was having very little to say. The atmosphere had somehow changed. Justhow, the twins did not know, but the fine glow had gone out of the afternoon. Scarlett seemed to bepaying little attention to what they said, although she made the correct answers. Sensing somethingthey could not understand, baffled and annoyed by it, the twins struggled along for a while, andthen rose reluctantly, looking at their watches.
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767334.003634 send_time: 1553767333.987469 msg: 　　The sun was low across the new-plowed fields and the tall woods across the river were loomingblackly in silhouette. Chimney swallows were darting swiftly across the yard, and chickens, ducksand turkeys were waddling and strutting and straggling in from the fields.
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767335.047626 send_time: 1553767335.028703 msg: 　　Stuart bellowed: “Jeems!” And after an interval a tall black boy of their own age ran breathlesslyaround the house and out toward the tethered horses. Jeems was their body servant and, like thedogs, accompanied them everywhere. He had been their childhood playmate and had been given tothe twins for their own on their tenth birthday. At the sight of him, the Tarleton hounds rose up outof the red dust and stood waiting expectantly for their masters. The boys bowed, shook hands andtold Scarlett they’d be over at the Wilkeses’ early in the morning, waiting for her. Then they wereoff down the walk at a rush, mounted their horses and, followed by Jeems, went down the avenueof cedars at a gallop, waving their hats and yelling back to her.
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767336.079359 send_time: 1553767336.067576 msg: 　　When they had rounded the curve of the dusty road that hid them from Tara, Brent drew hishorse to a stop under a clump of dogwood. Stuart halted, too, and the darky boy pulled up a fewpaces behind them. The horses, feeling slack reins, stretched down their necks to crop the tenderspring grass, and the patient hounds lay down again in the soft red dust and looked up longingly atthe chimney swallows circling in the gathering dusk. Brent’s wide ingenuous face was puzzled andmildly indignant.
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767337.119592 send_time: 1553767337.099094 msg: 　　“Look,” he said. “Don’t it look to you like she would of asked us to stay for supper?”
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767338.155735 send_time: 1553767338.139692 msg: 　　“I thought she would,” said Stuart. I kept waiting for her to do it, but she didn’t. What do youmake of it?”
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767339.203793 send_time: 1553767339.178153 msg: 　　“I don’t make anything of it But it just looks to me like she might of. After all, it’s our first dayhome and she hasn’t seen us in quite a spell. And we had lots more things to tell her.”
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767340.239711 send_time: 1553767340.223671 msg: 　　“It looked to me like she was mighty glad to see us when we came.”
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767341.271719 send_time: 1553767341.255386 msg: 　　“I thought so, too.”
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767342.323493 send_time: 1553767342.291587 msg: 　　“And then, about a half-hour ago, she got kind of quiet, like she had a headache.”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767351.014077 send_time: 1553767350.919281 msg: 　　“I noticed that but I didn’t pay it any mind then. What do you suppose ailed her?”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767352.047709 send_time: 1553767352.031347 msg: 　　“I dunno. Do you suppose we said something that made her mad?”
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767353.088513 send_time: 1553767353.075373 msg: 　　They both thought for a minute.
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767354.123412 send_time: 1553767354.107505 msg: 　　“I can’t think of anything. Besides, when Scarlett gets mad, everybody knows it. She don’t holdherself in like some girls do.”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767355.163526 send_time: 1553767355.147684 msg: 　　“Yes, that’s what I like about her. She don’t go around being cold and hateful when she’s mad—she tells you about it. But it was something we did or said that made her shut up talking and looksort of sick. I could swear she was glad to see us when we came and was aiming to ask us tosupper.”
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767356.203795 send_time: 1553767356.187276 msg: 　　“You don’t suppose it’s because we got expelled?”
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767357.244009 send_time: 1553767357.223417 msg: 　　“Hell, no! Don’t be a fool. She laughed like everything when we told her about it. And besidesScarlett don’t set any more store by book learning than we do.”
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767358.279444 send_time: 1553767358.259546 msg: 　　Brent turned in the saddle and called to the negro groom.
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767359.312263 send_time: 1553767359.299695 msg: 　　“Jeems!”
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767360.352685 send_time: 1553767360.335312 msg: 　　“Suh?”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767369.014208 send_time: 1553767368.934848 msg: 　　“You heard what we were talking to Miss Scarlett about?”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767370.055218 send_time: 1553767370.039429 msg: 　　“Nawsuh, Mist’ Brent! Huccome you think Ah be spyin’ on w’ite folks?”
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767371.087234 send_time: 1553767371.071433 msg: 　　“Spying, my God! You darkies know everything that goes on. Why, you liar, I saw you with myown eyes sidle round the corner of the porch and squat in the cape jessamine bush by the wall.
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767372.135731 send_time: 1553767372.115919 msg: 　　Now, did you hear us say anything that might have made Miss Scarlett mad—or hurt her feelings?”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767373.191523 send_time: 1553767373.167167 msg: 　　Thus appealed to, Teems gave up further pretense of not having overheard the conversation andfurrowed his black brow.
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767374.231615 send_time: 1553767374.215543 msg: 　　“Nawsuh, Ah din’ notice y’all say anything ter mek her mad. Look ter me lak she sho glad tersee you an’ sho had missed you, an’ she cheep along happy as a bird, tell ‘bout de time y’all got tertalkin’ ‘bout Mist’ Ashley an’ Miss Melly Hamilton gittin’ mah’ied. Den she quiet down lak a birdw’en de hawk fly ober.”
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767375.267836 send_time: 1553767375.251374 msg: 　　The twins looked at each other and nodded, but without comprehension.
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767376.299827 send_time: 1553767376.283406 msg: 　　“Jeems is right. But I don’t see why,” said Stuart. “My Lord! Ashley don’t mean anything to her,‘cept a friend. She’s not crazy about him. It’s us she’s crazy about.”
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767377.335943 send_time: 1553767377.315338 msg: 　　Brent nodded an agreement.
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767378.388254 send_time: 1553767378.367347 msg: 　　“But do you suppose,” he said, “that maybe Ashley hadn’t told her he was going to announce ittomorrow night and she was mad at him for not telling her, an old friend, before he told everybodyelse? Girls set a big store on knowing such things first.”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767387.026833 send_time: 1553767386.948116 msg: 　　“Well, maybe. But what if he hadn’t told her it was tomorrow? It was supposed to be a secretand a surprise, and a man’s got a right to keep his own engagement quiet, hasn’t he? We wouldn’thave known it if Miss Melly’s aunt hadn’t let it out. But Scarlett must have known he was going tomarry Miss Melly sometime. Why, we’ve known it for years. The Wilkes and Hamiltons alwaysmarry their own cousins. Everybody knew he’d probably marry her some day, just like HoneyWilkes is going to marry Miss Melly’s brother, Charles.”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767388.068101 send_time: 1553767388.041988 msg: 　　“Well, I give it up. But I’m sorry she didn’t ask us to supper. I swear I don’t want to go homeand listen to Ma take on about us being expelled. It isn’t as if this was the first time.”
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767389.111958 send_time: 1553767389.083426 msg: 　　“Maybe Boyd will have smoothed her down by now. You know what a slick talker that littlevarmint is. You know he always can smooth her down.”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767390.179703 send_time: 1553767390.131406 msg: 　　“Yes, he can do it, but it takes Boyd time. He has to talk around in circles till Ma gets soconfused that she gives up and tells him to save his voice for his law practice. But he ain’t had timeto get good started yet. Why, I’ll bet you Ma is still so excited about the new horse that she’ll nevereven realize we’re home again till She sits down to supper tonight and sees Boyd. And beforesupper is over she’ll be going strong and breathing fire. And it’ll be ten o’clock before Boyd gets achance to tell her that it wouldn’t have been honorable for any of us to stay in college after the waythe Chancellor talked to you and me. And it’ll be midnight before he gets her turned around towhere she’s so mad at the Chancellor she’ll be asking Boyd why he didn’t shoot him. No, we can’tgo home till after midnight”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767391.216334 send_time: 1553767391.198755 msg: 　　The twins looked at each other glumly. They were completely fearless of wild horses, shootingaffrays and the indignation of their neighbors, but they had a wholesome fear of their red-hairedmother’s outspoken remarks and the riding crop that she did not scruple to lay across theirbreeches.
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767392.276387 send_time: 1553767392.235609 msg: 　　“Well, look,” said Brent. “Let’s go over to the Wilkes’. Ashley and the girls’ll be glad to have usfor supper.”
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767393.339677 send_time: 1553767393.303417 msg: 　　Stuart looked a little discomforted.
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767394.411835 send_time: 1553767394.379879 msg: 　　“No, don’t let’s go there. They’ll be in a stew getting ready for the barbecue tomorrow andbesides—”
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767395.455890 send_time: 1553767395.430914 msg: 　　“Oh, I forgot about that,” said Brent hastily. “No, don’t let’s go there.”
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767396.510989 send_time: 1553767396.483419 msg: 　　They clucked to their horses and rode along in silence for a while, a flush of embarrassment onStuart’s brown cheeks. Until the previous summer, Stuart had courted India Wilkes with theapprobation of both families and the entire County. The County felt that perhaps the cool andcontained India Wilkes would have a quieting effect on him. They fervently hoped so, at any rate.
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767423.097563 send_time: 1553767423.001017 msg: 　　And Stuart might have made the match, but Brent had not been satisfied. Brent liked India but hethought her mighty plain and tame, and he simply could not fall in love with her himself to keepStuart company. That was the first time the twins’ interest had ever diverged, and Brent wasresentful of his brother’s attentions to a girl who seemed to him not at all remarkable.
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767424.143686 send_time: 1553767424.115527 msg: 　　Then, last summer at a political speaking in a grove of oak trees at Jonesboro, they bothsuddenly became aware of Scarlett O’Hara. They had known her for years, and, since theirchildhood, she had been a favorite playmate, for she could ride horses and climb trees almost as well as they. But now to their amazement she had become a grown-up young lady and quite themost charming one in all the world.
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767425.179593 send_time: 1553767425.163652 msg: 　　They noticed for the first time how her green eyes danced, how deep her dimples were when shelaughed, how tiny her hands and feet and what a small waist she had. Their clever remarks sent herinto merry peals of laughter and, inspired by the thought that she considered them a remarkablepair, they fairly outdid themselves.
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767426.228621 send_time: 1553767426.200230 msg: 　　It was a memorable day in the life of the twins. Thereafter, when they talked it over, they alwayswondered just why they had failed to notice Scarlett’s charms before. They never arrived at thecorrect answer, which was that Scarlett on that day had decided to make them notice. She wasconstitutionally unable to endure any man being in love with any woman not herself, and the sightof India Wilkes and Stuart at the speaking had been too much for her predatory nature. Not contentwith Stuart alone, she had set her cap for Brent as well, and with a thoroughness that overwhelmedthe two of them.
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767427.271576 send_time: 1553767427.247266 msg: 　　Now they were both in love with her, and India Wilkes and Letty Munroe, from Lovejoy, whomBrent had been half-heartedly courting, were far in the back of their minds. Just what the loserwould do, should Scarlett accept either one of them, the twins did not ask. They would cross thatbridge when they came to it. For the present they were quite satisfied to be in accord again aboutone girl, for they had no jealousies between them. It was a situation which interested the neighborsand annoyed their mother, who had no liking for Scarlett.
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767428.331732 send_time: 1553767428.303599 msg: 　　“It will serve you right if that sly piece does accept one of you,” she said. “Or maybe she’llaccept both of you, and then you’ll have to move to Utah, if the Mormons’ll have you—which Idoubt. ... All that bothers me is that some one of these days you’re both going to get lickered upand jealous of each other about that two-faced, little, green-eyed baggage, and you’ll shoot eachother. But that might not be a bad idea either.”
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767429.404214 send_time: 1553767429.372243 msg: 　　Since the day of the speaking, Stuart had been uncomfortable in India’s presence. Not that Indiaever reproached him or even indicated by look or gesture that she was aware of his abruptlychanged allegiance. She was too much of a lady. But Stuart felt guilty and ill at ease with her. Heknew he had made India love him and he knew that she still loved him and, deep in his heart, hehad the feeling that he had not played the gentleman. He still liked her tremendously and respectedher for her cool good breeding, her book learning and all the sterling qualities she possessed. But,damn it, she was just so pallid and uninteresting and always the same, beside Scarlett’s bright andchangeable charm. You always knew where you stood with India and you never had the slightestnotion with Scarlett. That was enough to drive a man to distraction, but it had its charm.
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767430.443776 send_time: 1553767430.427325 msg: 　　“Well, let’s go over to Cade Calvert’s and have supper. Scarlett said Cathleen was home fromCharleston. Maybe she’ll have some news about Fort Sumter that we haven’t heard.”
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767431.487543 send_time: 1553767431.471132 msg: 　　“Not Cathleen. I’ll lay you two to one she didn’t even know the fort was out there in the harbor,much less that it was full of Yankees until we shelled them out. All she’ll know about is the ballsshe went to and the beaux she collected.”
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767432.540621 send_time: 1553767432.523625 msg: 　　“Well, it’s fun to hear her gabble. And it’ll be somewhere to hide out till Ma has gone to bed.”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767441.086150 send_time: 1553767441.007688 msg: 　　“Well, hell! I like Cathleen and she is fun and I’d like to hear about Caro Rhett and the rest of the Charleston folks; but I’m damned if I can stand sitting through another meal with that Yankeestepmother of hers.”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767442.123642 send_time: 1553767442.106774 msg: 　　“Don’t be too hard on her, Stuart. She means well.”
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767443.196343 send_time: 1553767443.171561 msg: 　　“I’m not being hard on her. I feel sorry for her, but I don’t like people I’ve got to feel sorry for.
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767444.259622 send_time: 1553767444.219430 msg: 　　And she fusses around so much, trying to do the right thing and make you feel at home, that shealways manages to say and do just exactly the wrong thing. She gives me the fidgets! And shethinks Southerners wild barbarians. She even told Ma so. She’s afraid of Southerners. Wheneverwe’retheres(are) he always looks scared to death. She reminds me of a skinny hen perchedon a chair, her eyes kind of bright and blank and scared, all ready to flap and squawk at theslightest move anybody makes.”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767445.299707 send_time: 1553767445.283354 msg: 　　“Well, you can’t blame her. You did shoot Cade in the leg.”
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767446.359780 send_time: 1553767446.327356 msg: 　　“Well, I was lickered up or I wouldn’t have done it,” said Stuart. “And Cade never had any hardfeelings. Neither did Cathleen or Raiford or Mr. Calvert. It was just that Yankee stepmother whosqualled and said I was a wild barbarian and decent people weren’t safe around uncivilizedSoutherners.”
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767447.395212 send_time: 1553767447.378962 msg: 　　“Well, you can’t blame her. She’s a Yankee and ain’t got very good manners; and, after all, youdid shoot him and he is her stepson.”
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767448.427744 send_time: 1553767448.411784 msg: 　　“Well, hell! That’s no excuse for insulting me! You are Ma’s own blood son, but did she take onthat time Tony Fontaine shot you in the leg? No, she just sent for old Doc Fontaine to dress it andasked the doctor what ailed Tony’s aim. Said she guessed licker was spoiling his marksmanship.
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767449.459740 send_time: 1553767449.447273 msg: 　　Remember how mad that made Tony?”
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767450.491738 send_time: 1553767450.475641 msg: 　　Both boys yelled with laughter.
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767459.134261 send_time: 1553767459.029126 msg: 　　“Ma’s a card!” said Brent with loving approval. “You can always count on her to do the rightthing and not embarrass you in front of folks.”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767460.163718 send_time: 1553767460.147078 msg: 　　“Yes, but she’s mighty liable to talk embarrassing in front of Father and the girls when we gethome tonight,” said Stuart gloomily. “Look, Brent. I guess this means we don’t go to Europe. Youknow Mother said if we got expelled from another college we couldn’t have our Grand Tour.”
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767461.227831 send_time: 1553767461.191661 msg: 　　“Well, hell! We don’t care, do we? What is there to see in Europe? I’ll bet those foreigners can’tshow us a thing we haven’t got right here in Georgia. I’ll bet their horses aren’t as fast or their girlsas pretty, and I know damn well they haven’t got any rye whisky that can touch Father’s.”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767462.267511 send_time: 1553767462.251614 msg: 　　“Ashley Wilkes said they had an awful lot of scenery and music. Ashley liked Europe. He’salways talking about it.”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767463.323597 send_time: 1553767463.307640 msg: 　　“Well—you know how the Wilkes are. They are kind of queer about music and books andscenery. Mother says it’s because their grandfather came from Virginia. She says Virginians setquite a store by such things.”
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767464.367725 send_time: 1553767464.351982 msg: 　　“They can have ‘em. Give me a good horse to ride and some good licker to drink and a good girlto court and a bad girl to have fun with and anybody can have their Europe. ... What do we careabout missing the Tour? Suppose we were in Europe now, with the war coming on? We couldn’tget home soon enough. I’d heap rather go to a war than go to Europe.”
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767465.399745 send_time: 1553767465.383871 msg: 　　“So would I, any day. ... Look, Brent! I know where we can go for supper. Let’s ride across theswamp to Abel Wynder’s place and tell him we’re all four home again and ready for drill.”
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767466.436341 send_time: 1553767466.419523 msg: 　　“That’s an idea!” cried Brent with enthusiasm. “And we can hear all the news of the Troop andfind out what color they finally decided on for the uniforms.”
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767467.471698 send_time: 1553767467.455732 msg: 　　“If it’s Zouave, I’m damned if I’ll go in the troop. I’d feel like a sissy in those baggy red pants.
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767468.507720 send_time: 1553767468.491215 msg: 　　They look like ladies’ red flannel drawers to me.”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767495.216365 send_time: 1553767495.109459 msg: 　　“Is y’all aimin’ ter go ter Mist’ Wynder’s? ‘Cause ef you is, you ain’ gwine git much supper,”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767496.263879 send_time: 1553767496.243637 msg: 　　said Jeems. “Dey cook done died, an’ dey ain’ bought a new one. Dey got a fe’el han’ cookin’, an’
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767497.314914 send_time: 1553767497.290262 msg: 　　de niggers tells me she is de wustest cook in de state.”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767498.352814 send_time: 1553767498.327488 msg: 　　“Good God! Why don’t they buy another cook?”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767499.395496 send_time: 1553767499.375486 msg: 　　“Huccome po’ w’ite trash buy any niggers? Dey ain’ never owned mo’n fo’ at de mostes’.”
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767500.439722 send_time: 1553767500.423690 msg: 　　There was frank contempt in Jeems’ voice. His own social status was assured because theTarletons owned a hundred negroes and, like all slaves of large planters, he looked down on smallfarmers whose slaves were few.
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767501.479971 send_time: 1553767501.463307 msg: 　　“I’m going to beat your hide off for that,” cried Stuart fiercely. “Don’t you call Abel Wynder‘po’ white.’ Sure he’s poor, but he ain’t trash; and I’m damned if I’ll have any man, darky orWhite, throwing off on him. There ain’t a better man in this County, or why else did the Troopelect him lieutenant?”
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767502.532349 send_time: 1553767502.500067 msg: 　　“Ah ain’ never figgered dat out, mahseff,” replied Jeems, undisturbed by his master’s scowl.
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767503.567524 send_time: 1553767503.547480 msg: 　　“Look ter me lak dey’d ‘lect all de awficers frum rich gempmum, ‘stead of swamp trash.”
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767504.608318 send_time: 1553767504.591725 msg: 　　“He ain’t trash! Do you mean to compare him with real white trash like the Slatterys? Abel justain’t rich. He’s a small farmer, not a big planter, and if the boys thought enough of him to elect himlieutenant, then it’s not for any darky to talk impudent about him. The Troop knows what it’sdoing.”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767513.218232 send_time: 1553767513.129388 msg: 　　The troop of cavalry had been organized three months before, the very day that Georgia secededfrom the Union, and since then the recruits had been whistling for war. The outfit was as yetunnamed, though not for want of suggestions. Everyone had his own idea on that subject and wasloath to relinquish it, just as everyone had ideas about the color and cut of the uniforms. “ClaytonWild Cats,” “Fire Eaters,” “North Georgia Hussars,” “Zouaves,” “The Inland Rifles” (although theTroop was to be armed with pistols, sabers and bowie knives, and not with rifles), “The ClaytonGrays,” “The Blood and Thunderers,” “The Rough and Readys,” all had their adherents. Untilmatters were settled, everyone referred to the organization as the Troop and, despite the high-sounding name finally adopted, they were known to the end of their usefulness simply as “TheTroop.”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767514.255524 send_time: 1553767514.239458 msg: 　　The officers were elected by the members, for no one in the County had had any militaryexperience except a few veterans of the Mexican and Seminole wars and, besides, the Troop wouldhave scorned a veteran as a leader if they had not personally liked him and trusted him. Everyoneliked the four Tarleton boys and the three Fontaines, but regretfully refused to elect them, becausethe Tarletons got lickered up too quickly and liked to skylark, and the Fontaines had such quick, murderous tempers. Ashley Wilkes was elected captain, because he was the best rider in theCounty and because his cool head was counted on to keep some semblance of order. RaifordCalvert was made first lieutenant, because everybody liked Raif, and Abel Wynder, son of aswamp trapper, himself a small farmer, was elected second lieutenant.
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767515.299815 send_time: 1553767515.272243 msg: 　　Abel was a shrewd, grave giant, illiterate, kind of heart, older than the other boys and with asgood or better manners in the presence of ladies. There was little snobbery in the Troop. Too manyof their fathers and grandfathers had come up to wealth from the small farmer class for that.
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767516.339762 send_time: 1553767516.315274 msg: 　　Moreover, Abel was the best shot in the Troop, a real sharpshooter who could pick out the eye of asquirrel at seventy-five yards, and, too, he knew all about living outdoors, building fires in the rain,tracking animals and finding water. The Troop bowed to real worth and moreover, because theyliked him, they made him an officer. He bore the honor gravely and with no untoward conceit, asthough it were only his due. But the planters’ ladies and the planters’ slaves could not overlook thefact that he was not born a gentleman, even if their men folks could.
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767517.392922 send_time: 1553767517.356088 msg: 　　In the beginning, the Troop had been recruited exclusively from the of planters, agentleman’s outfit, each supplying his own horse,arms,equipment,unif(sons) orm and body servant.Butrichplanterswere(man) few in the young county of Clayton, and, in order to muster a full-strength troop, it had been necessary to raise more recruits among the sons of small farmers,hunters in the backwoods, swamp trappers, Crackers and, in a very few cases, even poor whites, ifthey were above the average of their class.
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767549.573520 send_time: 1553767549.481737 msg: 　　The troop of cavalry had been organized three months before, the very day that Georgia secededfrom the Union, and since then the recruits had been whistling for war. The outfit was as yetunnamed, though not for want of suggestions. Everyone had his own idea on that subject and wasloath to relinquish it, just as everyone had ideas about the color and cut of the uniforms. “ClaytonWild Cats,” “Fire Eaters,” “North Georgia Hussars,” “Zouaves,” “The Inland Rifles” (although theTroop was to be armed with pistols, sabers and bowie knives, and not with rifles), “The ClaytonGrays,” “The Blood and Thunderers,” “The Rough and Readys,” all had their adherents. Untilmatters were settled, everyone referred to the organization as the Troop and, despite the high-sounding name finally adopted, they were known to the end of their usefulness simply as “TheTroop.”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767550.624504 send_time: 1553767550.591053 msg: 　　The officers were elected by the members, for no one in the County had had any militaryexperience except a few veterans of the Mexican and Seminole wars and, besides, the Troop wouldhave scorned a veteran as a leader if they had not personally liked him and trusted him. Everyoneliked the four Tarleton boys and the three Fontaines, but regretfully refused to elect them, becausethe Tarletons got lickered up too quickly and liked to skylark, and the Fontaines had such quick, murderous tempers. Ashley Wilkes was elected captain, because he was the best rider in theCounty and because his cool head was counted on to keep some semblance of order. RaifordCalvert was made first lieutenant, because everybody liked Raif, and Abel Wynder, son of aswamp trapper, himself a small farmer, was elected second lieutenant.
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767551.659913 send_time: 1553767551.643390 msg: 　　Abel was a shrewd, grave giant, illiterate, kind of heart, older than the other boys and with asgood or better manners in the presence of ladies. There was little snobbery in the Troop. Too manyof their fathers and grandfathers had come up to wealth from the small farmer class for that.
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767552.728366 send_time: 1553767552.703549 msg: 　　Moreover, Abel was the best shot in the Troop, a real sharpshooter who could pick out the eye of asquirrel at seventy-five yards, and, too, he knew all about living outdoors, building fires in the rain,tracking animals and finding water. The Troop bowed to real worth and moreover, because theyliked him, they made him an officer. He bore the honor gravely and with no untoward conceit, asthough it were only his due. But the planters’ ladies and the planters’ slaves could not overlook thefact that he was not born a gentleman, even if their men folks could.
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767553.777066 send_time: 1553767553.751908 msg: 　　In the beginning, the Troop had been recruited exclusively from the of planters, agentleman’s outfit, each supplying his own horse,arms,equipment,unif(sons) orm and body servant.Butrichplanterswere(man) few in the young county of Clayton, and, in order to muster a full-strength troop, it had been necessary to raise more recruits among the sons of small farmers,hunters in the backwoods, swamp trappers, Crackers and, in a very few cases, even poor whites, ifthey were above the average of their class.
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767567.357173 send_time: 1553767567.246089 msg: 　　“Well, let’s cut across country to Abel’s,” suggested Brent. “We can go through Mr. O’Hara’sriver bottom and the Fontaine’s pasture and get there in no time.”
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767568.403953 send_time: 1553767568.383765 msg: 　　“We ain’ gwine git nothin’ ter eat ‘cept possum an’ greens,” argued Jeems.
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767569.439902 send_time: 1553767569.423204 msg: 　　“You ain’t going to get anything,” grinned Stuart “Because you are going home and tell Ma thatwe won’t be home for supper.”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767570.487507 send_time: 1553767570.463506 msg: 　　“No, Ah ain’!” cried Jeems in alarm. “No, Ah ain’! Ah doan git no mo’ fun outer havin’ MissBeetriss lay me out dan y’all does. Fust place she’ll ast me huccome Ah let y’all git expelled agin.
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767571.520089 send_time: 1553767571.503905 msg: 　　An’ nex’ thing, huccome Ah din’ bring y’all home ternight so she could lay you out An’ den she’lllight on me lak a duck on a June bug, an’ fust thing Ah know Ah’ll be ter blame fer it all. Ef y’alldoan tek me ter Mist’ Wynder’s, Ah’ll lay out in de woods all night an’ maybe de patterollers gitme, ‘cause Ah heap ruther de patterollers git me dan Miss Beetriss when she in a state.”
+
+Receive Packet #6: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767572.559735 send_time: 1553767572.540184 msg: 　　The twins looked at the determined black boy in perplexity and indignation.
+
+Receive Packet #7: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767573.604595 send_time: 1553767573.579255 msg: 　　“He’d be just fool enough to let the patterollers get him and that would give Ma something elseto talk about for weeks. I swear, darkies are more trouble. Sometimes I think the Abolitionists havegot the right idea.”
+
+Receive Packet #8: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767574.641097 send_time: 1553767574.623098 msg: 　　“Well, it wouldn’t be right to make Jeems face what we don’t want to face. We’ll have to takehim. But, look, you impudent black fool, if you put on any airs in front of the Wynder darkies andhint that we all the time have fried chicken and ham, while they don’t have nothing but rabbit andpossum, I’ll—I’ll tell Ma. And we won’t let you go to the war with us, either.”
+
+Receive Packet #9: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767575.705756 send_time: 1553767575.672859 msg: 　　“Airs? Me put on airs fo’ dem cheap niggers? Nawsuh, Ah got better manners. Ain’ MissBeetriss taught me manners same as she taught y’all?”
+
+Receive Packet #10: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767576.768141 send_time: 1553767576.735896 msg: 　　“She didn’t do a very good job on any of the three of us,” said Stuart. “Come on, let’s get going.”
+
+Receive Packet #1: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767585.345302 send_time: 1553767585.249309 msg: 　　He backed his big red horse and then, putting spurs to his side, lifted him easily over the splitrail fence into the soft field of Gerald O’Hara’s plantation. Brent’s horse followed and then Jeems’,with Jeems clinging to pommel and mane. Jeems did not like to jump fences, but he had jumpedhigher ones than this in order to keep up with his masters.
+
+Receive Packet #2: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767586.384179 send_time: 1553767586.359513 msg: 　　As they picked their way across the red furrows and down the hill to the river bottom in thedeepening dusk, Brent yelled to his brother:
+
+Receive Packet #3: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767587.427617 send_time: 1553767587.411172 msg: 　　“Look, Stu! Don’t it seem like to you that Scarlett would have asked us to supper?”
+
+Receive Packet #4: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767588.484068 send_time: 1553767588.451352 msg: 　　“I kept thinking she would,” yelled Stuart “Why do you suppose ...”
+
+Receive Packet #5: 10.0.0.1 ==> 10.0.0.2 : receive_time: 1553767589.536290 send_time: 1553767589.511817 msg: 　　
+
