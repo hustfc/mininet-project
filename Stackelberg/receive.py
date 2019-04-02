@@ -26,9 +26,9 @@ class action:
             # filename=[]
             # filename.append(packet[0][1].dst)
             # filename.append(".txt")
-            filename1='/Users/fanc/Documents/GitHub/mininet-wifi-project/Stackelberg/Log/%s.txt' % packet[0][1].dst[7:9]
+            filename1='/Users/fanc/Documents/GitHub/mininet-project/Stackelberg/Log/%s.txt' % packet[0][1].dst[7:9]
             f1=open(filename1,"a+")
-            filename2='/Users/fanc/Documents/GitHub/mininet-wifi-project/Stackelberg/Log/final.txt'
+            filename2='/Users/fanc/Documents/GitHub/mininet-project/Stackelberg/Log/final.txt'
             f2=open(filename2,'a+')
             packet_queue.append(packet[0][3].load)
             self.rc_pkt.append(packet[0][3].load)

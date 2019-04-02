@@ -91,7 +91,7 @@ def topology():
     BSLog["h2"]["flag"]=False
     BSLog["h3"]["flag"]=False
     #filename1 = "/home/shlled/mininet-wifi/Log/BSLog.json"
-    filename1 = '/media/psf/Home/Documents/GitHub/mininet-wifi-project/Stackelberg/Log/BSLog.json'
+    filename1 = '/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/BSLog.json'
 
     with open(filename1,'r') as f1:
         buffer=f1.readlines()

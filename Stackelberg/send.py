@@ -17,7 +17,7 @@ import json
 def send(src, iface, dst, num=0, pow=5,times=10,send_pkt=[]):
     t = 0
     index = 0+num*10
-    filename1='/home/shlled/mininet-wifi/Log/msg.txt'
+    filename1='/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/msg.txt'
     f1=open(filename1,'r')
     buffer=f1.readlines()
     lenth=len(buffer)
@@ -34,7 +34,7 @@ def send(src, iface, dst, num=0, pow=5,times=10,send_pkt=[]):
         index+=1
         # alpha = chr(ord(alpha) + 1)
     f1.close()
-    filename2='/Users/fanc/Documents/GitHub/mininet-wifi-project/Stackelberg/Log/UE%s.json' % src[7:9]
+    filename2='/Users/fanc/Documents/GitHub/mininet-project/Stackelberg/Log/UE%s.json' % src[7:9]
     #update the pow after sending msg
     with open(filename2,'r+') as f2:
         buffer = f2.readlines()

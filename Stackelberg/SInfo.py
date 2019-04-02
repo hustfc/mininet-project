@@ -11,7 +11,7 @@ import fire
 def send(src, iface, dst, times=15, send_pkt=[]):
     t = 0
     #filename='/home/shlled/mininet-wifi/Log/UE%s.txt' % src[7:9]
-    filename = '/media/psf/Home/Documents/GitHub/mininet-wifi-project/Stackelberg/Log/UE%s.json' % src[7:9]
+    filename = '/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/UE%s.json' % src[7:9]
     f=open(filename,'r')
     buffer=f.readlines()
     lenth=len(buffer)
