@@ -22,7 +22,11 @@ def stringToList(s):
     --times the max time of sending
     --flag  if flag = false ,that means sending the missing packet using miss_pkt params
 '''
-def send(src, iface, dst, loss, filename,flag = True,miss_pkt='',pow=5, times=10,send_pkt=[]):
+def send(src, iface, dst, distance, filename,flag = True,miss_pkt='',pow=5, times=10,send_pkt=[]):
+    if distance == 5:
+        loss = 0
+    else:
+        loss = 0.3
     if flag:
         index = 0
         #filename1='/home/shlled/mininet-wifi/Log/%s' % filename
