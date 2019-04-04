@@ -8,12 +8,9 @@ from mn_wifi.wmediumdConnector import interference
 # from send import send
 # from receive import receive
 
+from Params.params import getDistance
 
-import time
-import thread
 import threading
-import json
-
 
 
 class MyThread(threading.Thread):
@@ -157,7 +154,8 @@ def topology():
     t1 = MyThread(command, args=(h2, "python receive.py 10.0.0.2 h2-eth0"))
     # t1 = threading.Thread(target=command,args=(h2,"python receive.py 10.0.0.2 h2-eth0"))
     thread_list.append(t1)
-    t2 = MyThread(command, args=(h1, "python send.py  10.0.0.1 h1-eth0 10.0.0.2 0.30 msg.txt"))
+    distance = getDistance(h1, h2)
+    t2 = MyThread(command, args=(h1, "python send.py  10.0.0.1 h1-eth0 10.0.0.2 %s msg.txt" % distance))
     # t2 = threading.Thread(target=command,args=(h1,"python send.py  10.0.0.1 h1-eth0 10.0.0.2 0.15 msg.txt"))
     thread_list.append(t2)
     t1.start()
@@ -169,20 +167,24 @@ def topology():
     info("*** Start sending the miss pkg\n")
     #filename4 = '/home/shlled/mininet-wifi/Log/miss.txt'
     filename4 = '/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/miss.txt'
-    with open(filename4, 'r+') as f4:
-        buffer = f4.readlines()
-        lenth = len(buffer)
-        miss_pkt = buffer[lenth - 1]
-    print(miss_pkt)
-    t3 = threading.Thread(target=command, args=(h2, "python receive.py 10.0.0.2 h2-eth0"))
-    thread_list.append(t3)
-    t4 = threading.Thread(target=command,
-                          args=(h1, "python send.py 10.0.0.1 h1-eth0 10.0.0.2 0 msg.txt False '%s'" % miss_pkt))
-    thread_list.append(t4)
-    t3.start()
-    t4.start()
-    for t in thread_list:
-        t.join()
+    while True:
+        with open(filename4, 'r+') as f4:
+            buffer = f4.readlines()
+            lenth = len(buffer)
+            miss_pkt = buffer[lenth - 1]
+        info('miss:', miss_pkt)
+        if miss_pkt == 'None\n':
+            break
+        t3 = threading.Thread(target=command, args=(h2, "python receive.py 10.0.0.2 h2-eth0"))
+        thread_list.append(t3)
+        t4 = threading.Thread(target=command,
+                              args=(h1, "python send.py 10.0.0.1 h1-eth0 10.0.0.2 %s msg.txt False '%s'" % (distance, miss_pkt)))
+        thread_list.append(t4)
+        t3.start()
+        t4.start()
+        for t in thread_list:
+            t.join()
+
     # index=0
     # num = 0 #packge number
     # "find the size of the data"

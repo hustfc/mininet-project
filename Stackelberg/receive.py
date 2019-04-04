@@ -1,6 +1,7 @@
 from scapy.all import sniff, sendp
 from scapy.all import Packet
 from scapy.all import ShortField, IntField, LongField, BitField
+from mininet.log import info
 
 import sys
 import struct
@@ -113,7 +114,7 @@ def receive(ip, iface, filter="icmp", rc_pkt=[]):
         Pkts["%d" % i] = False
     miss_pkt = []  # save the index of missing numbers
 
-    with open(filename1, 'a+') as f:
+    with open(filename1) as f:
         buffer = f.readlines()
         lenth = len(buffer) - 1
 
@@ -162,9 +163,16 @@ def receive(ip, iface, filter="icmp", rc_pkt=[]):
                 break
             lenth -= 1
         # print('pkts:', Pkts)
+        filename4 = "/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/pkts.txt"
+        with open(filename4, 'a+') as f4:
+            f4.write(str(Pkts) + '\n')
 
     if Flag:
         "consist the file"
+        filename3 = "/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/miss.txt"
+        with open(filename3, 'a+') as f3:
+            f3.write('None')
+            f3.write('\n')
         with open(filename1, 'r') as f1:
             buffer = f1.readlines()
             lenth = len(buffer)
@@ -205,15 +213,14 @@ def receive(ip, iface, filter="icmp", rc_pkt=[]):
         for i in range(0, total):
             if Pkts["%d" % i] == False:
                 miss_pkt.append(i)
-        print('miss_pkt', miss_pkt)
-        print(miss_pkt)
+        info('miss in receive', miss_pkt)
         #filename3 = "/home/shlled/mininet-wifi/Log/miss.txt"
+        # if miss_pkt == []:
+        #     miss_pkt.append(-1)
         filename3 = "/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/miss.txt"
         with open(filename3, 'a+') as f3:
             f3.write(str(miss_pkt))
             f3.write('\n')
-
-
 def packetQueue():
     print(packet_counts)
     print(packet_queue)
