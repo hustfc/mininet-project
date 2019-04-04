@@ -25,8 +25,7 @@ def stringToList(s):
 def send(src, iface, dst, loss, filename,flag = True,miss_pkt='',pow=5, times=10,send_pkt=[]):
     if flag:
         index = 0
-        #filename1='/home/shlled/mininet-wifi/Log/%s' % filename
-        filename1 = '/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/%s' % filename
+        filename1='/home/shlled/mininet-wifi/Log/%s' % filename
         f1=open(filename1,'r')
         buffer=f1.readlines()
         lenth=len(buffer)
@@ -52,8 +51,7 @@ def send(src, iface, dst, loss, filename,flag = True,miss_pkt='',pow=5, times=10
             index+=1
         f1.close()
     else:
-        #filename1='/home/shlled/mininet-wifi/Log/%s' % filename
-        filename1 = '/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/%s' % filename
+        filename1='/home/shlled/mininet-wifi/Log/%s' % filename
         f1=open(filename1,'r')
         buffer=f1.readlines()
         lenth=len(buffer)
@@ -80,7 +78,7 @@ def send(src, iface, dst, loss, filename,flag = True,miss_pkt='',pow=5, times=10
         # lenth = len(buffer)
         # #data =buffer[0]
         # data = json.loads(buffer[lenth-1])
-        # data["POWER"]-= pow
+        # data["POWER"]-= pow 
         # json.dump(data,f2)
         # f2.write("\n")
 
