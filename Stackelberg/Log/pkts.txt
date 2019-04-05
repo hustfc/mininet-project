@@ -9,3 +9,5 @@
 {'11': True, '10': True, '13': True, '12': False, '15': True, '14': True, '17': True, '16': True, '18': True, '1': True, '0': True, '3': False, '2': True, '5': True, '4': True, '7': True, '6': True, '9': True, '8': True}
 {'11': True, '10': True, '13': True, '12': True, '15': True, '14': True, '17': True, '16': True, '18': True, '1': True, '0': True, '3': False, '2': True, '5': True, '4': True, '7': True, '6': True, '9': True, '8': True}
 {'11': True, '10': True, '13': True, '12': True, '15': True, '14': True, '17': True, '16': True, '18': True, '1': True, '0': True, '3': True, '2': True, '5': True, '4': True, '7': True, '6': True, '9': True, '8': True}
+{'11': False, '10': True, '13': True, '12': True, '15': True, '14': True, '17': True, '16': True, '18': False, '1': True, '0': True, '3': True, '2': True, '5': True, '4': True, '7': True, '6': True, '9': True, '8': False}
+{'11': True, '10': True, '13': True, '12': True, '15': True, '14': True, '17': True, '16': True, '18': True, '1': True, '0': True, '3': True, '2': True, '5': True, '4': True, '7': True, '6': True, '9': True, '8': True}
