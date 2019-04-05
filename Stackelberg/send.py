@@ -31,7 +31,7 @@ def send(src, iface, dst, distance, filename,flag = True,miss_pkt='',pow=5, time
         loss = 0.3
     if flag:
         index = 0
-        #filename1='/home/shlled/mininet-wifi/Log/%s' % filename
+        #filename1 = '/home/shlled/mininet-project-fc/Stackelberg/Log/%s' % filename
         filename1 = '/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/%s' % filename
         f1=open(filename1,'r')
         buffer=f1.readlines()
@@ -72,7 +72,7 @@ def send(src, iface, dst, distance, filename,flag = True,miss_pkt='',pow=5, time
             now = time.time()
             alpha=buffer[int(miss_pkt[0])]
             print('alpha', alpha)
-            msg = "send_time: " + "%.6f" % float(now) + " filename:%s " % filename  + "total:%d " % total + "index:%d " % miss_pkt[0] + "data:" + alpha
+            msg = "send_time: " + "%.6f" % float(now) + " filename:%s" % filename  + "total:%d" % total + "index:%d" % miss_pkt[0] + "data:" + alpha
             send_pkt.append(msg)
             print(msg)
             p = Ether() / IP(src=src, dst=dst) / ICMP() / msg

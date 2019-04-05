@@ -60,7 +60,7 @@ class action:
             index = packet[0][3].load[e4:s5]
             data = packet[0][3].load[e5 + 1:]
             "write the data"
-            #filename1 = '/home/shlled/mininet-wifi/Log/%s.txt' % packet[0][1].dst[7:8]
+            #filename1 = '/home/shlled/mininet-project-fc/Stackelberg/Log/%s.txt' % packet[0][1].dst[7:8]
             filename1 = '/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/%s.txt' % packet[0][1].dst[7:8]
             # if flag:
             #     f1 = open(filename1,'w+')
@@ -78,7 +78,7 @@ class action:
             info = "receive_time: " + "%.6f" % float(now) + " " + packet[0][3].load
             print("info in action :", info)
             f1.write('Receive Packet #%d: %s ==> %s : %s' % (
-            sum(packet_counts.values()), packet[0][1].src, packet[0][1].dst, info))
+                sum(packet_counts.values()), packet[0][1].src, packet[0][1].dst, info))
 
             # "find the start of the data"
             # span=re.search('data:',packet[0][3].load).span()
@@ -114,7 +114,7 @@ def receive(ip, iface, filter="icmp", rc_pkt=[]):
         Pkts["%d" % i] = False
     miss_pkt = []  # save the index of missing numbers
 
-    with open(filename1) as f:
+    with open(filename1, 'r+') as f:
         buffer = f.readlines()
         lenth = len(buffer) - 1
 
@@ -163,12 +163,15 @@ def receive(ip, iface, filter="icmp", rc_pkt=[]):
                 break
             lenth -= 1
         # print('pkts:', Pkts)
+
+        #filename4 = "/home/shlled/mininet-project-fc/Stackelberg/Log/pkts.txt"
         filename4 = "/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/pkts.txt"
         with open(filename4, 'a+') as f4:
             f4.write(str(Pkts) + '\n')
 
     if Flag:
         "consist the file"
+        #filename3 = "/home/shlled/mininet-project-fc/Stackelberg/Log/miss.txt"
         filename3 = "/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/miss.txt"
         with open(filename3, 'a+') as f3:
             f3.write('None')
@@ -176,32 +179,34 @@ def receive(ip, iface, filter="icmp", rc_pkt=[]):
         with open(filename1, 'r') as f1:
             buffer = f1.readlines()
             lenth = len(buffer)
-            #filename2 = '/home/shlled/mininet-wifi/Log/new%s' % filename
+            # filename2 = '/home/shlled/mininet-wifi/Log/new%s' % filename
             filename2 = '/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/new%s' % filename
             f2 = open(filename2, 'a+')
             current_index = 0
 
-            while current_index < total:
-                for i in range(0, lenth - 1):
-                    temp = buffer[i]
-                    span1 = re.search('filename:', temp).span()
-                    s1 = span1[0]
-                    e1 = span1[1]
-                    span3 = re.search('total:', temp).span()
-                    s3 = span3[0]
-                    e3 = span3[1]
-                    span4 = re.search('index:', temp).span()
-                    s4 = span4[0]
-                    e4 = span4[1]
-                    span5 = re.search('data:', temp).span()
-                    s5 = span5[0]
-                    e5 = span5[1]
-                    T_index = int(temp[e4:s5])
-                    if T_index == current_index:
-                        f2.write(temp[e5:])
-                        current_index += 1
+            # while current_index < total:
+            #     i = lenth - 1
+            #     while i >= 0:
+            #         temp = buffer[i]
+            #         span1 = re.search('filename:', temp).span()
+            #         s1 = span1[0]
+            #         e1 = span1[1]
+            #         span3 = re.search('total:', temp).span()
+            #         s3 = span3[0]
+            #         e3 = span3[1]
+            #         span4 = re.search('index:', temp).span()
+            #         s4 = span4[0]
+            #         e4 = span4[1]
+            #         span5 = re.search('data:', temp).span()
+            #         s5 = span5[0]
+            #         e5 = span5[1]
+            #         T_index = int(temp[e4:s5])
+            #         if T_index == current_index:
+            #             f2.write(temp[e5:])
+            #             current_index += 1
+            #             break;
             f2.close()
-        return []
+
 
     else:
         "calculate the loss"
@@ -214,17 +219,18 @@ def receive(ip, iface, filter="icmp", rc_pkt=[]):
             if Pkts["%d" % i] == False:
                 miss_pkt.append(i)
         info('miss in receive', miss_pkt)
-        #filename3 = "/home/shlled/mininet-wifi/Log/miss.txt"
+        # filename3 = "/home/shlled/mininet-wifi/Log/miss.txt"
         # if miss_pkt == []:
         #     miss_pkt.append(-1)
         filename3 = "/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/miss.txt"
         with open(filename3, 'a+') as f3:
             f3.write(str(miss_pkt))
             f3.write('\n')
+
+
 def packetQueue():
     print(packet_counts)
     print(packet_queue)
 
 
 fire.Fire(receive)
-# packetQueue()

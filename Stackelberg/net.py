@@ -1,4 +1,3 @@
-#!/usr/bin/python
 from mininet.node import Controller
 from mininet.log import setLogLevel, info
 from mn_wifi.link import wmediumd, _4address
@@ -162,10 +161,10 @@ def topology():
     t2.start()
     for t in thread_list:
         t.join()
-    miss_pkt = thread_list[0].get_result()
+    #miss_pkt = thread_list[0].get_result()
 
     info("*** Start sending the miss pkg\n")
-    #filename4 = '/home/shlled/mininet-wifi/Log/miss.txt'
+    #filename4 = '/home/shlled/mininet-project-fc/Stackelberg/Log/miss.txt'
     filename4 = '/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/miss.txt'
     while True:
         with open(filename4, 'r+') as f4:
@@ -174,6 +173,7 @@ def topology():
             miss_pkt = buffer[lenth - 1]
         info('miss:', miss_pkt)
         if miss_pkt == 'None\n':
+            print("finish collet")
             break
         t3 = threading.Thread(target=command, args=(h2, "python receive.py 10.0.0.2 h2-eth0"))
         thread_list.append(t3)
