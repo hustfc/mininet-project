@@ -1,4 +1,3 @@
-#!/usr/bin/python
 from mininet.node import Controller
 from mininet.log import setLogLevel, info
 from mn_wifi.link import wmediumd, _4address
@@ -6,18 +5,17 @@ from mn_wifi.cli import CLI_wifi
 from mn_wifi.net import Mininet_wifi
 from mn_wifi.wmediumdConnector import interference
 # from send import send
-# from receive import receive 
+# from receive import receive
 
+from Params.params import getDistance
 
-import time
-import thread
 import threading
-import json
+
 
 class MyThread(threading.Thread):
 
-    def __init__(self,func,args=()):
-        super(MyThread,self).__init__()
+    def __init__(self, func, args=()):
+        super(MyThread, self).__init__()
         self.func = func
         self.args = args
 
@@ -26,15 +24,19 @@ class MyThread(threading.Thread):
 
     def get_result(self):
         try:
-            return self.result  
+            return self.result
         except Exception:
             return None
 
 
 "function for exec cmd"
-def command(host,arg):
-    result=host.cmd(arg)
+
+
+def command(host, arg):
+    result = host.cmd(arg)
     return result
+
+
 # "function for create a thread for sending a certern packet "
 # def sendpacket(src,dst,num):
 
@@ -68,7 +70,7 @@ def topology():
     net.configureWifiNodes()
 
     info("*** Adding Link\n")
-    net.addLink(ap1, ap2, cls=_4address) # ap1=ap, ap2=client
+    net.addLink(ap1, ap2, cls=_4address)  # ap1=ap, ap2=client
     net.addLink(h1, ap1)
     net.addLink(h2, ap1)
     net.addLink(h3, ap1)
@@ -76,7 +78,7 @@ def topology():
     # net.addLink(h5, ap1)
     net.addLink(h6, ap1)
     net.addLink(BS, ap1)
-    #net.plotGraph(max_x=100, max_y=100)
+    # net.plotGraph(max_x=100, max_y=100)
 
     info("*** Starting network\n")
     net.build()
@@ -90,7 +92,7 @@ def topology():
     #     thread.start_new_thread(command,(h1,"python SInfo.py 10.0.0.1 h1-eth0 10.0.0.7"))
     #     thread.start_new_thread(command,(h2,"python SInfo.py 10.0.0.2 h2-eth0 10.0.0.7"))
     #     thread.start_new_thread(command,(h3,"python SInfo.py 10.0.0.3 h3-eth0 10.0.0.7"))
-        
+
     # except:
     #     print("first cycle error")
     # time.sleep(22) #wait for collect UE info
@@ -115,7 +117,7 @@ def topology():
     #     print(lenth)
     #     while lenth>0:
     #         temp=buffer[lenth-1]
-            
+
     #         temp=json.loads(temp)
     #         print(temp,"\n")
     #         if temp[0]["UEIP"] == "10.0.0.1" and BSLog["h1"]["flag"] == False:
@@ -145,37 +147,44 @@ def topology():
 
     # "BS use UE info to decide which UE send which packet"
 
-
-
     info("*** Start sending information\n")
     "BS should not control the behavior of UE,what UE has send isn't full"
     thread_list = []
-    t1 = MyThread(command,args=(h2,"python receive.py 10.0.0.2 h2-eth0"))
-    #t1 = threading.Thread(target=command,args=(h2,"python receive.py 10.0.0.2 h2-eth0"))
+    t1 = MyThread(command, args=(h2, "python receive.py 10.0.0.2 h2-eth0"))
+    # t1 = threading.Thread(target=command,args=(h2,"python receive.py 10.0.0.2 h2-eth0"))
     thread_list.append(t1)
-    t2 = MyThread(command,args=(h1,"python send.py  10.0.0.1 h1-eth0 10.0.0.2 0.30 msg.txt"))
-    #t2 = threading.Thread(target=command,args=(h1,"python send.py  10.0.0.1 h1-eth0 10.0.0.2 0.15 msg.txt"))
+    distance = getDistance(h1, h2)
+    t2 = MyThread(command, args=(h1, "python send.py  10.0.0.1 h1-eth0 10.0.0.2 %s msg.txt" % distance))
+    # t2 = threading.Thread(target=command,args=(h1,"python send.py  10.0.0.1 h1-eth0 10.0.0.2 0.15 msg.txt"))
     thread_list.append(t2)
     t1.start()
     t2.start()
     for t in thread_list:
         t.join()
-    miss_pkt = thread_list[0].get_result()
+    #miss_pkt = thread_list[0].get_result()
+
     info("*** Start sending the miss pkg\n")
-    filename4 = '/home/shlled/mininet-wifi/Log/miss.txt'
-    with open(filename4,'r+') as f4:
-        buffer = f4.readlines()
-        lenth = len(buffer)
-        miss_pkt = buffer[lenth-1]
-    print(miss_pkt)
-    t3 = threading.Thread(target=command,args=(h2,"python receive.py 10.0.0.2 h2-eth0"))
-    thread_list.append(t3)
-    t4 = threading.Thread(target=command,args=(h1,"python send.py 10.0.0.1 h1-eth0 10.0.0.2 0 msg.txt False '%s'" % miss_pkt))
-    thread_list.append(t4)
-    t3.start()
-    t4.start()
-    for t in thread_list:
-        t.join()
+    #filename4 = '/home/shlled/mininet-project-fc/Stackelberg/Log/miss.txt'
+    filename4 = '/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/miss.txt'
+    while True:
+        with open(filename4, 'r+') as f4:
+            buffer = f4.readlines()
+            lenth = len(buffer)
+            miss_pkt = buffer[lenth - 1]
+        info('miss:', miss_pkt)
+        if miss_pkt == 'None\n':
+            print("finish collet")
+            break
+        t3 = threading.Thread(target=command, args=(h2, "python receive.py 10.0.0.2 h2-eth0"))
+        thread_list.append(t3)
+        t4 = threading.Thread(target=command,
+                              args=(h1, "python send.py 10.0.0.1 h1-eth0 10.0.0.2 %s msg.txt False '%s'" % (distance, miss_pkt)))
+        thread_list.append(t4)
+        t3.start()
+        t4.start()
+        for t in thread_list:
+            t.join()
+
     # index=0
     # num = 0 #packge number
     # "find the size of the data"
@@ -204,12 +213,10 @@ def topology():
     #     index += 10
     #     num += 1
     info("*** Running CLI\n")
-    CLI_wifi(net)  
-    
+    CLI_wifi(net)
+
     # h2.cmd("python receive.py 10.0.0.2 h2-eth0")
     # h1.cmd("python send.py 10.0.0.1 h1-eth0 10.0.0.2")
-
-
 
     info("*** Stopping network\n")
     net.stop()
