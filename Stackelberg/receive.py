@@ -169,7 +169,7 @@ def receive(ip, iface, filter="icmp", rc_pkt=[]):
         with open(filename4, 'a+') as f4:
             f4.write(str(Pkts) + '\n')
 
-    if Flag:
+    if Flag:   #all packages received
         "consist the file"
         #filename3 = "/home/shlled/mininet-project-fc/Stackelberg/Log/miss.txt"
         filename3 = "/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/miss.txt"
@@ -208,7 +208,7 @@ def receive(ip, iface, filter="icmp", rc_pkt=[]):
             f2.close()
 
 
-    else:
+    else:  #append miss packet
         "calculate the loss"
 
         loss = (float(total) - float(count)) / float(total)

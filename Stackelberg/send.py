@@ -81,9 +81,9 @@ def send(src, iface, dst, distance, filename,flag = True,miss_pkt='',pow=5, time
             key = random.randint(1, 100)
             if key in range(1, top):
                 sendp(p, iface=iface)
-                miss_pkt.pop(0)
             else:
                 print("can't send the packet\n")
+            miss_pkt.pop(0)
         f1.close()
     # filename2='/home/shlled/mininet-wifi/Log/UE%s.json' % src[7:9]
     # #update the pow after sending msg

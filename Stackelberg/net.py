@@ -215,8 +215,6 @@ def topology():
     info("*** Running CLI\n")
     CLI_wifi(net)
 
-    # h2.cmd("python receive.py 10.0.0.2 h2-eth0")
-    # h1.cmd("python send.py 10.0.0.1 h1-eth0 10.0.0.2")
 
     info("*** Stopping network\n")
     net.stop()
