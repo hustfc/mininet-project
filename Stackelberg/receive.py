@@ -62,10 +62,6 @@ class action:
             "write the data"
             #filename1 = '/home/shlled/mininet-project-fc/Stackelberg/Log/%s.txt' % packet[0][1].dst[7:8]
             filename1 = '/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/%s.txt' % packet[0][1].dst[7:8]
-            # if flag:
-            #     f1 = open(filename1,'w+')
-            #     f1.close()
-            #     flag=False
 
             f1 = open(filename1, "a+")
             # filename2='/home/shlled/mininet-wifi/Log/new%s.txt' % filename
@@ -80,26 +76,11 @@ class action:
             f1.write('Receive Packet #%d: %s ==> %s : %s' % (
                 sum(packet_counts.values()), packet[0][1].src, packet[0][1].dst, info))
 
-            # "find the start of the data"
-            # span=re.search('data:',packet[0][3].load).span()
-            # start=span[1]
-            # data=packet[0][3].load[start+1:]
-
-            # f2.write(data)
-            # f2.close()
-
             f1.close()
         sys.stdout.flush()
 
 
 def receive(ip, iface, filter="icmp", rc_pkt=[]):
-    # top=int(100-100*loss)
-    # key=random.randint(1,100)
-    # if key in range(1,top):
-    #     sniff(iface = iface, filter= filter, timeout = 20,prn = action(ip, rc_pkt).custom_action)
-    # else:
-    #     print("can't receive the packet\n")
-
     sniff(iface=iface, filter=filter, timeout=10, prn=action(ip, rc_pkt).custom_action)
     "after sniff,check the packet num and return the missing number"
     Pkts = {}

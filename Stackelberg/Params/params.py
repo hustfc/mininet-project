@@ -1,5 +1,4 @@
 import math
-from mininet.log import info
 
 def getDistance(h1, h2):
     position1 = h1.params['position'].replace(' ', '').split(',')
