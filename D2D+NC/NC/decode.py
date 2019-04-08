@@ -138,24 +138,31 @@ from encode import encode
 
 if __name__ == '__main__':
     success, error = 0, 0
-    for t in range(50):
-        packets = [32, 41, 15, 21, 43, 41, 43, 54, 12, 54, 42, 23, 42, 54, 98, 123, 23, 43, 23, 43, 64, 12, 82, 43, 45, 13] * 10
-        coe, encodedP = encode(packets)
-        print('随机编码矩阵:')
-        print(coe)
-        print('伽罗华域编码之后的包:')
-        print(encodedP)
-        print()
-        try:
-            sigma, res = solve(coe, encodedP, len(packets))
-            if res and int(res[0]) == packets[0]:
-                success += 1
-            else:
-                error += 1
-        except:
+    #for t in range(50):
+    strings = 'Oh, he read law in Judge Parmalee’s office over in Fayetteville,'
+    packets = [ord(i) for i in strings if ord(i) >= 0 and ord(i) < 2 ** 8]
+    print(packets)
+    #packets = [21, 43, 41, 43, 54, 12, 54, 42, 23, 42, 54, 98, 123, 23, 43, 23, 43, 64, 12, 82, 43, 45, 13]
+    coe, encodedP = encode(packets)
+    print('随机编码矩阵:')
+    print(coe)
+    print('伽罗华域编码之后的包:')
+    print(encodedP)
+    print()
+    try:
+        sigma, res = solve(coe, encodedP, len(packets))
+        if res and int(res[0]) == packets[0]:
+            #print_result(res)
+            success += 1
+        else:
             error += 1
-        print('*' * 20)
-        print()
+    except:
+        error += 1
+    print(res)
+    result = ''.join([chr(int(i)) for i in res])
+    print(result)
+    print('*' * 20)
+    print()
     print('成功:', success)
     print('失败:', error)
     print('成功率：%.3f' % (success / (success + error)))
