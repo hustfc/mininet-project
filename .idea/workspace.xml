@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="993479c9-978c-438f-9151-f24db2b49d77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Stackelberg/Params/reFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/D2D+NC/Log/RU.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/D2D+NC/receiveTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/D2D+NC/sendTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stackelberg/Params/params.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stackelberg/Params/params.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stackelberg/Log/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Stackelberg/Log/2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stackelberg/Log/miss.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Stackelberg/Log/miss.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stackelberg/Log/msg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Stackelberg/Log/msg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stackelberg/Log/pkts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Stackelberg/Log/pkts.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stackelberg/net.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stackelberg/net.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stackelberg/receive.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stackelberg/receive.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stackelberg/send.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stackelberg/send.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Stackelberg/net.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1337">
-              <caret line="185" column="29" lean-forward="true" selection-start-line="185" selection-start-column="29" selection-end-line="185" selection-end-column="29" />
+            <state relative-caret-position="194">
+              <caret line="152" column="50" lean-forward="true" selection-start-line="152" selection-start-column="38" selection-end-line="152" selection-end-column="50" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -33,74 +38,55 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Stackelberg/Params/params.py">
+        <entry file="file://$PROJECT_DIR$/D2D+NC/receive.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="11" selection-start-column="11" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Stackelberg/Params/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Stackelberg/EH/energy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="28" />
+            <state relative-caret-position="209">
+              <caret line="83" column="47" selection-start-line="83" selection-start-column="47" selection-end-line="83" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Stackelberg/receive.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2112">
-              <caret line="88" column="20" lean-forward="true" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Stackelberg/Log/pkts.txt">
+        <entry file="file://$PROJECT_DIR$/D2D+NC/Log/RU.txt">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Stackelberg/RInfo.py">
+        <entry file="file://$PROJECT_DIR$/D2D+NC/net.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+            <state relative-caret-position="465">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
               <folding>
-                <element signature="e#0#34#0" expanded="true" />
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Stackelberg/NC/encode.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Stackelberg/NC/GF.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Stackelberg/send.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-244">
-              <caret line="45" column="32" lean-forward="true" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Stackelberg/SInfo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+            <state relative-caret-position="1373">
+              <caret line="82" column="37" lean-forward="true" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -139,19 +125,26 @@
         <option value="$PROJECT_DIR$/Stackelberg/SInfo.py" />
         <option value="$PROJECT_DIR$/Params/params.py" />
         <option value="$PROJECT_DIR$/Params/__init__.py" />
-        <option value="$PROJECT_DIR$/Stackelberg/send.py" />
         <option value="$PROJECT_DIR$/Stackelberg/Params/reFile.py" />
         <option value="$PROJECT_DIR$/Stackelberg/Params/params.py" />
-        <option value="$PROJECT_DIR$/Stackelberg/net.py" />
         <option value="$PROJECT_DIR$/Stackelberg/receive.py" />
+        <option value="$PROJECT_DIR$/Stackelberg/net.py" />
+        <option value="$PROJECT_DIR$/Stackelberg/D2D+NC/net.py" />
+        <option value="$PROJECT_DIR$/Stackelberg/send.py" />
+        <option value="$PROJECT_DIR$/D2D+NC/sendTest.py" />
+        <option value="$PROJECT_DIR$/receiveTest.py" />
+        <option value="$PROJECT_DIR$/D2D+NC/receiveTest.py" />
+        <option value="$PROJECT_DIR$/D2D+NC/net.py" />
+        <option value="$PROJECT_DIR$/D2D+NC/receive.py" />
+        <option value="$PROJECT_DIR$/D2D+NC/Log/RU.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="9" />
+    <option name="x" value="1680" />
     <option name="y" value="23" />
-    <option name="width" value="1692" />
-    <option name="height" value="1027" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -172,13 +165,7 @@
             <path>
               <item name="mininet-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="mininet-project" type="462c0819:PsiDirectoryNode" />
-              <item name="Stackelberg" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mininet-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mininet-project" type="462c0819:PsiDirectoryNode" />
-              <item name="Stackelberg" type="462c0819:PsiDirectoryNode" />
-              <item name="Params" type="462c0819:PsiDirectoryNode" />
+              <item name="D2D+NC" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -195,6 +182,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/D2D+NC" />
       <recent name="$PROJECT_DIR$/Stackelberg" />
     </key>
   </component>
@@ -277,13 +265,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25687000" />
+    <option name="totallyTimeSpent" value="38627000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
+    <frame x="1680" y="23" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13997555" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.122068234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -333,9 +321,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Stackelberg/NC/GF.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Stackelberg/NC/MGM_decode.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1624">
@@ -468,6 +453,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Stackelberg/NC/decode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Stackelberg/NC/encode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Stackelberg/NC/GF.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Stackelberg/Params/params.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -475,35 +481,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Stackelberg/net.py">
+    <entry file="file://$PROJECT_DIR$/Stackelberg/D2D+NC/net.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1337">
-          <caret line="185" column="29" lean-forward="true" selection-start-line="185" selection-start-column="29" selection-end-line="185" selection-end-column="29" />
+        <state relative-caret-position="667">
+          <caret line="38" column="14" lean-forward="true" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Stackelberg/send.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-244">
-          <caret line="45" column="32" lean-forward="true" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Stackelberg/receive.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2112">
+        <state relative-caret-position="410">
           <caret line="88" column="20" lean-forward="true" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="20" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Stackelberg/send.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1373">
+          <caret line="82" column="37" lean-forward="true" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Stackelberg/net.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="152" column="50" lean-forward="true" selection-start-line="152" selection-start-column="38" selection-end-line="152" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D2D+NC/receiveTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D2D+NC/sendTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D2D+NC/net.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D2D+NC/receive.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="83" column="47" selection-start-line="83" selection-start-column="47" selection-end-line="83" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D2D+NC/Log/RU.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

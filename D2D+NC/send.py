@@ -32,7 +32,7 @@ def send(src, iface, dst, distance, filename,flag = True,miss_pkt='',pow=5, time
     if flag:
         index = 0
         #filename1 = '/home/shlled/mininet-project-fc/Stackelberg/Log/%s' % filename
-        filename1 = '/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/%s' % filename
+        filename1 = '/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/%s' % filename
         f1=open(filename1,'r')
         buffer=f1.readlines()
         lenth=len(buffer)
@@ -59,7 +59,7 @@ def send(src, iface, dst, distance, filename,flag = True,miss_pkt='',pow=5, time
         f1.close()
     else:
         #filename1='/home/shlled/mininet-wifi/Log/%s' % filename
-        filename1 = '/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/%s' % filename
+        filename1 = '/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/%s' % filename
         f1=open(filename1,'r')
         buffer=f1.readlines()
         lenth=len(buffer)
