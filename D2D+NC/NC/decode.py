@@ -139,7 +139,7 @@ from encode import encode
 if __name__ == '__main__':
     success, error = 0, 0
     #for t in range(50):
-    strings = 'Oh, he read law in Judge Parmalee’s office over in Fayetteville,'
+    strings = 'Oh, he read law in Judge Parmalee’s office over in Fayetteville,' * 5
     packets = [ord(i) for i in strings if ord(i) >= 0 and ord(i) < 2 ** 8]
     print(packets)
     #packets = [21, 43, 41, 43, 54, 12, 54, 42, 23, 42, 54, 98, 123, 23, 43, 23, 43, 64, 12, 82, 43, 45, 13]
