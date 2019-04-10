@@ -97,7 +97,7 @@ def receive(ip, iface, filter="icmp", rc_pkt=[]):
             e5 = span5[1]
             "temp data of each line,use for cmp"
             T_index = temp[e4:s5]
-            data = temp[e5+1:]   # True?**********
+            data = temp[e5:]   # True?**********
 
             # print("filename:%s filename:%s\n" % (T_filename,filename))
             Pkts["%d" % int(T_index)] = True

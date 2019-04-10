@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="993479c9-978c-438f-9151-f24db2b49d77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/D2D+NC/APSend.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/D2D+NC/DU_receive.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/D2D+NC/Log/APSend.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/D2D+NC/NC/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/D2D+NC/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/D2D+NC/NC/FileToM.py" beforeDir="false" afterPath="$PROJECT_DIR$/D2D+NC/NC/FileToM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/D2D+NC/send.py" beforeDir="false" afterPath="$PROJECT_DIR$/D2D+NC/send.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2D+NC/DU_receive.py" beforeDir="false" afterPath="$PROJECT_DIR$/D2D+NC/DU_receive.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,8 +105,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/D2D+NC/DU_receive.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="116" column="36" selection-start-line="116" selection-start-column="36" selection-end-line="116" selection-end-column="36" />
+            <state relative-caret-position="376">
+              <caret line="99" column="28" lean-forward="true" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -370,12 +363,12 @@
       <option name="presentableId" value="Default" />
       <updated>1554170694176</updated>
       <workItem from="1554170695509" duration="142000" />
-      <workItem from="1554775603427" duration="19388000" />
+      <workItem from="1554775603427" duration="19512000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60525000" />
+    <option name="totallyTimeSpent" value="60649000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1681" y="23" width="1920" height="1057" extended-state="6" />
@@ -661,8 +654,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/D2D+NC/DU_receive.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="116" column="36" selection-start-line="116" selection-start-column="36" selection-end-line="116" selection-end-column="36" />
+        <state relative-caret-position="376">
+          <caret line="99" column="28" lean-forward="true" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
