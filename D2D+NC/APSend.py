@@ -6,53 +6,29 @@ import time
 
 import fire
 import random
-def stringToList(s):
-    if s == '':
-        return []
-    s = s[1:len(s)-1]
-    s = s.replace(' ', '')
-    print(s)
-    return [int(i) for i in s.split(',')]
-''' 
-    --num  the number of the packet
-    --pow  the power of sending msg
-    --times the max time of sending
-    --flag  if flag = false ,that means sending the missing packet using miss_pkt params
-'''
-def send(src, iface, dst, distance, filename,flag = True,miss_pkt='',pow=5, times=10,send_pkt=[]):
-    info(distance)
-    if distance <= 5:
-        loss = 0
-    else:
-        loss = 0.3
+
+from NC.FileToM import *
+
+file = '/Users/fanc/Documents/GitHub/mininet-project/D2D+NC/Log'
+#file = '/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log'
+
+filename1 = '%s/msg.txt' % file
+results = FToMatrix(filename1)
+matrix = results[0]
+
+def send(src, iface, dst, filename, flag = True, miss_pkt='',pow=5, times=10,send_pkt=[]):
     if flag:
         index = 0
-        #filename1 = '/home/shlled/mininet-project-fc/Stackelberg/Log/%s' % filename
-        filename1 = '/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/%s' % filename
-        f1=open(filename1,'r')
-        buffer=f1.readlines()
-        lenth=len(buffer)
+        lenth=len(matrix)
         total=lenth
         while index<lenth:
             time.sleep(0.1)
             now = time.time()
-            alpha=buffer[index]
-            #alpha=buffer[index].strip()
-            msg = "send_time: " + "%.6f" % float(now) + " filename:%s" % filename  + "total:%d" % total + "index:%d" % index + "data:" + alpha
-            send_pkt.append(msg)
-            print(msg)
+            data = matrix[index]
+            msg = "send_time: " + "%.6f" % float(now) + "total:%d" % total + "index:%d" % index + "data:" + data
             p = Ether() / IP(src=src, dst=dst) / ICMP() / msg
-
-            "miss packet"
-            top=int(100-100*loss)
-            key=random.randint(1,100)
-            if key in range(1,top):
-                sendp(p, iface = iface)
-            else:
-                print("can't send the packet\n")
-
-            index+=1
-        f1.close()
+            sendp(p, iface = iface)
+            index += 1
     else:
         #filename1='/home/shlled/mininet-wifi/Log/%s' % filename
         filename1 = '/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/%s' % filename

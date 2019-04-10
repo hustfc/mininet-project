@@ -37,8 +37,8 @@ def FToMatrix(filename):
     return results
 
 
-filename1 = '/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/msg.txt'
-filename2 = '/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU.txt'
-result = FToMatrix(filename1)
-for item in result:
-    print(item)
+# filename1 = '/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/msg.txt'
+# filename2 = '/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU.txt'
+# result = FToMatrix(filename1)
+# for item in result:
+#     print(item)
