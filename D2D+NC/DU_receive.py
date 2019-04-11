@@ -82,6 +82,7 @@ def receive(ip, iface, filter="udp", rc_pkt=[]):
         f5.write(str(datas) + '\n')
 
     #next, encode pakts based pkts and datas
+    print('Encoding>>>>>>>>>>>>>')
     coe_matrix, encode_matrix = DU_Encode(Pkts, datas, size)
 
     filename6 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/coe.txt"

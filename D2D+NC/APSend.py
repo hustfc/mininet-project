@@ -15,7 +15,7 @@ file = '/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log'
 filename1 = '%s/msg.txt' % file
 results = FToMatrix(filename1)
 matrix = results[0]
-#python APSend.py 10.0.0.10 AP1-wlan1 10.0.0.3
+#python APSend.py 10.0.0.10 AP-wlan0 10.0.0.3
 #python DU_receive.py 10.0.0.3 DU-wlan0
 
 def send(src, iface, dst, filename = '', flag = True, miss_pkt='',pow=5, times=10,send_pkt=[]):

@@ -16,7 +16,8 @@ def topology():
     net = Mininet_wifi(controller=Controller, link=wmediumd, wmediumd_mode=interference)
 
     info("*** Creating nodes\n")
-    AP1 = net.addAccessPoint('AP1', ssid="ap-ssid", mode="g", channel="1", position='5,10,0', range=100)
+    #AP1 = net.addAccessPoint('AP1', ssid="ap-ssid", mode="g", channel="1", position='5,10,0', range=100)
+    AP = net.addStation('AP', position='5,10,0', ip='10.0.0.10', mac='00:00:00:00:00:10')
 
     RU = net.addStation('RU', wlans=2, position='30,5,0', ip='10.0.0.1/8,10.0.0.2/8', mac='00:00:00:00:00:01,00:00:00:00:00:02')
 
@@ -29,18 +30,17 @@ def topology():
     info("*** Configuring wifi nodes\n")
     net.configureWifiNodes()
     net.plotGraph(max_x=40, max_y=40)
-    AP1.setIP('10.0.0.10', intf='AP1-wlan1')
+    #AP1.setIP('10.0.0.10', intf='AP1-wlan1')
 
     info("*** Creating links\n")
-    net.addLink(AP1, RU)
-    net.addLink(AP1, DU)
+    net.addLink(AP, cls=adhoc, ssid='adhocNet', mode='g', channel=5, ht_cap='HT40+')
     net.addLink(RU, cls=adhoc, ssid='adhocNet', mode='g', channel=5, ht_cap='HT40+')
     net.addLink(DU, cls=adhoc, ssid='adhocNet', mode='g', channel=5, ht_cap='HT40+')
 
     info("*** Starting network\n")
     net.build()
     c1.start()
-    AP1.start([c1])
+    #AP1.start([c1])
 
     info("*** Running CLI\n")
     CLI_wifi(net)
