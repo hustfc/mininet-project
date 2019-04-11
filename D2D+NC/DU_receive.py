@@ -84,6 +84,15 @@ def receive(ip, iface, filter="udp", rc_pkt=[]):
     #next, encode pakts based pkts and datas
     coe_matrix, encode_matrix = DU_Encode(Pkts, datas, size)
 
+    filename6 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/coe.txt"
+    filename7 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/encoded.txt"
+
+    with open(filename6, 'a+') as f6:
+        f6.write(str(coe_matrix) + '\n')
+
+    with open(filename7, 'a+') as f7:
+        f7.write(str(encode_matrix) + '\n')
+
 
     #filename4 = "/home/shlled/mininet-project-fc/Stackelberg/Log/pkts.txt"
 

@@ -42,9 +42,9 @@ def DU_Encode(pkts, datas, size):
         for j in range(count):
             coe_matrix[i][j] = random.randint(1, 2 ** w - 1)
     encode_matrix = matrix_mul(coe_matrix, data_matrix)
-    print('coe', coe_matrix)
-    print('data', data_matrix)
-    print('encode', encode_matrix)
+    # print('coe', coe_matrix)
+    # print('data', data_matrix)
+    # print('encode', encode_matrix)
     return coe_matrix, encode_matrix
 
 #Unit test

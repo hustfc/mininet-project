@@ -36,9 +36,11 @@ def FToMatrix(filename):
     results.append(StringToM(subString, size))
     return results
 
-
-# filename1 = '/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/msg.txt'
-# filename2 = '/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU.txt'
+#Unit Test
+# filename1 = '/Users/fanc/Documents/GitHub/mininet-project/D2D+NC/Log/msg.txt'
+# #filename2 = '/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU.txt'
 # result = FToMatrix(filename1)
 # for item in result:
-#     print(item)
+#     for a in item:
+#         print(a)
+#     print()
