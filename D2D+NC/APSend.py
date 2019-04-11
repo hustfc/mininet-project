@@ -15,6 +15,8 @@ file = '/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log'
 filename1 = '%s/msg.txt' % file
 results = FToMatrix(filename1)
 matrix = results[0]
+#python APSend.py 10.0.0.10 AP1-wlan1 10.0.0.3
+#python DU_receive.py 10.0.0.3 DU-wlan0
 
 def send(src, iface, dst, filename = '', flag = True, miss_pkt='',pow=5, times=10,send_pkt=[]):
     if flag:
@@ -26,7 +28,7 @@ def send(src, iface, dst, filename = '', flag = True, miss_pkt='',pow=5, times=1
             data = matrix[index]
             data_send = ''.join(data)
             print('index', index)
-            print(data_send)
+            print('data', data_send)
             msg = "send_time: " + "%.6f" % float(now) + "total:%d" % total + "index:%d" % index + "data:" + data_send
             p = Ether() / IP(src=src, dst=dst) / UDP() / msg
             sendp(p, iface = iface)
@@ -59,15 +61,4 @@ def send(src, iface, dst, filename = '', flag = True, miss_pkt='',pow=5, times=1
                 print("can't send the packet\n")
             miss_pkt.pop(0)
         f1.close()
-    # filename2='/home/shlled/mininet-wifi/Log/UE%s.json' % src[7:9]
-    # #update the pow after sending msg
-    # with open(filename2,'r+') as f2:
-        # buffer = f2.readlines()
-        # lenth = len(buffer)
-        # #data =buffer[0]
-        # data = json.loads(buffer[lenth-1])
-        # data["POWER"]-= pow
-        # json.dump(data,f2)
-        # f2.write("\n")
-
 fire.Fire(send)
