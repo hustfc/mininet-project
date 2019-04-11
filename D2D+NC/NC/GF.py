@@ -17,8 +17,8 @@ class GF:
         primitive_polynomial = primitive_polynomial_dict[w]
         for i in range(1, gf_element_total_number - 1):
             temp = gfilog[i - 1] << 1  # g(i) = g(i-1) * 2
-            if temp & gf_element_total_number:  # 判断溢出
-                temp ^= primitive_polynomial  # 异或本原多项式
+            if temp & gf_element_total_number:  # overflow
+                temp ^= primitive_polynomial  # xor primitive
             gfilog.append(temp)
 
         assert (gfilog[gf_element_total_number - 2] << 1) ^ primitive_polynomial
@@ -64,3 +64,9 @@ class GF:
 #     print('%d / %d = %d' % (d, a, gf.div(d, a)))
 #     print()
 #     t += 1
+
+#Unit test
+# gf = GF(8)
+# a = gf.mul(118, 97)
+# b = gf.mul(233, 109)
+# print(gf.add(a, b))

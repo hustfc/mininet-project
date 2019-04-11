@@ -7,11 +7,13 @@ from collections import Counter
 import fire
 import random
 import re
+from NC.DU_encode import DU_Encode
 import os
 
 packet_counts = Counter()
 packet_queue = []
 global total
+total = 0
 size = 32
 
 # flag = True # before log delete the previous log file
@@ -54,18 +56,19 @@ class action:
             print("info in action :", info)
             f1.write('Receive Packet #%d: %s ==> %s : %s' % (
                 sum(packet_counts.values()), packet[0][1].src, packet[0][1].dst, info))
+            f1.write('\n')
             f1.close()
         sys.stdout.flush()
 
 
-def receive(ip, iface, filter="icmp", rc_pkt=[]):
-    sniff(iface=iface, filter=filter, timeout=20, prn=action(ip, rc_pkt).custom_action)
+def receive(ip, iface, filter="udp", rc_pkt=[]):
+    sniff(iface=iface, filter=filter, timeout=50, prn=action(ip, rc_pkt).custom_action)
     "after sniff,check the packet num and return the missing number"
     Pkts = {}
     datas = {}   #store data dictionary
     global total
     # print("global filename:%s\n" % filename)
-    # print("global total:%s\n" % total)
+    print("global total:%s\n" % total)
     total = int(total)
     for i in range(0, total):
         Pkts["%d" % i] = False
@@ -97,7 +100,7 @@ def receive(ip, iface, filter="icmp", rc_pkt=[]):
             e5 = span5[1]
             "temp data of each line,use for cmp"
             T_index = temp[e4:s5]
-            data = temp[e5:]   # True?**********
+            data = list(temp[e5:])   #string to list
 
             # print("filename:%s filename:%s\n" % (T_filename,filename))
             Pkts["%d" % int(T_index)] = True
@@ -113,8 +116,12 @@ def receive(ip, iface, filter="icmp", rc_pkt=[]):
             if Flag:
                 break
             lenth -= 1
-        # print('pkts:', Pkts)
-        #下一步工作：根据datas字典和Pkts字典来进行编码
+        print('pkts:', Pkts)
+        print('datas', datas)
+
+        #next, encode pakts based pkts and datas
+        coe_matrix, encode_matrix = DU_Encode(Pkts, datas, size)
+
 
         #filename4 = "/home/shlled/mininet-project-fc/Stackelberg/Log/pkts.txt"
         filename4 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/pkts.txt"

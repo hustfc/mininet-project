@@ -29,6 +29,7 @@ def topology():
     info("*** Configuring wifi nodes\n")
     net.configureWifiNodes()
     net.plotGraph(max_x=40, max_y=40)
+    AP1.setIP('10.0.0.10', intf='AP1-wlan1')
 
     info("*** Creating links\n")
     net.addLink(AP1, RU)

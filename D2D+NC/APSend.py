@@ -1,5 +1,5 @@
 from scapy.all import sniff, sendp
-from scapy.all import Ether, IP, ICMP
+from scapy.all import Ether, IP, ICMP, UDP
 from mininet.log import info
 
 import time
@@ -9,24 +9,26 @@ import random
 
 from NC.FileToM import *
 
-file = '/Users/fanc/Documents/GitHub/mininet-project/D2D+NC/Log'
-#file = '/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log'
+#file = '/Users/fanc/Documents/GitHub/mininet-project/D2D+NC/Log'
+file = '/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log'
 
 filename1 = '%s/msg.txt' % file
 results = FToMatrix(filename1)
 matrix = results[0]
 
-def send(src, iface, dst, filename, flag = True, miss_pkt='',pow=5, times=10,send_pkt=[]):
+def send(src, iface, dst, filename = '', flag = True, miss_pkt='',pow=5, times=10,send_pkt=[]):
     if flag:
         index = 0
-        lenth=len(matrix)
-        total=lenth
-        while index<lenth:
-            time.sleep(0.1)
+        lenth = len(matrix)
+        total = lenth
+        while index < lenth:
             now = time.time()
             data = matrix[index]
-            msg = "send_time: " + "%.6f" % float(now) + "total:%d" % total + "index:%d" % index + "data:" + data
-            p = Ether() / IP(src=src, dst=dst) / ICMP() / msg
+            data_send = ''.join(data)
+            print('index', index)
+            print(data_send)
+            msg = "send_time: " + "%.6f" % float(now) + "total:%d" % total + "index:%d" % index + "data:" + data_send
+            p = Ether() / IP(src=src, dst=dst) / UDP() / msg
             sendp(p, iface = iface)
             index += 1
     else:
