@@ -1,17 +1,16 @@
 from scapy.all import sniff, sendp
 from mininet.log import info
 
-import sys
+#python APSend.py 10.0.0.10 AP-wlan0 10.0.0.1
+#python RU_receive_AP.py 10.0.0.1 RU-wlan0
+
 import time
 from collections import Counter
 import fire
 import random
 import re
-from NC.DU_encode import DU_Encode
 import os
-
-#python APSend.py 10.0.0.10 AP-wlan0 10.0.0.3
-#python DU_receive.py 10.0.0.3 DU-wlan0
+import sys
 
 packet_counts = Counter()
 packet_queue = []
@@ -20,8 +19,6 @@ total = 32
 size = 32
 Pkts = {}
 datas = {}   #store data dictionary
-coe_matrix, encode_matrix = [], []
-
 for i in range(total):
     Pkts[i] = False
     datas[i] = []
@@ -33,7 +30,7 @@ class action:
         self.rc_pkt = rc_pkt
 
     def custom_action(self, packet):
-        loss = 0
+        loss = 0.3
         top = int(100 - 100 * loss)
         num = random.randint(1, 101)
         key = tuple([packet[0][1].src, packet[0][1].dst])
@@ -57,7 +54,7 @@ class action:
             datas[int(index)] = data
             print(Pkts, datas)
             "write the data"
-            filename1 = '/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/DU_Log.txt'
+            filename1 = '/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU_Log.txt'
 
             f1 = open(filename1, "a+")
             packet_queue.append(packet[0][3].load)
@@ -78,50 +75,17 @@ def receive(ip, iface, filter="udp", rc_pkt=[]):
     sniff(iface=iface, filter=filter, timeout=5, prn=action(ip, rc_pkt).custom_action)
     "after sniff,check the packet num and return the missing number"
 
-    filename4 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/DU_pkts.txt"
+    filename4 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU_pkts.txt"
     with open(filename4, 'a+') as f4:
         f4.write(str(Pkts) + '\n')
 
-    filename5 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/DU_datas.txt"
+    filename5 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU_datas.txt"
     with open(filename5, 'a+') as f5:
         f5.write(str(datas) + '\n')
 
-    #next, encode pakts based pkts and datas
-    print('Encoding>>>>>>>>>>>>>')
-    coe_matrix, encode_matrix = DU_Encode(Pkts, datas, size)
-
-    filename6 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/DU_coe.txt"
-    filename7 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/DU_encoded.txt"
-    filename8 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/DU_count.txt"
-
-    with open(filename6, 'a+') as f6:
-        for item in coe_matrix:
-            f6.write(str(item) + '\n')
-        f6.write('\n')
-
-    with open(filename7, 'a+') as f7:
-        for item in encode_matrix:
-            f7.write(str(item) + '\n')
-        f7.write('\n')
-
-    count = 0
-    for i in range(len(Pkts)):
-        if Pkts[i] == True:
-            count += 1
-    with open(filename8, 'a+') as f8:
-        f8.write(str(count) + '\n')
-
-
-    print('Encode finish')
 
 
     #filename4 = "/home/shlled/mininet-project-fc/Stackelberg/Log/pkts.txt"
-
-def get_coe():
-    return coe_matrix
-
-def get_encoded():
-    return encode_matrix
 
 
 def packetQueue():

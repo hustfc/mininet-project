@@ -9,16 +9,18 @@ import random
 
 from NC.FileToM import *
 
-#file = '/Users/fanc/Documents/GitHub/mininet-project/D2D+NC/Log'
+#python APSend.py 10.0.0.10 AP-wlan0 10.0.0.1, 10.0.0.3
+#python DU_receive.py 10.0.0.3 DU-wlan0
+#python RU_receive_AP.py 10.0.0.1 RU-wlan0
+
 file = '/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log'
 
 filename1 = '%s/msg.txt' % file
 results = FToMatrix(filename1)
 matrix = results[0]
-#python APSend.py 10.0.0.10 AP-wlan0 10.0.0.3
-#python DU_receive.py 10.0.0.3 DU-wlan0
 
-def send(src, iface, dst, filename = '', flag = True, miss_pkt='',pow=5, times=10,send_pkt=[]):
+
+def send(src, iface, dst1, dst2, filename = '', flag = True, miss_pkt='',pow=5, times=10,send_pkt=[]):
     if flag:
         index = 0
         lenth = len(matrix)
@@ -30,11 +32,14 @@ def send(src, iface, dst, filename = '', flag = True, miss_pkt='',pow=5, times=1
             print('index', index)
             print('data', data_send)
             msg = "send_time: " + "%.6f" % float(now) + "total:%d" % total + "index:%d" % index + "data:" + data_send
-            p = Ether() / IP(src=src, dst=dst) / UDP() / msg
+            p = Ether() / IP(src=src, dst=dst1) / UDP() / msg
+            sendp(p, iface=iface)
+            p = Ether() / IP(src=src, dst=dst2) / UDP() / msg
             sendp(p, iface = iface)
             index += 1
     else:
         #filename1='/home/shlled/mininet-wifi/Log/%s' % filename
+
         filename1 = '/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/%s' % filename
         f1=open(filename1,'r')
         buffer=f1.readlines()
