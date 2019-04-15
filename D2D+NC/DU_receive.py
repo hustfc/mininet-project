@@ -24,7 +24,7 @@ coe_matrix, encode_matrix = [], []
 
 for i in range(total):
     Pkts[i] = False
-    datas[i] = []
+    datas[i] = ''
 
 # flag = True # before log delete the previous log file
 class action:
@@ -52,7 +52,7 @@ class action:
             global total
             total = packet[0][3].load[e3:s4]
             index = packet[0][3].load[e4:s5]
-            data = list(packet[0][3].load[e5:])
+            data = packet[0][3].load[e5:]
             Pkts[int(index)] = True
             datas[int(index)] = data
             print(Pkts, datas)

@@ -1,8 +1,8 @@
 from scapy.all import sniff, sendp
 from mininet.log import info
 
-#python APSend.py 10.0.0.10 AP-wlan0 10.0.0.1
-#python RU_receive_AP.py 10.0.0.1 RU-wlan0
+#python APSend.py 10.0.0.1 AP-wlan0 10.0.0.2 10.0.0.3
+#python RU_receive_AP.py 10.0.0.2 RU-wlan0
 
 import time
 from collections import Counter
@@ -21,7 +21,7 @@ Pkts = {}
 datas = {}   #store data dictionary
 for i in range(total):
     Pkts[i] = False
-    datas[i] = []
+    datas[i] = ''
 
 # flag = True # before log delete the previous log file
 class action:
@@ -49,7 +49,7 @@ class action:
             global total
             total = packet[0][3].load[e3:s4]
             index = packet[0][3].load[e4:s5]
-            data = list(packet[0][3].load[e5:])
+            data = packet[0][3].load[e5:]
             Pkts[int(index)] = True
             datas[int(index)] = data
             print(Pkts, datas)
@@ -75,13 +75,29 @@ def receive(ip, iface, filter="udp", rc_pkt=[]):
     sniff(iface=iface, filter=filter, timeout=5, prn=action(ip, rc_pkt).custom_action)
     "after sniff,check the packet num and return the missing number"
 
-    filename4 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU_pkts.txt"
-    with open(filename4, 'a+') as f4:
-        f4.write(str(Pkts) + '\n')
+    filename4 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU_pkts_AP.txt"
+    filename5 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU_datas_AP.txt"
+    filename6 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU_count_AP.txt"
 
-    filename5 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU_datas.txt"
+    true_count = 0
+
+    with open(filename4, 'a+') as f4:
+        for i in range(len(Pkts)):
+            if Pkts[i] == True:
+                f4.write(str(i) + '\n')
+                true_count += 1
+        f4.write('\n')
+
+
     with open(filename5, 'a+') as f5:
-        f5.write(str(datas) + '\n')
+        for i in range(len(datas)):
+            if Pkts[i] == True:
+                f5.write(datas[i] + '\n')
+        f5.write('\n')
+
+    with open(filename6, 'a+') as f6:
+        f6.write(str(true_count) + '\n')
+
 
 
 

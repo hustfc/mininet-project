@@ -19,6 +19,15 @@ def StringToM(subString, size):
             k += 1
     return matrix
 
+def CharToByte(matrix):
+    for i in range(len(matrix)):
+        for j in range(len(matrix[0])):
+            matrix[i][j] = ord(matrix[i][j])
+
+def convertMatrix(results):
+    for result in results:
+        CharToByte(result)
+
 def FToMatrix(filename):
     #file to matrix
     strings = FileToS(filename)
@@ -34,6 +43,7 @@ def FToMatrix(filename):
     if len(strings) > j:
         subString = strings[j:len(strings)] + ' ' * (total - (len(strings) - j))
     results.append(StringToM(subString, size))
+    convertMatrix(results)
     return results
 
 #Unit Test

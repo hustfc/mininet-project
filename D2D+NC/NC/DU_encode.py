@@ -23,10 +23,13 @@ def matrix_mul(a, b):
         result.append(row_vector)
     return result
 
-def CharToByte(matrix):
-    for i in range(len(matrix)):
-        for j in range(len(matrix[0])):
-            matrix[i][j] = ord(matrix[i][j])
+def stringToList(s):
+    if s == '':
+        return []
+    s = s[1:len(s)-1]
+    s = s.replace(' ', '')
+    print(s)
+    return [int(i) for i in s.split(',')]
 
 
 def DU_Encode(pkts, datas, size):
@@ -35,8 +38,7 @@ def DU_Encode(pkts, datas, size):
     for i in range(len(pkts)):
         if pkts[i] == True:
             count += 1
-            data_matrix.append(datas[i])
-    CharToByte(data_matrix)
+            data_matrix.append(stringToList(datas[i]))
     #print('data_matrix', data_matrix)
     coe_matrix = [([0] * count) for i in range(size)]    # size * count
     for i in range(size):

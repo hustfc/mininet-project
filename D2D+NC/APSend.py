@@ -9,9 +9,9 @@ import random
 
 from NC.FileToM import *
 
-#python APSend.py 10.0.0.10 AP-wlan0 10.0.0.1, 10.0.0.3
+#python APSend.py 10.0.0.1 AP-wlan0 10.0.0.2 10.0.0.3
 #python DU_receive.py 10.0.0.3 DU-wlan0
-#python RU_receive_AP.py 10.0.0.1 RU-wlan0
+#python RU_receive_AP.py 10.0.0.2 RU-wlan0
 
 file = '/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log'
 
@@ -27,11 +27,10 @@ def send(src, iface, dst1, dst2, filename = '', flag = True, miss_pkt='',pow=5, 
         total = lenth
         while index < lenth:
             now = time.time()
-            data = matrix[index]
-            data_send = ''.join(data)
+            data = str(matrix[index])
             print('index', index)
-            print('data', data_send)
-            msg = "send_time: " + "%.6f" % float(now) + "total:%d" % total + "index:%d" % index + "data:" + data_send
+            print('data', data)
+            msg = "send_time: " + "%.6f" % float(now) + "total:%d" % total + "index:%d" % index + "data:" + data
             p = Ether() / IP(src=src, dst=dst1) / UDP() / msg
             sendp(p, iface=iface)
             p = Ether() / IP(src=src, dst=dst2) / UDP() / msg

@@ -1,8 +1,8 @@
 from scapy.all import sniff, sendp
 from mininet.log import info
 
-#python APSend.py 10.0.0.10 AP-wlan0 10.0.0.1
-#python RU_receive_AP.py 10.0.0.1 RU-wlan0
+#python DU_send.py 10.0.0.3 RU-wlan0 10.0.0.2
+#python RU_receive_DU.py 10.0.0.2 RU-wlan0
 
 import time
 from collections import Counter
@@ -18,10 +18,22 @@ global total
 total = 32
 size = 32
 Pkts = {}
-datas = {}   #store data dictionary
+coe = {}   #store coe matrix dictionary
+enc = {}
+
+#pretreatment
 for i in range(total):
     Pkts[i] = False
-    datas[i] = []
+    coe[i] = []
+    enc[i] = []
+
+def stringToList(s):
+    if s == '':
+        return []
+    s = s[1:len(s)-1]
+    s = s.replace(' ', '')
+    print(s)
+    return [int(i) for i in s.split(',')]
 
 # flag = True # before log delete the previous log file
 class action:
@@ -30,7 +42,7 @@ class action:
         self.rc_pkt = rc_pkt
 
     def custom_action(self, packet):
-        loss = 0.3
+        loss = 0
         top = int(100 - 100 * loss)
         num = random.randint(1, 101)
         key = tuple([packet[0][1].src, packet[0][1].dst])
@@ -42,17 +54,23 @@ class action:
             span4 = re.search('index:', packet[0][3].load).span()
             s4 = span4[0]
             e4 = span4[1]
-            span5 = re.search('data:', packet[0][3].load).span()
+            span5 = re.search('coe:', packet[0][3].load).span()
             s5 = span5[0]
             e5 = span5[1]
+            span6 = re.search('enc:', packet[0][3].load).span()
+            s6 = span6[0]
+            e6 = span6[1]
             # global flag
             global total
             total = packet[0][3].load[e3:s4]
             index = packet[0][3].load[e4:s5]
-            data = list(packet[0][3].load[e5:])
+            coe_string = packet[0][3].load[e5:s6]
+            enc_string = packet[0][3].load[e6:]
+            print('coe_string', coe_string, 'enc_string', enc_string)
             Pkts[int(index)] = True
-            datas[int(index)] = data
-            print(Pkts, datas)
+            coe[int(index)] = stringToList(coe_string)
+            enc[int(index)] = stringToList(enc_string)
+            print(Pkts, coe, enc)
             "write the data"
             filename1 = '/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU_Log.txt'
 
@@ -81,7 +99,10 @@ def receive(ip, iface, filter="udp", rc_pkt=[]):
 
     filename5 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU_datas.txt"
     with open(filename5, 'a+') as f5:
-        f5.write(str(datas) + '\n')
+        f5.write('RU receive from DU coefficient matrix:\n')
+        f5.write(str(coe) + '\n')
+        f5.write('RU receive from DU encoded matrix:\n')
+        f5.write(str(enc) + '\n')
 
 
 

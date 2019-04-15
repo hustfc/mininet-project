@@ -17,11 +17,11 @@ def topology():
 
     info("*** Creating nodes\n")
     #AP1 = net.addAccessPoint('AP1', ssid="ap-ssid", mode="g", channel="1", position='5,10,0', range=100)
-    AP = net.addStation('AP', position='5,10,0', ip='10.0.0.10', mac='00:00:00:00:00:10')
+    AP = net.addStation('AP', position='5,10,0', ip='10.0.0.1', mac='00:00:00:00:00:01')
 
-    RU = net.addStation('RU', wlans=2, position='30,5,0', ip='10.0.0.1/8,10.0.0.2/8', mac='00:00:00:00:00:01,00:00:00:00:00:02')
+    RU = net.addStation('RU', position='30,5,0', ip='10.0.0.2', mac='00:00:00:00:00:02')
 
-    DU = net.addStation('DU', wlans=2, position='15,15,0', ip='10.0.0.3/8,10.0.0.4/8', mac='00:00:00:00:00:03,00:00:00:00:00:04')
+    DU = net.addStation('DU', position='15,15,0', ip='10.0.0.3', mac='00:00:00:00:00:03')
 
     c1 = net.addController('c1')
 
