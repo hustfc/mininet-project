@@ -31,5 +31,8 @@ print(buffer3[data_start:])
 for i in range(length):
     index = int(buffer2[pkt_start + i])
     pkts[index] = True
-    vector = stringToList(buffer3[data_start + i][0:-2])   #take out '\n'
-    print(vector)
+    vector = stringToList(buffer3[data_start + i][0:-1])   #take out '\n'
+    #print(vector)
+    datas[index] = vector
+print('pkts', pkts)
+print('datas', datas)
