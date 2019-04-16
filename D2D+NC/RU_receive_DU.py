@@ -2,7 +2,7 @@
 from scapy.all import sniff, sendp
 from mininet.log import info
 
-#python DU_send.py 10.0.0.3 RU-wlan0 10.0.0.2
+#python DU_send.py 10.0.0.3 DU-wlan0 10.0.0.2
 #python RU_receive_DU.py 10.0.0.2 RU-wlan0
 
 import time
@@ -12,6 +12,7 @@ import random
 import re
 import os
 import sys
+from NC.decode import solve
 
 packet_counts = Counter()
 packet_queue = []
@@ -96,6 +97,9 @@ class action:
 
 pkts_AP = {}
 datas_AP = {}   #data receive from AP
+for i in range(size):
+    pkts_AP[i] = False
+    datas_AP[i] = []
 
 
 #读取之间AP给RU发送的文件
@@ -178,8 +182,20 @@ def receive(ip, iface, filter="udp", rc_pkt=[]):
         f5.write(str(enc) + '\n')
 
     print("RU begin Decode>>>>>>>>>")
-    #read AP to RU file and receive
-
+    #读取之前AP给RU发送的信息，并且保存
+    readAPtoRU()
+    print('pkts_AP', pkts_AP)
+    print('datas_AP', datas_AP)
+    #根据两次收到的信息建立系数和编码矩阵
+    coe_matrix, encoded_matrix = Decode()
+    #对每一列进行解码
+    #将编码矩阵转化为一列一列的向量。
+    encoded_cols = GetMatrixCol(encoded_matrix)
+    original_matrix = []   #解码出来的原始数据存放
+    for i in range(len(encoded_cols)):
+        sigma, res = solve(coe_matrix, encoded_cols[i])
+        original_matrix.append(res)
+    print('original', original_matrix)
 
 
 def packetQueue():

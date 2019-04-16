@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import numpy as np
 import GF
 
@@ -118,19 +119,21 @@ def print_result(sigma, main_factor):
 
 
 # 得到简化的阶梯矩阵和主元列
-def solve(a, b, length):
+def solve(a, b):
     sigma = arguemented_mat(a, b)
-    print('增广矩阵为：')
-    print(sigma[0:length])
+    print('augment matrix：\n')
+    for item in sigma:
+        print(item)
     sigma, main_factor = trape_mat(sigma)
     sigma = back_solve(sigma, main_factor)
     try:
         print('方程的简化阶梯矩阵:')
-        print(sigma[0:length])
+        for item in sigma:
+            print(item)
     except:
         print('no answer')
     print('方程的主元列为：')
-    print(main_factor[0:length])
+    print(main_factor)
     res = print_result(sigma, main_factor)
     return sigma, res
 

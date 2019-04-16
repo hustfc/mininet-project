@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from scapy.all import sniff, sendp
 from mininet.log import info
 
@@ -75,12 +76,22 @@ class action:
 
 
 def receive(ip, iface, filter="udp", rc_pkt=[]):
-    sniff(iface=iface, filter=filter, timeout=5, prn=action(ip, rc_pkt).custom_action)
+    sniff(iface=iface, filter=filter, timeout=8, prn=action(ip, rc_pkt).custom_action)
     "after sniff,check the packet num and return the missing number"
+
+    #防止bug产生
+    for i in range(len(datas)):
+        if datas[i] != '':
+            Pkts[i] = True
+        else:
+            Pkts[i] = False
 
     filename4 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/DU_pkts.txt"
     with open(filename4, 'a+') as f4:
-        f4.write(str(Pkts) + '\n')
+        for i in range(len(Pkts)):
+            if Pkts[i] == True:
+                f4.write(str(i) + '\n')
+        f4.write('\n')
 
     filename5 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/DU_datas.txt"
     with open(filename5, 'a+') as f5:
