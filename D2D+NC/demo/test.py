@@ -1,9 +1,11 @@
+# -*- coding: utf-8 -*-
 filename1 = '/Users/fanc/Documents/GitHub/mininet-project/D2D+NC/Log/RU_count_AP.txt'
 filename2 = '/Users/fanc/Documents/GitHub/mininet-project/D2D+NC/Log/RU_pkts_AP.txt'
 filename3 = '/Users/fanc/Documents/GitHub/mininet-project/D2D+NC/Log/RU_datas_AP.txt'
 size = 32
 pkts = {}
 datas = {}
+#中文注释
 for i in range(size):
     pkts[i] = False
     datas[i] = []

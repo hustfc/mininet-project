@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from scapy.all import sniff, sendp
 from mininet.log import info
 
