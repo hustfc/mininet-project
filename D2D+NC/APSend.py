@@ -26,15 +26,15 @@ def send(src, iface, dst1, dst2, filename = '', flag = True, miss_pkt='',pow=5, 
         lenth = len(matrix)
         total = lenth
         while index < lenth:
-            time.sleep(0.3)
+            #time.sleep(0.3)
             now = time.time()
             data = str(matrix[index])
             print('index', index)
             print('data', data)
             msg = "send_time: " + "%.6f" % float(now) + "total:%d" % total + "index:%d" % index + "data:" + data
-            p = Ether() / IP(src=src, dst=dst1) / UDP() / msg
+            p = Ether() / IP(src=src, dst=dst1) / ICMP() / msg
             sendp(p, iface=iface)
-            p = Ether() / IP(src=src, dst=dst2) / UDP() / msg
+            p = Ether() / IP(src=src, dst=dst2) / ICMP() / msg
             sendp(p, iface = iface)
             index += 1
     else:

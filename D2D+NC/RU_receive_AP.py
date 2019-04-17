@@ -72,8 +72,8 @@ class action:
         sys.stdout.flush()
 
 
-def receive(ip, iface, filter="udp", rc_pkt=[]):
-    sniff(iface=iface, filter=filter, timeout=15, prn=action(ip, rc_pkt).custom_action)
+def receive(ip, iface, filter="icmp", rc_pkt=[]):
+    sniff(iface=iface, filter=filter, timeout=6, prn=action(ip, rc_pkt).custom_action)
     "after sniff,check the packet num and return the missing number"
 
     filename4 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU_pkts_AP.txt"

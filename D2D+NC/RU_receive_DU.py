@@ -45,7 +45,7 @@ class action:
         self.rc_pkt = rc_pkt
 
     def custom_action(self, packet):
-        loss = 0.2
+        loss = 0.1
         top = int(100 - 100 * loss)
         num = random.randint(1, 101)
         key = tuple([packet[0][1].src, packet[0][1].dst])
@@ -231,6 +231,7 @@ def receive(ip, iface, filter="udp", rc_pkt=[]):
     with open(filename6, 'a+') as f6:
         f6.write(original_string)
     print("Write File Finished")
+    print("Return ACK")
 
 def packetQueue():
     print(packet_counts)

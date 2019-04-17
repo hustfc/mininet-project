@@ -34,7 +34,7 @@ class action:
         self.rc_pkt = rc_pkt
 
     def custom_action(self, packet):
-        loss = 0
+        loss = 0.1
         top = int(100 - 100 * loss)
         num = random.randint(1, 101)
         key = tuple([packet[0][1].src, packet[0][1].dst])
@@ -75,8 +75,8 @@ class action:
         sys.stdout.flush()
 
 
-def receive(ip, iface, filter="udp", rc_pkt=[]):
-    sniff(iface=iface, filter=filter, timeout=15, prn=action(ip, rc_pkt).custom_action)
+def receive(ip, iface, filter="icmp", rc_pkt=[]):
+    sniff(iface=iface, filter=filter, timeout=6, prn=action(ip, rc_pkt).custom_action)
     "after sniff,check the packet num and return the missing number"
 
     #防止bug产生
