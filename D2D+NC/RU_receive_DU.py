@@ -71,7 +71,7 @@ class action:
             coe_string = packet[0][3].load[e5:s6]
             enc_string = packet[0][3].load[e6:]
             print('coe_string', coe_string, 'enc_string', enc_string)
-            Pkts[int(index)] = True
+            Pkts[int(index)] = True 
             coe[int(index)] = stringToList(coe_string)
             enc[int(index)] = stringToList(enc_string)
             coe_DU.append(stringToList(coe_string))
