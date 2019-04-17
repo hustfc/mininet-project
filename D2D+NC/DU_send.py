@@ -43,7 +43,7 @@ def send(src, iface, dst1, filename = '', flag = True, miss_pkt='',pow=5, times=
     i = 0  #由于系数矩阵的文件是没有空的
     for index in range(size):
         if pkts[index] == True:
-            time.sleep(0.5)
+            #time.sleep(0.5)
             now = time.time()
             coe = buffer1[coe_start + i][:-1]   #take out '\n'
             enc = buffer2[encode_start + i][:-1]

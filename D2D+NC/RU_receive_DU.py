@@ -144,6 +144,23 @@ def BuildMatrix():
     #参数：pkts_AP & datas_AP ：建立稀疏矩阵    coe_DU & enc_DU : 建立增广矩阵   Pkts ：确定填充的位置，是不是应该根据DU的pkt确定？
     coe_matrix = []  #总的系数矩阵
     encoded_matrix = []  #总的编码矩阵
+
+    #解码DU的pkt
+    filename1 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/DU_pkts.txt"
+    filename2 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/DU_count.txt"
+    with open(filename2, 'r') as f2:
+        buffer2 = f2.readlines()
+        DU_length = int(buffer2[-1])
+    with open(filename1, 'r') as f1:
+        buffer = f1.readlines()
+    pkt_start = len(buffer) - (DU_length + 1)
+    DU_pkt = {}
+    for i in range(size):
+        DU_pkt[i] = False
+    for i in range(DU_length):
+        index = int(buffer[pkt_start + i])
+        DU_pkt[index] = True
+
     for i in range(len(pkts_AP)):
         if pkts_AP[i] == True:
             coe_vector = [0] * size
@@ -157,8 +174,10 @@ def BuildMatrix():
     augment_matrix = [([0] * size) for i in range(len(coe_DU))]        #len(coe_DU) * size
     #coe_cols = GetMatrixCol(coe_DU)
     index = 0  # 指向列的指针
-    for j in range(len(Pkts)):
-        if Pkts[j] == True:
+
+    #判断DU_pkt来确定那一列缺失，如果RU丢包，那么只是行缺失
+    for j in range(len(DU_pkt)):
+        if DU_pkt[j] == True:
             for i in range(len(augment_matrix)):
                 augment_matrix[i][j] = coe_DU[i][index]
             index += 1
@@ -172,7 +191,7 @@ def BuildMatrix():
 
 
 def receive(ip, iface, filter="udp", rc_pkt=[]):
-    sniff(iface=iface, filter=filter, timeout=20, prn=action(ip, rc_pkt).custom_action)
+    sniff(iface=iface, filter=filter, timeout=5, prn=action(ip, rc_pkt).custom_action)
     "after sniff,check the packet num and return the missing number"
 
     filename4 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU_pkts.txt"
