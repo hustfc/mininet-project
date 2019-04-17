@@ -94,10 +94,11 @@ class action:
 
         sys.stdout.flush()
 
-#防止解码bug，需要同步Pkts coe enc
-for i in range(len(coe)):
-    if coe[i] == [] or enc[i] == []:
-        Pkts[i] = False
+#丢包之后需要重传，防止解码bug，需要同步Pkts coe enc
+
+# for i in range(len(coe)):
+#     if coe[i] == [] or enc[i] == []:
+#         Pkts[i] = False
 
 pkts_AP = {}
 datas_AP = {}   #data receive from AP
@@ -140,7 +141,7 @@ def GetMatrixCol(matrix):
     return result
 
 def BuildMatrix():
-    #参数：pkts_AP & datas_AP ：建立稀疏矩阵    coe_DU & enc_DU : 建立增广矩阵   Pkts ：确定填充的位置
+    #参数：pkts_AP & datas_AP ：建立稀疏矩阵    coe_DU & enc_DU : 建立增广矩阵   Pkts ：确定填充的位置，是不是应该根据DU的pkt确定？
     coe_matrix = []  #总的系数矩阵
     encoded_matrix = []  #总的编码矩阵
     for i in range(len(pkts_AP)):
@@ -171,7 +172,7 @@ def BuildMatrix():
 
 
 def receive(ip, iface, filter="udp", rc_pkt=[]):
-    sniff(iface=iface, filter=filter, timeout=15, prn=action(ip, rc_pkt).custom_action)
+    sniff(iface=iface, filter=filter, timeout=20, prn=action(ip, rc_pkt).custom_action)
     "after sniff,check the packet num and return the missing number"
 
     filename4 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU_pkts.txt"
