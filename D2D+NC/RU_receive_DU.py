@@ -191,7 +191,7 @@ def BuildMatrix():
 
 
 def receive(ip, iface, filter="udp", rc_pkt=[]):
-    sniff(iface=iface, filter=filter, timeout=5, prn=action(ip, rc_pkt).custom_action)
+    sniff(iface=iface, filter=filter, timeout=10, prn=action(ip, rc_pkt).custom_action)
     "after sniff,check the packet num and return the missing number"
 
     filename4 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU_pkts.txt"
@@ -220,6 +220,43 @@ def receive(ip, iface, filter="udp", rc_pkt=[]):
         sigma, res = solve(coe_matrix, encoded_cols[i])
         original_matrix.append(res)
     print('original', original_matrix)
+
+    #检测是不是有没有解码到的，需要重传，例如x_5没有解码到的话会返回x_5(free val)
+    #只需要检测第一行
+    miss_pkt = []
+    for i in range(len(original_matrix[0])):
+        if original_matrix[0][i][-4:-1] == 'var':
+            miss_pkt.append(i)
+    print('miss_pkt', miss_pkt)
+    filename7 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/miss.txt"
+    with open(filename7, 'a+') as f7:
+        if miss_pkt == []:
+            f7.write('ACK')
+            f7.write('\n')
+        else:
+            f7.write(str(miss_pkt))
+            f7.write('\n')
+
+    #重传
+    if miss_pkt != []:
+        filename8 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/APSend.txt"
+        with open(filename8, 'r') as f8:
+            buffer8 = f8.readlines()
+            send_start = len(buffer8) - (size + 1)
+            new_pkt_string = []
+            for item in miss_pkt:
+                new_pkt_string.append(buffer8[send_start + item])
+            print('new_string', new_pkt_string)
+            new_pkt_list = []
+            for i in range(len(new_pkt_string)):
+                new_pkt_list.append(stringToList(new_pkt_string[i][0:-1]))
+            print('new_list', new_pkt_list)
+            print('0,1', new_pkt_list[0][0], new_pkt_list[0][1])
+            for m in range(len(new_pkt_list)):
+                for i in range(len(new_pkt_list[m])):
+                    original_matrix[i][miss_pkt[m]] = new_pkt_list[m][i]
+    print('original', original_matrix)
+
     print("Decode Finish")
     print("Write to File>>>>>>>>>>")
     filename6 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU_msg.txt"

@@ -17,10 +17,12 @@ file = '/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log'
 
 filename1 = '%s/msg.txt' % file
 results = FToMatrix(filename1)
-matrix = results[0]
+#matrix = results[0]
+filename2 = '%s/APSend.txt' % file
+f2 = open(filename2, 'a+')
 
-
-def send(src, iface, dst1, dst2, filename = '', flag = True, miss_pkt='',pow=5, times=10,send_pkt=[]):
+def send(src, iface, dst1, dst2, num, flag = True, miss_pkt='',pow=5, times=10,send_pkt=[]):
+    matrix = results[num]
     if flag:
         index = 0
         lenth = len(matrix)
@@ -31,12 +33,16 @@ def send(src, iface, dst1, dst2, filename = '', flag = True, miss_pkt='',pow=5, 
             data = str(matrix[index])
             print('index', index)
             print('data', data)
+            f2.write(data)
+            f2.write('\n')
             msg = "send_time: " + "%.6f" % float(now) + "total:%d" % total + "index:%d" % index + "data:" + data
             p = Ether() / IP(src=src, dst=dst1) / ICMP() / msg
             sendp(p, iface=iface)
             p = Ether() / IP(src=src, dst=dst2) / ICMP() / msg
             sendp(p, iface = iface)
             index += 1
+        f2.write('\n')
+        f2.close()
     else:
         #filename1='/home/shlled/mininet-wifi/Log/%s' % filename
 

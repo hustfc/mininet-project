@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from mininet.node import Controller
 from mininet.log import setLogLevel, info
 from mn_wifi.link import wmediumd, adhoc
@@ -6,10 +7,29 @@ from mn_wifi.net import Mininet_wifi
 from mn_wifi.wmediumdConnector import interference
 
 import threading
+from NC.FileToM import *
+
+
+class MyThread(threading.Thread):
+
+    def __init__(self, func, args=()):
+        super(MyThread, self).__init__()
+        self.func = func
+        self.args = args
+
+    def run(self):
+        self.result = self.func(*self.args)
+
+    def get_result(self):
+        try:
+            return self.result
+        except Exception:
+            return None
 
 def command(host, arg):
     result = host.cmd(arg)
     return result
+
 
 def topology():
     "Create a network."
@@ -41,6 +61,33 @@ def topology():
     net.build()
     c1.start()
     #AP1.start([c1])
+
+    info("*** Starting Send information\n")
+    #获得总包的个数
+    file = '/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log'
+    filename1 = '%s/msg.txt' % file
+    results = FToMatrix(filename1)
+    nums = len(results)
+    for i in range(nums):
+        info("round ", i, "\n")
+        info("AP to DU and RU\n")
+        t1 = MyThread(command, args=(DU, "python DU_receive.py 10.0.0.3 DU-wlan0"))
+        t2 = MyThread(command, args=(RU, "python RU_receive_AP.py 10.0.0.2 RU-wlan0"))
+        t3 = MyThread(command, args=(AP, "python APSend.py 10.0.0.1 AP-wlan0 10.0.0.2 10.0.0.3 %s" % i))
+        t1.start()
+        t2.start()
+        t3.start()
+        t1.join()
+        t2.join()
+        t3.join()
+        info("DU send encoded packets to RU\n")
+        info("AP reSend to RU\n")
+        t4 = MyThread(command, args=(DU, "python DU_send.py 10.0.0.3 DU-wlan0 10.0.0.2"))
+        t5 = MyThread(command, args=(RU, "python RU_receive_DU.py 10.0.0.2 RU-wlan0"))
+        t4.start()
+        t5.start()
+        t4.join()
+        t5.join()
 
     info("*** Running CLI\n")
     CLI_wifi(net)
