@@ -36,7 +36,6 @@ def stringToList(s):
         return []
     s = s[1:len(s)-1]
     s = s.replace(' ', '')
-    print(s)
     return [int(i) for i in s.split(',')]
 
 # flag = True # before log delete the previous log file
@@ -71,7 +70,7 @@ class action:
             coe_string = packet[0][3].load[e5:s6]
             enc_string = packet[0][3].load[e6:]
             print('coe_string', coe_string, 'enc_string', enc_string)
-            Pkts[int(index)] = True 
+            Pkts[int(index)] = True
             coe[int(index)] = stringToList(coe_string)
             enc[int(index)] = stringToList(enc_string)
             coe_DU.append(stringToList(coe_string))
@@ -95,6 +94,11 @@ class action:
 
         sys.stdout.flush()
 
+#防止解码bug，需要同步Pkts coe enc
+for i in range(len(coe)):
+    if coe[i] == [] or enc[i] == []:
+        Pkts[i] = False
+
 pkts_AP = {}
 datas_AP = {}   #data receive from AP
 for i in range(size):
@@ -110,7 +114,7 @@ def readAPtoRU():
     with open(filename1, 'r') as f1:
         buffer1 = f1.readlines()
         length = int(buffer1[-1])
-        print('length', length)
+        print('AP_length', length)
     with open(filename2, 'r') as f2:
         buffer2 = f2.readlines()
     with open(filename3, 'r') as f3:
@@ -135,7 +139,7 @@ def GetMatrixCol(matrix):
         result.append([matrix[i][j] for i in range(rows)])
     return result
 
-def Decode():
+def BuildMatrix():
     #参数：pkts_AP & datas_AP ：建立稀疏矩阵    coe_DU & enc_DU : 建立增广矩阵   Pkts ：确定填充的位置
     coe_matrix = []  #总的系数矩阵
     encoded_matrix = []  #总的编码矩阵
@@ -167,7 +171,7 @@ def Decode():
 
 
 def receive(ip, iface, filter="udp", rc_pkt=[]):
-    sniff(iface=iface, filter=filter, timeout=5, prn=action(ip, rc_pkt).custom_action)
+    sniff(iface=iface, filter=filter, timeout=15, prn=action(ip, rc_pkt).custom_action)
     "after sniff,check the packet num and return the missing number"
 
     filename4 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU_pkts.txt"
@@ -187,7 +191,7 @@ def receive(ip, iface, filter="udp", rc_pkt=[]):
     print('pkts_AP', pkts_AP)
     print('datas_AP', datas_AP)
     #根据两次收到的信息建立系数和编码矩阵
-    coe_matrix, encoded_matrix = Decode()
+    coe_matrix, encoded_matrix = BuildMatrix()
     #对每一列进行解码
     #将编码矩阵转化为一列一列的向量。
     encoded_cols = GetMatrixCol(encoded_matrix)
@@ -196,7 +200,17 @@ def receive(ip, iface, filter="udp", rc_pkt=[]):
         sigma, res = solve(coe_matrix, encoded_cols[i])
         original_matrix.append(res)
     print('original', original_matrix)
-
+    print("Decode Finish")
+    print("Write to File>>>>>>>>>>")
+    filename6 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU_msg.txt"
+    original_string = ''
+    for i in range(len(original_matrix)):
+        for j in range(len(original_matrix[0])):
+            original_string += chr(int(original_matrix[i][j]))
+    print('txt:', original_string)
+    with open(filename6, 'a+') as f6:
+        f6.write(original_string)
+    print("Write File Finished")
 
 def packetQueue():
     print(packet_counts)

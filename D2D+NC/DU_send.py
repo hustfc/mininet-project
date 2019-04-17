@@ -36,13 +36,14 @@ def send(src, iface, dst1, filename = '', flag = True, miss_pkt='',pow=5, times=
     f2 = open(filename2, 'r')
     buffer1 = f1.readlines()
     buffer2 = f2.readlines()
-    coe_start = len(buffer1) - (lenth + 2)
-    encode_start = len(buffer2) - (lenth + 2)
+    coe_start = len(buffer1) - (lenth + 1)
+    encode_start = len(buffer2) - (lenth + 1)
     # print('pkts', pkts)
     # print('coe', buffer1[coe_start])
     i = 0  #由于系数矩阵的文件是没有空的
     for index in range(size):
         if pkts[index] == True:
+            time.sleep(0.3)
             now = time.time()
             coe = buffer1[coe_start + i][:-1]   #take out '\n'
             enc = buffer2[encode_start + i][:-1]

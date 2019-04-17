@@ -76,7 +76,7 @@ class action:
 
 
 def receive(ip, iface, filter="udp", rc_pkt=[]):
-    sniff(iface=iface, filter=filter, timeout=8, prn=action(ip, rc_pkt).custom_action)
+    sniff(iface=iface, filter=filter, timeout=15, prn=action(ip, rc_pkt).custom_action)
     "after sniff,check the packet num and return the missing number"
 
     #防止bug产生

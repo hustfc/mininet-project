@@ -26,6 +26,7 @@ def send(src, iface, dst1, dst2, filename = '', flag = True, miss_pkt='',pow=5, 
         lenth = len(matrix)
         total = lenth
         while index < lenth:
+            time.sleep(0.3)
             now = time.time()
             data = str(matrix[index])
             print('index', index)
