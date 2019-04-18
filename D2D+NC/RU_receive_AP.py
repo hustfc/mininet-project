@@ -75,7 +75,7 @@ class action:
 def receive(ip, iface, re_receive = False, filter="icmp", rc_pkt=[]):
     if re_receive == False:
 
-        sniff(iface=iface, filter=filter, timeout=10, prn=action(ip, rc_pkt).custom_action)
+        sniff(iface=iface, filter=filter, timeout=6, prn=action(ip, rc_pkt).custom_action)
         "after sniff,check the packet num and return the missing number"
 
         filename4 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU_pkts_AP.txt"
@@ -149,6 +149,7 @@ def receive(ip, iface, re_receive = False, filter="icmp", rc_pkt=[]):
         with open(filename6, 'a+') as f6:
             f6.write(original_string)
         print("Write File Finished")
+        time.sleep(1)
         print("Return ACK")
         filename8 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/miss.txt"
         with open(filename8, 'a+') as f8:

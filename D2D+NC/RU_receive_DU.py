@@ -191,7 +191,7 @@ def BuildMatrix():
 
 
 def receive(ip, iface, filter="icmp", rc_pkt=[]):
-    sniff(iface=iface, filter=filter, timeout=7, prn=action(ip, rc_pkt).custom_action)
+    sniff(iface=iface, filter=filter, timeout=4, prn=action(ip, rc_pkt).custom_action)
     "after sniff,check the packet num and return the missing number"
 
     filename4 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU_pkts.txt"
