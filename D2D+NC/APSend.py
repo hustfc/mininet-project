@@ -9,7 +9,7 @@ import random
 
 from NC.FileToM import *
 
-#python APSend.py 10.0.0.1 AP-wlan0 10.0.0.2 10.0.0.3
+#python APSend.py 10.0.0.1 AP-wlan0 10.0.0.2 10.0.0.3 0 False(True)
 #python DU_receive.py 10.0.0.3 DU-wlan0
 #python RU_receive_AP.py 10.0.0.2 RU-wlan0
 
@@ -21,9 +21,9 @@ results = FToMatrix(filename1)
 filename2 = '%s/APSend.txt' % file
 f2 = open(filename2, 'a+')
 
-def send(src, iface, dst1, dst2, num, flag = True, miss_pkt='',pow=5, times=10,send_pkt=[]):
+def send(src, iface, dst1, dst2, num, resend = False, miss_pkt='',pow=5, times=10,send_pkt=[]):
     matrix = results[num]
-    if flag:
+    if resend == False:
         index = 0
         lenth = len(matrix)
         total = lenth
@@ -44,32 +44,17 @@ def send(src, iface, dst1, dst2, num, flag = True, miss_pkt='',pow=5, times=10,s
         f2.write('\n')
         f2.close()
     else:
-        #filename1='/home/shlled/mininet-wifi/Log/%s' % filename
-
-        filename1 = '/media/psf/Home/Documents/GitHub/mininet-project/Stackelberg/Log/%s' % filename
-        f1=open(filename1,'r')
-        buffer=f1.readlines()
-        lenth=len(buffer)
-        total=lenth
-        #miss_pkt = stringToList(miss_pkt)
-        while miss_pkt!=[]:
-            info("miss_pkt in send.py:", miss_pkt)
-            print(miss_pkt)
-            time.sleep(0.1)
+        index = 0
+        lenth = len(matrix)
+        total = lenth
+        while index < lenth:
+            # time.sleep(0.3)
             now = time.time()
-            alpha=buffer[int(miss_pkt[0])]
-            print('alpha', alpha)
-            msg = "send_time: " + "%.6f" % float(now) + " filename:%s" % filename  + "total:%d" % total + "index:%d" % miss_pkt[0] + "data:" + alpha
-            send_pkt.append(msg)
-            print(msg)
-            p = Ether() / IP(src=src, dst=dst) / ICMP() / msg
-            "miss packet"
-            top = int(100 - 100 * loss)
-            key = random.randint(1, 100)
-            if key in range(1, top):
-                sendp(p, iface=iface)
-            else:
-                print("can't send the packet\n")
-            miss_pkt.pop(0)
-        f1.close()
+            data = str(matrix[index])
+            print('index', index)
+            print('data', data)
+            msg = "send_time: " + "%.6f" % float(now) + "total:%d" % total + "index:%d" % index + "data:" + data
+            p = Ether() / IP(src=src, dst=dst1) / ICMP() / msg
+            sendp(p, iface=iface)
+            index += 1
 fire.Fire(send)

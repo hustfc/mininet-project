@@ -190,8 +190,8 @@ def BuildMatrix():
 
 
 
-def receive(ip, iface, filter="udp", rc_pkt=[]):
-    sniff(iface=iface, filter=filter, timeout=10, prn=action(ip, rc_pkt).custom_action)
+def receive(ip, iface, filter="icmp", rc_pkt=[]):
+    sniff(iface=iface, filter=filter, timeout=7, prn=action(ip, rc_pkt).custom_action)
     "after sniff,check the packet num and return the missing number"
 
     filename4 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU_pkts.txt"
@@ -226,6 +226,8 @@ def receive(ip, iface, filter="udp", rc_pkt=[]):
     miss_pkt = []
     for i in range(len(original_matrix[0])):
         if original_matrix[0][i][-4:-1] == 'var':
+            for j in range(len(original_matrix)):
+                original_matrix[j][i] = '-1'   #将不能解码的元素变为-1
             miss_pkt.append(i)
     print('miss_pkt', miss_pkt)
     filename7 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/miss.txt"
@@ -237,38 +239,15 @@ def receive(ip, iface, filter="udp", rc_pkt=[]):
             f7.write(str(miss_pkt))
             f7.write('\n')
 
-    #重传
-    if miss_pkt != []:
-        filename8 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/APSend.txt"
-        with open(filename8, 'r') as f8:
-            buffer8 = f8.readlines()
-            send_start = len(buffer8) - (size + 1)
-            new_pkt_string = []
-            for item in miss_pkt:
-                new_pkt_string.append(buffer8[send_start + item])
-            print('new_string', new_pkt_string)
-            new_pkt_list = []
-            for i in range(len(new_pkt_string)):
-                new_pkt_list.append(stringToList(new_pkt_string[i][0:-1]))
-            print('new_list', new_pkt_list)
-            print('0,1', new_pkt_list[0][0], new_pkt_list[0][1])
-            for m in range(len(new_pkt_list)):
-                for i in range(len(new_pkt_list[m])):
-                    original_matrix[i][miss_pkt[m]] = new_pkt_list[m][i]
-    print('original', original_matrix)
-
-    print("Decode Finish")
-    print("Write to File>>>>>>>>>>")
-    filename6 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU_msg.txt"
-    original_string = ''
+    #将original写在文件里面
+    filename9 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU_original.txt"
     for i in range(len(original_matrix)):
         for j in range(len(original_matrix[0])):
-            original_string += chr(int(original_matrix[i][j]))
-    print('txt:', original_string)
-    with open(filename6, 'a+') as f6:
-        f6.write(original_string)
-    print("Write File Finished")
-    print("Return ACK")
+            original_matrix[i][j] = int(original_matrix[i][j])
+    with open(filename9, 'a+') as f9:
+        for item in original_matrix:
+            f9.write(str(item) + '\n')
+        f9.write('\n')
 
 def packetQueue():
     print(packet_counts)

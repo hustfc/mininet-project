@@ -53,7 +53,7 @@ def send(src, iface, dst1, filename = '', flag = True, miss_pkt='',pow=5, times=
             # print('enc', enc)
             msg = "send_time: " + "%.6f" % float(now) + "total:%d" % size + "index:%d" % index + "coe:" + coe + "enc:" + enc
             print(msg)
-            p = Ether() / IP(src=src, dst=dst1) / UDP() / msg
+            p = Ether() / IP(src=src, dst=dst1) / ICMP() / msg
             sendp(p, iface=iface)
             i += 1
     f1.close()
