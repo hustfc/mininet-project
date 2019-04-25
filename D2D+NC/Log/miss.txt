@@ -139,3 +139,59 @@ ACK
 ACK
 ACK
 ACK
+ACK
+ACK
+ACK
+ACK
+ACK
+[24]
+[14]
+ACK
+ACK
+[12]
+ACK
+[13]
+ACK
+[0, 7, 23]
+ACK
+[0]
+ACK
+[31]
+ACK
+[0, 26]
+ACK
+[13, 30]
+ACK
+ACK
+[20, 25, 26, 27, 28, 29, 30, 31]
+ACK
+[0]
+ACK
+[0]
+ACK
+[5]
+ACK
+ACK
+ACK
+[0, 3, 11]
+ACK
+ACK
+ACK
+ACK
+ACK
+[0]
+ACK
+[0, 20, 24]
+ACK
+[0, 1]
+ACK
+[0, 31]
+ACK
+ACK
+ACK
+[0, 21]
+ACK
+[0]
+ACK
+[21]
+ACK

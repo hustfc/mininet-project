@@ -41,7 +41,6 @@ class GF:
     def mul(self, a, b):
         if a == 0 or b == 0:
             return 0
-        #print('a, b:', a, b)
         return self.gfilog[(self.gflog[a] + self.gflog[b]) % self.total]
 
     def div(self, a, b):
@@ -51,19 +50,21 @@ class GF:
 
 
 
-# import random
-# t = 0
-# while t <= 20:
-#     a = random.randint(1, 2 ** 4 - 1)
-#     b = random.randint(1, 2 ** 4 - 1)
-#     c = gf.add(a, b)
-#     d = gf.mul(a, b)
-#     print('%d + %d = %d' % (a, b, c))
-#     print('%d - %d = %d' % (c, a, gf.sub(c, a)))
-#     print('%d * %d = %d' % (a, b, d))
-#     print('%d / %d = %d' % (d, a, gf.div(d, a)))
-#     print()
-#     t += 1
+import random
+t = 0
+w = 16
+gf = GF(w)
+while t <= 20:
+    a = random.randint(1, 2 ** w - 1)
+    b = random.randint(1, 2 ** w - 1)
+    c = gf.add(a, b)
+    d = gf.mul(a, b)
+    print('%d + %d = %d' % (a, b, c))
+    print('%d - %d = %d' % (c, a, gf.sub(c, a)))
+    print('%d * %d = %d' % (a, b, d))
+    print('%d / %d = %d' % (d, a, gf.div(d, a)))
+    print()
+    t += 1
 
 #Unit test
 # gf = GF(8)

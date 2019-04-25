@@ -1,2 +1,2 @@
-string = '(..... var)'
-print(string[-4:-1] == 'var')
+lenth = 197 - 142
+print(float(35 / lenth))
