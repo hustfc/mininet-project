@@ -151,9 +151,9 @@ def receive(ip, iface, re_receive = False, filter="icmp", rc_pkt=[]):
         print("Write File Finished")
         time.sleep(1)
         print("Return ACK")
-        filename8 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/miss.txt"
-        with open(filename8, 'a+') as f8:
-            f8.write('ACK\n')
+        # filename8 = "/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/miss.txt"
+        # with open(filename8, 'a+') as f8:
+        #     f8.write('ACK\n')
 
 
 def packetQueue():
