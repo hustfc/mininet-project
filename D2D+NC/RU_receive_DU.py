@@ -45,10 +45,12 @@ class action:
         self.rc_pkt = rc_pkt
 
     def custom_action(self, packet):
+        # 丢包率0.1
         loss = 0.1
         top = int(100 - 100 * loss)
         num = random.randint(1, 101)
         key = tuple([packet[0][1].src, packet[0][1].dst])
+        # 如果ip相同才进行接收
         if num in range(1, top + 1) and packet[0][1].dst == self.ip:  # receive.py  second param is its own ip
             "offload the msg from packet"
             span3 = re.search('total:', packet[0][3].load).span()
@@ -65,18 +67,24 @@ class action:
             e6 = span6[1]
             # global flag
             global total
+            # 从包里面的load字段取出数据
             total = packet[0][3].load[e3:s4]
             index = packet[0][3].load[e4:s5]
+            # 系数矩阵和编码矩阵，这个时候是string类型
             coe_string = packet[0][3].load[e5:s6]
             enc_string = packet[0][3].load[e6:]
             print('coe_string', coe_string, 'enc_string', enc_string)
+            # 对收到的数据进行保存
             Pkts[int(index)] = True
             coe[int(index)] = stringToList(coe_string)
             enc[int(index)] = stringToList(enc_string)
+            # 加入到系数矩阵和编码矩阵里面
             coe_DU.append(stringToList(coe_string))
             enc_DU.append(stringToList(enc_string))
             print(Pkts, coe, enc)
 
+
+            # 写入到RU_Log文件中
             "write the data"
             filename1 = '/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log/RU_Log.txt'
             f1 = open(filename1, "a+")
@@ -161,6 +169,7 @@ def BuildMatrix():
         index = int(buffer[pkt_start + i])
         DU_pkt[index] = True
 
+    # 从AP收到的包的矩阵
     for i in range(len(pkts_AP)):
         if pkts_AP[i] == True:
             coe_vector = [0] * size
