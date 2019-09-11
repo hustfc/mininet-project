@@ -31,7 +31,7 @@ class action:
         self.rc_pkt = rc_pkt
 
     def custom_action(self, packet):
-        loss = 0.3
+        loss = 0.4
         top = int(100 - 100 * loss)
         num = random.randint(1, 101)
         key = tuple([packet[0][1].src, packet[0][1].dst])

@@ -21,7 +21,7 @@ for i in range(len(buffer)):
         missList = stringToList(context)
         print(missList)
         counts.append(32-len(missList))
-print(counts)\
+print(counts)
 
 for j in range(len(counts)):
     count += counts[j]

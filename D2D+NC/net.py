@@ -64,7 +64,7 @@ def topology():
 
     info("*** Starting Send information\n")
     #获得总包的个数
-    for index in range(30):
+    for index in range(15):
         file = '/media/psf/Home/Documents/GitHub/mininet-project/D2D+NC/Log'
         filename1 = '%s/msg.txt' % file
         results = FToMatrix(filename1)
