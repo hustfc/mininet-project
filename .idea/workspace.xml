@@ -2,8 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="993479c9-978c-438f-9151-f24db2b49d77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/D2D+NC/NC/Simulator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/D2D+NC/NC/NCSimulator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2D+NC/Log/APSend.txt" beforeDir="false" afterPath="$PROJECT_DIR$/D2D+NC/Log/APSend.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2D+NC/Log/DU_Log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/D2D+NC/Log/DU_Log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2D+NC/Log/DU_coe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/D2D+NC/Log/DU_coe.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2D+NC/Log/DU_count.txt" beforeDir="false" afterPath="$PROJECT_DIR$/D2D+NC/Log/DU_count.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2D+NC/Log/DU_datas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/D2D+NC/Log/DU_datas.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2D+NC/Log/DU_encoded.txt" beforeDir="false" afterPath="$PROJECT_DIR$/D2D+NC/Log/DU_encoded.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2D+NC/Log/DU_pkts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/D2D+NC/Log/DU_pkts.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2D+NC/Log/RU_Log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/D2D+NC/Log/RU_Log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2D+NC/Log/RU_count_AP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/D2D+NC/Log/RU_count_AP.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2D+NC/Log/RU_datas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/D2D+NC/Log/RU_datas.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2D+NC/Log/RU_datas_AP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/D2D+NC/Log/RU_datas_AP.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2D+NC/Log/RU_msg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/D2D+NC/Log/RU_msg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2D+NC/Log/RU_original.txt" beforeDir="false" afterPath="$PROJECT_DIR$/D2D+NC/Log/RU_original.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2D+NC/Log/RU_pkts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/D2D+NC/Log/RU_pkts.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2D+NC/Log/RU_pkts_AP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/D2D+NC/Log/RU_pkts_AP.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2D+NC/Log/miss.txt" beforeDir="false" afterPath="$PROJECT_DIR$/D2D+NC/Log/miss.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2D+NC/NC/Simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/D2D+NC/NC/Simulator.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +35,9 @@
     <SUITE FILE_PATH="coverage/mininet_project$FileToM__1_.coverage" NAME="FileToM (1) Coverage Results" MODIFIED="1554970974181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/D2D+NC/NC" />
     <SUITE FILE_PATH="coverage/mininet_project$net.coverage" NAME="net Coverage Results" MODIFIED="1555488777465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/D2D+NC" />
     <SUITE FILE_PATH="coverage/mininet_project$decode.coverage" NAME="decode Coverage Results" MODIFIED="1555397543447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/D2D+NC/NC" />
-    <SUITE FILE_PATH="coverage/mininet_project$Simulator.coverage" NAME="Simulator Coverage Results" MODIFIED="1568191569637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/D2D+NC/NC" />
+    <SUITE FILE_PATH="coverage/mininet_project$Simulator.coverage" NAME="Simulator Coverage Results" MODIFIED="1568194686121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/D2D+NC/NC" />
     <SUITE FILE_PATH="coverage/mininet_project$test.coverage" NAME="test Coverage Results" MODIFIED="1556243101038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/D2D+NC/demo" />
+    <SUITE FILE_PATH="coverage/mininet_project$NCSimulator.coverage" NAME="NCSimulator Coverage Results" MODIFIED="1568194565299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/D2D+NC/NC" />
     <SUITE FILE_PATH="coverage/mininet_project$GF.coverage" NAME="GF Coverage Results" MODIFIED="1556108766507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/D2D+NC/NC" />
     <SUITE FILE_PATH="coverage/mininet_project$FileToM.coverage" NAME="FileToM Coverage Results" MODIFIED="1554776395631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/D2D+NC/NC" />
     <SUITE FILE_PATH="coverage/mininet_project$NoRelayTest.coverage" NAME="NoRelayTest Coverage Results" MODIFIED="1556242867535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/D2D+NC/demo" />
@@ -31,29 +49,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/D2D+NC/Log/miss.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="626">
-              <caret line="239" column="3" lean-forward="true" selection-start-line="239" selection-start-column="3" selection-end-line="239" selection-end-column="3" />
+            <state relative-caret-position="1779">
+              <caret line="254" column="7" selection-start-line="254" selection-start-column="7" selection-end-line="254" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D2D+NC/RU_receive_DU.py">
+        <entry file="file://$PROJECT_DIR$/D2D+NC/net.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
+            <state relative-caret-position="65">
+              <caret line="66" column="13" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="13" />
               <folding>
-                <element signature="e#24#58#0" expanded="true" />
+                <element signature="e#24#59#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D2D+NC/Log/msg.txt">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/D2D+NC/NC/NCSimulator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="674">
+              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Stackelberg/net.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="165" column="82" selection-start-line="165" selection-start-column="82" selection-end-line="165" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -61,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/D2D+NC/RU_receive_AP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="35" column="36" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="36" />
+            <state relative-caret-position="-1357">
+              <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
               <folding>
                 <element signature="e#24#58#0" expanded="true" />
               </folding>
@@ -70,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/D2D+NC/NC/Simulator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+            <state relative-caret-position="610">
+              <caret line="34" selection-start-line="34" selection-end-line="34" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -82,33 +109,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/D2D+NC/Log/RU_pkts_AP.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-234150" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D2D+NC/Log/RU_datas_AP.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-70397" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D2D+NC/Log/RU_pkts.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-10099">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
+            <state relative-caret-position="-208076" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/D2D+NC/APSend.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="39" column="33" lean-forward="true" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+            <state relative-caret-position="199">
+              <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D2D+NC/RU_receive_DU.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="252" column="6" selection-start-line="252" selection-start-column="6" selection-end-line="252" selection-end-column="6" />
+              <folding>
+                <element signature="e#24#58#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,6 +178,9 @@
       <find>DU_Encode</find>
       <find>range</find>
       <find>enc_DU</find>
+      <find>miss.t</find>
+      <find>ACK</find>
+      <find>'ACK'</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -170,7 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/APSend.py" />
         <option value="$PROJECT_DIR$/D2D+NC/send.py" />
         <option value="$PROJECT_DIR$/D2D+NC/copy_DU_receive.py" />
         <option value="$PROJECT_DIR$/D2D+NC/Log/datas.txt" />
@@ -221,6 +246,7 @@
         <option value="$PROJECT_DIR$/D2D+NC/demo/BwTest.py" />
         <option value="$PROJECT_DIR$/D2D+NC/RU_receive_DU.py" />
         <option value="$PROJECT_DIR$/D2D+NC/NC/Simulator.py" />
+        <option value="$PROJECT_DIR$/D2D+NC/NC/NCSimulator.py" />
       </list>
     </option>
   </component>
@@ -335,6 +361,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="NCSimulator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="mininet-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/D2D+NC/NC" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/D2D+NC/NC/NCSimulator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="NoRelayTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="mininet-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -379,28 +427,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="net" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="mininet-project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/D2D+NC" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/D2D+NC/net.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="mininet-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -426,10 +452,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.Simulator" />
+        <item itemvalue="Python.NCSimulator" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.NoRelayTest" />
         <item itemvalue="Python.GF" />
-        <item itemvalue="Python.net" />
       </list>
     </recent_temporary>
   </component>
@@ -456,22 +482,23 @@
       <workItem from="1557049874822" duration="304000" />
       <workItem from="1557366649529" duration="7000" />
       <workItem from="1567395625347" duration="3463000" />
-      <workItem from="1568187481581" duration="3569000" />
+      <workItem from="1568187481581" duration="5961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177040000" />
+    <option name="totallyTimeSpent" value="179432000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13080685" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.1221865" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25937834" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17577706" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -479,7 +506,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.22186495" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.17470525" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -516,14 +543,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/D2D+NC/Log/DU_pkts.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D2D+NC/Log/DU_encoded.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-52181" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/D2D+NC/Log/DU_datas.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -758,16 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D2D+NC/net.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="85" column="62" selection-start-line="85" selection-start-column="62" selection-end-line="85" selection-end-column="62" />
-          <folding>
-            <element signature="e#24#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/D2D+NC/Log/RU_datas.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-36210">
@@ -794,59 +803,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D2D+NC/Log/miss.txt">
+    <entry file="file://$PROJECT_DIR$/D2D+NC/Log/msg.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="239" column="3" lean-forward="true" selection-start-line="239" selection-start-column="3" selection-end-line="239" selection-end-column="3" />
+        <state relative-caret-position="456">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Stackelberg/net.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="165" column="82" selection-start-line="165" selection-start-column="82" selection-end-line="165" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D2D+NC/RU_receive_DU.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="252" column="6" selection-start-line="252" selection-start-column="6" selection-end-line="252" selection-end-column="6" />
+          <folding>
+            <element signature="e#24#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/D2D+NC/APSend.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="39" column="33" lean-forward="true" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+        <state relative-caret-position="199">
+          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D2D+NC/Log/RU_pkts_AP.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234150" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D2D+NC/Log/msg.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D2D+NC/RU_receive_DU.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
-          <folding>
-            <element signature="e#24#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/D2D+NC/RU_receive_AP.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="35" column="36" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="36" />
+        <state relative-caret-position="-1357">
+          <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
           <folding>
             <element signature="e#24#58#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D2D+NC/net.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="66" column="13" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="13" />
+          <folding>
+            <element signature="e#24#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D2D+NC/Log/RU_pkts_AP.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-208076" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D2D+NC/Log/miss.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1779">
+          <caret line="254" column="7" selection-start-line="254" selection-start-column="7" selection-end-line="254" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/D2D+NC/NC/Simulator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        <state relative-caret-position="610">
+          <caret line="34" selection-start-line="34" selection-end-line="34" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D2D+NC/NC/NCSimulator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
         </state>
       </provider>
     </entry>

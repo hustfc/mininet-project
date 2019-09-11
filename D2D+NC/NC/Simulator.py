@@ -1,7 +1,7 @@
 import random
 
 # 模拟没有NC环境下面的吞吐量
-ratioAPtoRU = 0.3
+ratioAPtoRU = 0.4
 ratioAPtoDU = 0.1
 ratioDUtoRU = 0.1
 packet = list(range(1, 32))
@@ -26,11 +26,10 @@ for j in range(1000):
         topDU_RU = int(100 * (1 - ratioDUtoRU))
         num = random.randint(1, 101)
         if num in range(1, topDU_RU + 1):
-           RU_pkt.append(DU_pkt[i])
+            RU_pkt.append(DU_pkt[i])
     counts.append(len(set(RU_pkt)))
-    print(counts)
 for j in range(len(counts)):
     count += counts[j]
 count = count / len(counts)
-print(count)
-
+print("cout", count)
+print("throutput", (count/32)*1024)
