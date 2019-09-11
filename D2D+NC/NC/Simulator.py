@@ -1,7 +1,7 @@
 import random
 
 # 模拟没有NC环境下面的吞吐量
-ratioAPtoRU = 0.25
+ratioAPtoRU = 0.2
 ratioAPtoDU = 0.1
 ratioDUtoRU = 0.1
 packet = list(range(1, 32))
