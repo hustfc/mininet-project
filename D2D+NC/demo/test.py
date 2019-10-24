@@ -1,14 +1,18 @@
-filename = '/Users/fanc/Documents/GitHub/mininet-project/D2D+NC/Log/miss.txt'
-success = 0
-loss = 0
-with open(filename, 'r') as f:
-    buffer = f.readlines()
-    length = len(buffer)
-    for i in range(length):
-        if buffer[i][0] == 'A':
-            success += 1
-        else:
-            loss += 1
-print('success',success)
-print('loss', loss)
-print('rate', float(success / length))
+total = 500 * 2.7
+a = (float)(3.7/2.7)
+b = a
+count = 0
+for i in range(14):
+    count += b
+    b = b * a
+print(count)
+output = (500 * 2.7) / (3.7 + count)
+print(output)
+result = []
+result.append(output)
+an = output/2.7
+result.append(an)
+for i in range(14):
+    an = an * a
+    result.append(an)
+print("结果:", result)
